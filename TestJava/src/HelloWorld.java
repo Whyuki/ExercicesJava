@@ -10,6 +10,7 @@ public class HelloWorld {	/**
 	 * @param args argument
 	 */
 	public static void main(String[] args) {
+		//methode MAIN (fonction/procedure)
 		// TODO Auto-generated method stub
 		System.out.println("Hello World !!!");
 		System.out.println("My second message");
