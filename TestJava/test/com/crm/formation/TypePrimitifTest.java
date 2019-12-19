@@ -27,6 +27,14 @@ public class TypePrimitifTest {
 		System.out.println("Remise à zéro\n"+"var1 = "+var1+"\nvar2 = "+var2);
 		var2 = var1++;
 		System.out.println("suffixe ++ : var2 = var1++ donne: \n"+"var1 = "+var1+"\nvar2 = "+var2); //incrémentation apres (ré)affectation
+		
+		int nb1, nb2, total;
+		nb1 = 15;
+		nb2 = 50;
+		total = nb1 + nb2;
+		System.out.println("\nTest addition :\n"+ nb1 +"+"+nb2+" = " + total);
+				
+		
 	}
 
 }
