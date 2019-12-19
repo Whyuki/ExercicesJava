@@ -16,13 +16,17 @@ public class TypePrimitifTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int age, age2, diff;
-		age = 28;
-		age2 = 24;
-		diff = 0;
-		diff = age - age2;
-		System.out.println("La différence d'âge entre "+age+" ans et "+age2+" ans est de "+diff+" ans");		
-		
+		int var1, var2;
+		var1 = 3;
+		var2 = 0;
+		System.out.println("var1 = "+var1+"\nvar2 = "+var2);	
+		var2 = ++var1;
+		System.out.println("préfixe ++ : var2 = ++var1 donne: \n"+"var1 = "+var1+"\nvar2 = "+var2); //incrémentation avant (ré)affectation
+		var1 = 3;
+		var2 = 0;
+		System.out.println("Remise à zéro\n"+"var1 = "+var1+"\nvar2 = "+var2);
+		var2 = var1++;
+		System.out.println("suffixe ++ : var2 = var1++ donne: \n"+"var1 = "+var1+"\nvar2 = "+var2); //incrémentation apres (ré)affectation
 	}
 
 }
