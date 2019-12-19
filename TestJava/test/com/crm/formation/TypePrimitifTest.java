@@ -38,9 +38,8 @@ public class TypePrimitifTest {
 		f1 = 1.5;
 		f2 = 3.2;
 		totalf = f1 + f2;
-		System.out.println("\n\n"+f1+" + "+f2+" = "+totalf);
+		System.out.println("\n\n"+f1+" + "+f2+" = "+totalf+"\n");
 		
-				
 		
 	}
 
