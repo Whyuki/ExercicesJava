@@ -49,10 +49,13 @@ public class TypePrimitifTest {
 		
 		
 		int varBool1, varBool2;
-		boolean res;	
+		boolean res;
+		varBool1 = 8;
+		varBool2 = 7;
 		res = true;
 		System.out.println("test boolean : "+res+"\n\n");
-		
+		res = (varBool1 == varBool2);
+		System.out.println("test boolean : "+res+"\n\n");
 		
 		int var1, var2;
 		var1 = 3;
