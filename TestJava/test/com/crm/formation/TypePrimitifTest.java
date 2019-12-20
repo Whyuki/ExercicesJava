@@ -44,10 +44,14 @@ public class TypePrimitifTest {
 		System.out.println("test double : "+d1+"\n\n");
 		
 		char c1;
+		c1 = 'b';
+		System.out.println("test character : "+c1+"\n\n");
 		
 		
-		
-		boolean bool1;	
+		int varBool1, varBool2;
+		boolean res;	
+		res = true;
+		System.out.println("test boolean : "+res);
 		
 		
 		int var1, var2;
