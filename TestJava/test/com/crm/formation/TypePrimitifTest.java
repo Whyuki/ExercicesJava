@@ -40,6 +40,12 @@ public class TypePrimitifTest {
 		totalf = f1 + f2;
 		System.out.println("\n\n"+f1+" + "+f2+" = "+totalf+"\n");
 		
+		Scanner sc;
+		sc = new Scanner(System.in);
+		String nb;
+		System.out.println("Saisir un nombre");
+		nb = sc.nextLine();
+		System.out.println("vous avez saisi "+nb);
 	}
 
 }
