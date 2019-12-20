@@ -25,10 +25,28 @@ public class TypePrimitifTest {
 		System.out.println("test short : "+s1+"\n\n");
 		
 		int i1;
+		i1 = 11;
+		System.out.println("test int : "+i1+"\n\n");
+		
+		
 		long l1;
+		l1 = 15;
+		System.out.println("test long : "+l1+"\n\n");
+				
+		
 		float fl1;
+		fl1 = 1.2f;
+		System.out.println("test float : "+fl1+"\n\n");
+		
+		
 		double d1;
+		d1 = 1.5;
+		System.out.println("test double : "+d1+"\n\n");
+		
 		char c1;
+		
+		
+		
 		boolean bool1;	
 		
 		
