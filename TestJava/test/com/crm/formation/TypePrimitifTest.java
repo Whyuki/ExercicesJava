@@ -29,7 +29,7 @@ public class TypePrimitifTest {
 		System.out.println("suffixe ++ : var2 = var1++ donne: \n"+"var1 = "+var1+"\nvar2 = "+var2); //incrémentation apres (ré)affectation
 		
 		int var3, var4, x;
-		var3 = 9;
+		var3 = 15;
 		var4 = 2;
 		x = var3 % var4;
 		System.out.println("\n\nTest modulo : "+var3+" mod "+var4+" = "+x);
