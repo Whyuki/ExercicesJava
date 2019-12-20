@@ -28,11 +28,11 @@ public class TypePrimitifTest {
 		var2 = var1++;
 		System.out.println("suffixe ++ : var2 = var1++ donne: \n"+"var1 = "+var1+"\nvar2 = "+var2); //incrémentation apres (ré)affectation
 		
-		int nb1, nb2, total, mood;
+		int nb1, nb2, totalm, total, mod;
 		nb1 = 15;
 		nb2 = 50;
-		total = nb1+nb2;
-		System.out.println("\nTest addition :\n"+ nb1 +"+"+nb2+" = " + total);
+		totalm = nb1+nb2;
+		System.out.println("\nTest addition :\n"+ nb1 +"+"+nb2+" = " + totalm);
 		
 		double f1, f2, totalf;
 		f1 = 1.5;
@@ -42,10 +42,13 @@ public class TypePrimitifTest {
 		
 		Scanner sc;
 		sc = new Scanner(System.in);
-		String nb;
+		int nb;
 		System.out.println("Saisir un nombre");
-		nb = sc.nextLine();
-		System.out.println("vous avez saisi "+nb);
+		nb = sc.nextInt();
+		System.out.println("vous avez saisi le nombre "+nb);
+		total = nb + 1;
+		System.out.println(nb+ " + "+"1"+" = "+total);
+		
 	}
 
 }
