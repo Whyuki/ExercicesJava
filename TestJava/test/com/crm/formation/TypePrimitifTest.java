@@ -16,6 +16,22 @@ public class TypePrimitifTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		byte b1;
+		b1 = 8;
+		System.out.println("test byte : "+b1+"\n\n");
+		
+		short s1;
+		s1 = 9;
+		System.out.println("test short : "+s1+"\n\n");
+		
+		int i1;
+		long l1;
+		float fl1;
+		double d1;
+		char c1;
+		boolean bool1;	
+		
+		
 		int var1, var2;
 		var1 = 3;
 		var2 = 0;
@@ -27,6 +43,7 @@ public class TypePrimitifTest {
 		System.out.println("Remise à zéro\n"+"var1 = "+var1+"\nvar2 = "+var2);
 		var2 = var1++;
 		System.out.println("suffixe ++ : var2 = var1++ donne: \n"+"var1 = "+var1+"\nvar2 = "+var2); //incrémentation apres (ré)affectation
+		
 		
 		int var3, var4, x;
 		var3 = 15;
@@ -59,6 +76,7 @@ public class TypePrimitifTest {
 		total = nb + nbbis;
 		System.out.println(nb+ " + "+nbbis+" = "+total);
 		
+
 	}
 
 }
