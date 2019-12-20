@@ -38,16 +38,19 @@ public class TypePrimitifTest {
 		f1 = 1.5;
 		f2 = 3.2;
 		totalf = f1 + f2;
-		System.out.println("\n\n"+f1+" + "+f2+" = "+totalf+"\n");
+		System.out.println("\n\nTest nombre à virgule : "+f1+" + "+f2+" = "+totalf+"\n");
 		
 		Scanner sc;
 		sc = new Scanner(System.in);
-		int nb;
-		System.out.println("Saisir un nombre");
+		int nb, nbbis;
+		System.out.println("Saisir un nombre :");
 		nb = sc.nextInt();
 		System.out.println("vous avez saisi le nombre "+nb);
-		total = nb + 1;
-		System.out.println(nb+ " + "+"1"+" = "+total);
+		System.out.println("Saisir un second nombre :");
+		nbbis = sc.nextInt();
+		System.out.println("Votre second nombre est : "+nbbis);
+		total = nb + nbbis;
+		System.out.println(nb+ " + "+nbbis+" = "+total);
 		
 	}
 
