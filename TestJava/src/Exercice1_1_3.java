@@ -31,7 +31,7 @@ public class Exercice1_1_3 {
 			nombre = sc.nextInt();
 			somme = somme + nombre;
 			compteurDeNombre++;
-			moyenne = somme / compteurDeNombre;
+			moyenne = (float)somme / (float)compteurDeNombre;
 			System.out.println("somme : " + somme);
 			System.out.println("compteur de nombre : " + compteurDeNombre);
 			System.out.println("moyenne : " + moyenne);
