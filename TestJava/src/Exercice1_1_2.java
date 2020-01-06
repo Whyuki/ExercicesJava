@@ -20,7 +20,6 @@ public class Exercice1_1_2 {
 		boolean réponse;
 		Scanner sc;
 		sc = new Scanner(System.in);
-
 		réponse = true;
 		while (réponse == true) {
 			System.out.println("Veuillez saisir un premier nombre :");

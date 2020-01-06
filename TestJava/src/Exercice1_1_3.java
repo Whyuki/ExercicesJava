@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * 
  */
@@ -15,5 +17,4 @@ public class Exercice1_1_3 {
 		// TODO Auto-generated method stub
 
 	}
-
 }
