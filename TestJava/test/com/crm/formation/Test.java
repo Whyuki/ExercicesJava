@@ -50,7 +50,7 @@ public class Test {
 
 	String maChaine1 = "Mon texte"; // String màj : type objet _ double cotes
 	String maChaine2 = " est super";
-	String maChaine3 = maChaine1+maChaine2;
+	String maChaine3 = maChaine1+32+maChaine2;
 	System.out.println(maChaine3);
 	
 	}
