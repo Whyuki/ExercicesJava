@@ -46,7 +46,7 @@ public class MethodTest {
 	}
 
 	public static float perimeterRectangle(float length, float width) {
-		float perim = (length + width) * 2f;
+		float perim = (length+width) * 2f;
 		return perim;
 	}
 
