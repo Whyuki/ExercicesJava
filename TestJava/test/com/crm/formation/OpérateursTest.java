@@ -115,12 +115,34 @@ public class OpérateursTest {
 																											// (ré)affectation
 
 		
-		
-		
 		int var3;
 		var3 = 8;
 		var3--;
-		System.out.println("\n"+"var3 = "+var3);
+		System.out.println("\n"+"var3 = "+var3+"\n\n");
+		
+		int varBool1, varBool2;
+		boolean res;
+		varBool1 = 8;
+		varBool2 = 15;
+		res = true;
+		res = (varBool1 == varBool2);
+		System.out.println("test boolean : " + res + "\n\n");
+		res = (varBool1>varBool2);
+		System.out.println("test boolean : " + res + "\n\n");
+		res = (varBool1>=varBool2);
+		System.out.println("test boolean : " + res + "\n\n");
+		res = (varBool1<varBool2);
+		System.out.println("test boolean : " + res + "\n\n");
+		res = (varBool1<=varBool2);
+		System.out.println("test boolean : " + res + "\n\n");
+		res = (varBool1!=varBool2);
+		System.out.println("test boolean : " + res + "\n\n");
+
+		boolean bool1 = true;
+		boolean bool2 = false;
+		boolean bool3 = bool1 && bool2;
+		System.out.println(bool3);
+
 		
 	}
 
