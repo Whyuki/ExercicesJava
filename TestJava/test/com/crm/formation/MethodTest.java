@@ -16,7 +16,7 @@ public class MethodTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int nb1 = 2;
+/*		int nb1 = 2;
 		int nb2 = 3;
 		float s = MethodTest.somme(nb1, nb2);
 		System.out.println(s);
@@ -35,7 +35,7 @@ public class MethodTest {
 		perimeterRectangle = MethodTest.perimeterRectangle(lengthRectangle, widthRectangle);
 		System.out.println("Length : " + lengthRectangle + "cm \nWidth : " + widthRectangle + "cm \nPerimeter : "
 				+ perimeterRectangle + "cm");
-		sc.close();
+		sc.close();*/
 	}
 
 	public static float somme(float a, float b) {
