@@ -68,6 +68,9 @@ public class OpérateursTest {
 		total =5;
 		num = 1;
 		pourcentage =0.5;
+		System.out.println("\ntotal :"+total);
+		System.out.println("num :"+num);
+		System.out.println("pourcentage :"+pourcentage);
 		total = total + num;
 		System.out.println("\ntotal :"+total);
 		System.out.println("num :"+num);

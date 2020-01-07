@@ -53,6 +53,7 @@ public class Test {
 	String maChaine3 = maChaine1+32+maChaine2;
 	System.out.println(maChaine3);
 	
+		
 	}
 
 }
