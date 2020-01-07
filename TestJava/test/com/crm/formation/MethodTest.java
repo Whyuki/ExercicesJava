@@ -18,11 +18,11 @@ public class MethodTest {
 		// TODO Auto-generated method stub
 		int nb1 = 2;
 		int nb2 = 3;
-		int s = MethodTest.somme(nb1, nb2); 
+		float s = MethodTest.somme(nb1, nb2); 
 		System.out.println(s);
 		int nb3 = 7;
 		int nb4 = 4;
-		int s2 = MethodTest.somme(nb3, nb4);
+		float s2 = MethodTest.somme(nb3, nb4);
 		System.out.println(s2);
 		
 
@@ -38,15 +38,15 @@ public class MethodTest {
 		sc.close();
 	}
 
-	public static int somme(int a, int b) { // déclaration methode somme, parametre entrée deux entier a et b, renvoit
+	public static float somme(float a, float b) { // déclaration methode somme, parametre entrée deux entier a et b, renvoit
 											// int
 
-		int s = a + b;
+		float s = a + b;
 		return s;
 	}
 
 	public static float perimeterRectangle(float length, float width) {
-		float perim = (length+width) * 2f;
+		float perim = MethodTest.somme(length,width) * 2f;
 		return perim;
 	}
 
