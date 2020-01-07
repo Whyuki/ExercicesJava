@@ -28,16 +28,19 @@ public class Exercice1_1_3 {
 		somme = somme + nombre;
 		compteurDeNombre++;
 		rep = true;
-		while (nombre > 0) {
+		while (rep == true) {
 			System.out.println("Veuillez saisir un autre nombre :");
 			nombre = sc.nextInt();
-			somme = somme + nombre;
-			compteurDeNombre++;
-			moyenne = (float) somme / (float) compteurDeNombre;
-			System.out.println(compteurDeNombre + " nombres saisis");
-			System.out.println("moyenne : " + moyenne+"\n");
-			System.out.println("somme : " + somme+"\n");
-				}
+			if (nombre > 0) {
+				rep = true;
+				compteurDeNombre++;
+				somme = somme + nombre;
+				moyenne = (float) somme / (float) compteurDeNombre;
+				System.out.println("somme : " + somme);
+				System.out.println(compteurDeNombre + " nombres saisis");
+				System.out.println("moyenne : " + moyenne + "\n");
+			}
+		}
 		sc.close();
 	}
 }
