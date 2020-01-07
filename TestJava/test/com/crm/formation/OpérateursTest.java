@@ -64,7 +64,34 @@ public class OpérateursTest {
 		modulo1 = 5 % 2;
 		System.out.println(modulo1);
 		
-		
+		double total, num, pourcentage;
+		total =5;
+		num = 1;
+		pourcentage =0.5;
+		total = total + num;
+		System.out.println("\ntotal :"+total);
+		System.out.println("num :"+num);
+		System.out.println("pourcentage :"+pourcentage);
+		total +=num;
+		System.out.println("\ntotal :"+total);
+		System.out.println("num :"+num);
+		System.out.println("pourcentage :"+pourcentage);
+		total -= num;
+		System.out.println("\ntotal :"+total);
+		System.out.println("num :"+num);
+		System.out.println("pourcentage :"+pourcentage);
+		total *= pourcentage;
+		System.out.println("\ntotal :"+total);
+		System.out.println("num :"+num);
+		System.out.println("pourcentage :"+pourcentage);
+		total /=2;
+		System.out.println("\ntotal :"+total);
+		System.out.println("num :"+num);
+		System.out.println("pourcentage :"+pourcentage);
+		num %= pourcentage;
+		System.out.println("\ntotal :"+total);
+		System.out.println("num :"+num);
+		System.out.println("pourcentage :"+pourcentage);
 		
 	}
 

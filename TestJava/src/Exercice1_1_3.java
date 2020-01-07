@@ -32,9 +32,9 @@ public class Exercice1_1_3 {
 			somme = somme + nombre;
 			compteurDeNombre++;
 			moyenne = (float)somme / (float)compteurDeNombre;
+			System.out.println(compteurDeNombre+" nombres saisis");
 			System.out.println("somme : " + somme);
-			System.out.println("compteur de nombre : " + compteurDeNombre);
-			System.out.println("moyenne : " + moyenne);
+			System.out.println("moyenne : " + moyenne+"\n");
 		}
 		sc.close();
 	}
