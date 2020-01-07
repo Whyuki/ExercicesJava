@@ -17,6 +17,7 @@ public class Exercice1_1_3 {
 		// TODO Auto-generated method stub
 		int nombre, compteurDeNombre, somme;
 		float moyenne;
+		boolean rep;
 		Scanner sc;
 		sc = new Scanner(System.in);
 		compteurDeNombre = 0;
@@ -26,7 +27,8 @@ public class Exercice1_1_3 {
 		nombre = sc.nextInt();
 		somme = somme + nombre;
 		compteurDeNombre++;
-		while (nombre > 0) {
+		rep = true;
+		while (rep == true) {
 			System.out.println("Veuillez saisir un autre nombre :");
 			nombre = sc.nextInt();
 			somme = somme + nombre;

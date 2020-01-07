@@ -65,7 +65,7 @@ public class OpérateursTest {
 		System.out.println(modulo1);
 		
 		double total, num, pourcentage;
-		total =5;
+		total =0;
 		num = 1;
 		pourcentage =0.5;
 		System.out.println("\ntotal :"+total);
@@ -75,23 +75,23 @@ public class OpérateursTest {
 		System.out.println("\ntotal :"+total);
 		System.out.println("num :"+num);
 		System.out.println("pourcentage :"+pourcentage);
-		total +=num;
+		total +=num;									// équivalent : total = total + num
 		System.out.println("\ntotal :"+total);
 		System.out.println("num :"+num);
 		System.out.println("pourcentage :"+pourcentage);
-		total -= num;
+		total -= num;									// équivalent : total = total - num
 		System.out.println("\ntotal :"+total);
 		System.out.println("num :"+num);
 		System.out.println("pourcentage :"+pourcentage);
-		total *= pourcentage;
+		total *= pourcentage;							// équivalent : total = total * pourcentage
 		System.out.println("\ntotal :"+total);
 		System.out.println("num :"+num);
 		System.out.println("pourcentage :"+pourcentage);
-		total /=2;
+		total /=2;										// équivalent : total = total /2
 		System.out.println("\ntotal :"+total);
 		System.out.println("num :"+num);
 		System.out.println("pourcentage :"+pourcentage);
-		num %= pourcentage;
+		num %= pourcentage;								// équivalent : num = num % pourcentage
 		System.out.println("\ntotal :"+total);
 		System.out.println("num :"+num);
 		System.out.println("pourcentage :"+pourcentage+"\n");
