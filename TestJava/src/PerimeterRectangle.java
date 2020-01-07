@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import com.crm.formation.MethodTest;
+
 /**
  * 
  */
@@ -17,13 +19,13 @@ public class PerimeterRectangle {
 		// TODO Auto-generated method stub
 		Scanner sc;
 		sc = new Scanner(System.in);
-		float longueurRectangle, largeurRectangle, perimetreRectangle;
+		float lengthRectangle, widthRectangle, perimeterRectangle;
 		System.out.println("To calculate the perimeter, please enter the length of the rectangle : ");
-		longueurRectangle = sc.nextFloat();
+		lengthRectangle = sc.nextFloat();
 		System.out.println("and now, please enter its width :");
-		largeurRectangle = sc.nextFloat();
-		perimetreRectangle = (longueurRectangle + largeurRectangle)*2f;
-		System.out.println("Length : "+longueurRectangle+"cm \nWidth : "+largeurRectangle+"cm \nPerimeter : "+perimetreRectangle+"cm");
+		widthRectangle = sc.nextFloat();
+		perimeterRectangle = MethodTest.perimeterRectangle(lengthRectangle,widthRectangle);
+		System.out.println("Length : "+lengthRectangle+"cm \nWidth : "+widthRectangle+"cm \nPerimeter : "+perimeterRectangle+"cm");
 		sc.close();
 	}
 
