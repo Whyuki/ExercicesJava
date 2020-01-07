@@ -24,8 +24,9 @@ public class PerimeterRectangle {
 		lengthRectangle = sc.nextFloat();
 		System.out.println("and now, please enter its width :");
 		widthRectangle = sc.nextFloat();
-		perimeterRectangle = MethodTest.perimeterRectangle(lengthRectangle,widthRectangle);
-		System.out.println("Length : "+lengthRectangle+"cm \nWidth : "+widthRectangle+"cm \nPerimeter : "+perimeterRectangle+"cm");
+		perimeterRectangle = MethodTest.perimeterRectangle(lengthRectangle, widthRectangle);
+		System.out.println("Length : " + lengthRectangle + "cm \nWidth : " + widthRectangle + "cm \nPerimeter : "
+				+ perimeterRectangle + "cm");
 		sc.close();
 	}
 

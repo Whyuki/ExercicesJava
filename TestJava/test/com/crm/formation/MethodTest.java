@@ -18,13 +18,12 @@ public class MethodTest {
 		// TODO Auto-generated method stub
 		int nb1 = 2;
 		int nb2 = 3;
-		float s = MethodTest.somme(nb1, nb2); 
+		float s = MethodTest.somme(nb1, nb2);
 		System.out.println(s);
 		int nb3 = 7;
 		int nb4 = 4;
 		float s2 = MethodTest.somme(nb3, nb4);
 		System.out.println(s2);
-		
 
 		Scanner sc;
 		sc = new Scanner(System.in);
@@ -33,27 +32,21 @@ public class MethodTest {
 		lengthRectangle = sc.nextFloat();
 		System.out.println("and now, please enter its width :");
 		widthRectangle = sc.nextFloat();
-		perimeterRectangle = MethodTest.perimeterRectangle(lengthRectangle,widthRectangle);
-		System.out.println("Length : "+lengthRectangle+"cm \nWidth : "+widthRectangle+"cm \nPerimeter : "+perimeterRectangle+"cm");
+		perimeterRectangle = MethodTest.perimeterRectangle(lengthRectangle, widthRectangle);
+		System.out.println("Length : " + lengthRectangle + "cm \nWidth : " + widthRectangle + "cm \nPerimeter : "
+				+ perimeterRectangle + "cm");
 		sc.close();
 	}
 
-	public static float somme(float a, float b) { // déclaration methode somme, parametre entrée deux entier a et b, renvoit
-											// int
+	public static float somme(float a, float b) {
 
 		float s = a + b;
 		return s;
 	}
 
 	public static float perimeterRectangle(float length, float width) {
-		float perim = MethodTest.somme(length,width) * 2f;
+		float perim = MethodTest.somme(length, width) * 2f;
 		return perim;
 	}
 
 }
-
-
-
-
-
-
