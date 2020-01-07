@@ -138,9 +138,14 @@ public class OpérateursTest {
 		res = (varBool1!=varBool2);
 		System.out.println("test boolean : " + res + "\n\n");
 
-		boolean bool1 = true;
-		boolean bool2 = false;
-		boolean bool3 = bool1 && bool2; // boolean bool3 = bool1 ^ bool2; boolean bool3 = bool1 || bool2; boolean bool3 = !bool2;
+		short nb1, nb2, nb3, nb4;
+		nb1 = 3;
+		nb2 = 2;
+		nb3 = 6;
+		nb4 = 6;
+		boolean bool1 = nb1>nb2;
+		boolean bool2 = nb3==nb4;
+		boolean bool3 = bool1 || bool2; // opérateurs logiques : boolean bool3 = bool1 ^ bool2; boolean bool3 = bool1 || bool2; boolean bool3 = !bool2;
 		System.out.println(bool3);
 
 		
