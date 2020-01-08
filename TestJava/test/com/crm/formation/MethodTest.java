@@ -41,7 +41,7 @@ public class MethodTest {
 	public static float somme(float a, float b) {
 
 		float s = a + b;
-		return s;
+		return s;			// return : renvoyer le résultat 
 	}
 
 	public static float perimeterRectangle(float length, float width) {
