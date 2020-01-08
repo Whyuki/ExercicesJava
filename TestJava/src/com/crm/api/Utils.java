@@ -16,7 +16,14 @@ public class Utils {
 	}
 
 	public static float perimeterRectangle(float length, float width) {
-		float perim = Utils.somme(length, width) * 2f;
+		float perim = Utils.somme(length, width) * 2;
 		return perim;
 	}
+	
+	public static float squareArea (float side) {
+		float squareArea = (float)side*4;
+		return squareArea;
+		
+	}
+	
 }
