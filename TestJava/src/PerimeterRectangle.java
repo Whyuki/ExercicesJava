@@ -17,10 +17,10 @@ public class PerimeterRectangle {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		String str = "Hello !";
 		Utils.afficherMessage(str);
-		
+
 		Scanner sc;
 		sc = new Scanner(System.in);
 		float lengthRectangle, widthRectangle, perimeterRectangle;
@@ -32,7 +32,6 @@ public class PerimeterRectangle {
 		System.out.println("Length : " + lengthRectangle + "cm \nWidth : " + widthRectangle + "cm \nPerimeter : "
 				+ perimeterRectangle + "cm");
 		sc.close();
-		
 
 	}
 

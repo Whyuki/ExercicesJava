@@ -22,7 +22,7 @@ public class SquareArea {
 		System.out.println("Please enter the side of square : ");
 		squareSide = sc.nextFloat();
 		squareArea = Utils.squareArea(squareSide);
-		System.out.println("The square area is "+squareArea);
+		System.out.println("The square area is " + squareArea);
 		sc.close();
 	}
 
