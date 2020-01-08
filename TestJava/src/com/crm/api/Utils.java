@@ -19,16 +19,22 @@ public class Utils {
 		float perim = Utils.somme(length, width) * 2;
 		return perim;
 	}
-	
-	public static float squareArea (float side) {
-		float squareArea = (float)side*4;
+
+	public static float squareArea(float side) {
+		float squareArea = (float) side * 4;
 		return squareArea;
-			
-	
+
 	}
-	
+
+	public static float circleArea(float r) {
+		float a;
+		float pi = 3.14f;
+		a = r * r * pi;
+		return a;
+	}
+
 	public static void afficherMessage(String texte) {
 		System.out.println(texte);
 	}
-	
+
 }
