@@ -36,7 +36,7 @@ public class Utils {
 
 		// calcul de l'aire
 		float a = r * r * PI;
-
+ 
 		return a;
 	}
 
