@@ -18,10 +18,10 @@ public class CircleArea {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		float radius;
+		int radius;
 		float area;
 		System.out.println("Please enter the radius of the circle :");
-		radius = sc.nextFloat();
+		radius = sc.nextInt();
 		area = Utils.circleArea(radius);
 		System.out.println("Circle area = "+area);
 		sc.close();

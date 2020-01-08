@@ -26,10 +26,13 @@ public class Utils {
 
 	}
 
-	public static float circleArea(float r) {
-		float a;
-		float pi = 3.14f;
-		a = r * r * pi;
+	public static float circleArea(int r) {
+
+		// déclaration d'une constante PI
+		final float PI = 3.14f;
+		// calcul de l'aire
+		float a = r * r * PI;
+
 		return a;
 	}
 
