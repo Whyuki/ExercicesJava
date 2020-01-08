@@ -24,6 +24,12 @@ public class Utils {
 		float squareArea = (float)side*4;
 		return squareArea;
 		
+	
+	
+	}
+	
+	public static void afficherMessage(String texte) {
+		System.out.println(texte);
 	}
 	
 }
