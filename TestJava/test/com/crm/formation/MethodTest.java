@@ -40,7 +40,7 @@ public class MethodTest {
 
 	public static float somme(float a, float b) {
 
-		float s = a + b;
+		float s = (float)a + (float)b;
 		return s;			// return : renvoyer le résultat 
 	}
 
