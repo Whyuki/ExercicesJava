@@ -12,6 +12,8 @@ public class Utils {
 	//declaration d'une constance PI
 	public static final float PI  = 3.14f;
 
+	// déclaration contante de type string 
+	public static final String COLOR_BLUE="blue";
 
 	public static float somme(float a, float b) {
 
@@ -42,6 +44,5 @@ public class Utils {
 		System.out.println(texte);
 	}
 
-	public static final String COULEUR_BLEUE="bleu";
 	
 }

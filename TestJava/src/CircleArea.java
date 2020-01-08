@@ -17,6 +17,7 @@ public class CircleArea {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.print("The sky is "+ Utils.COLOR_BLUE+"\n");
 		Scanner sc = new Scanner(System.in);
 		int radius;
 		float area;
@@ -25,7 +26,6 @@ public class CircleArea {
 		area = Utils.circleArea(radius);
 		System.out.println("Circle area = "+area);
 		
-		System.out.print("\nLe ciel est "+ Utils.COULEUR_BLEUE);
 		sc.close();
 	}
 	
