@@ -24,6 +24,8 @@ public class CircleArea {
 		radius = sc.nextInt();
 		area = Utils.circleArea(radius);
 		System.out.println("Circle area = "+area);
+		
+		System.out.print("\nLe ciel est "+ Utils.COULEUR_BLEUE);
 		sc.close();
 	}
 	

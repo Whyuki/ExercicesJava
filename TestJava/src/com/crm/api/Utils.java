@@ -8,6 +8,10 @@ package com.crm.api;
  *
  */
 public class Utils {
+	
+	//declaration d'une constance PI
+	public static final float PI  = 3.14f;
+
 
 	public static float somme(float a, float b) {
 
@@ -28,8 +32,6 @@ public class Utils {
 
 	public static float circleArea(int r) {
 
-		// déclaration d'une constante PI
-		final float PI = 3.14f;
 		// calcul de l'aire
 		float a = r * r * PI;
 
@@ -40,4 +42,6 @@ public class Utils {
 		System.out.println(texte);
 	}
 
+	public static final String COULEUR_BLEUE="bleu";
+	
 }
