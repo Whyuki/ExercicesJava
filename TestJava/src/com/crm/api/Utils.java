@@ -23,8 +23,7 @@ public class Utils {
 	public static float squareArea (float side) {
 		float squareArea = (float)side*4;
 		return squareArea;
-		
-	
+			
 	
 	}
 	
