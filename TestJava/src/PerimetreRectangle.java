@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * 
  */
-
+//PERIMETRE RECTANGLE AVEC FORMULE
 /**
  * @author CRM
  *
