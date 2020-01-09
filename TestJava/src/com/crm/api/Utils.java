@@ -41,7 +41,7 @@ public class Utils {
 	
 	public static double circleAreaV2(int r) {
 
-		// utilisation de la class Math
+		// utilisation de la class Math pour la formule
 		double a = Math.pow(r, 2) * Math.PI;
  		return a;
 	}
