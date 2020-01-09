@@ -9,8 +9,8 @@ package com.crm.api;
  */
 public class Utils {
 	
-	//declaration d'une constance PI
-	// public static final double PI  = Math.PI;
+	//declaration d'une constance MY_PI
+	public static final double MY_PI  = Math.PI;
 
 	// déclaration constante de type string 
 	public static final String COLOR_BLUE="blue";
@@ -35,9 +35,15 @@ public class Utils {
 	public static double circleArea(int r) {
 
 		// calcul de l'aire
-		double a = r * r * Math.PI;
- 
-		return a;
+		double a = r * r * MY_PI;
+ 		return a;
+	}
+	
+	public static double circleAreaV2(int r) {
+
+		// utilisation de la class Math
+		double a = Math.pow(r, 2) * Math.PI;
+ 		return a;
 	}
 
 	public static void afficherMessage(String texte) {
