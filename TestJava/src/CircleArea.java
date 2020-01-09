@@ -25,7 +25,6 @@ public class CircleArea {
 		radius = sc.nextInt();
 		area = Utils.circleArea(radius);
 		System.out.println("Circle area = "+area);
-		Math.
 		sc.close();
 	}
 	
