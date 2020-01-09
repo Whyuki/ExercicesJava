@@ -19,7 +19,7 @@ public class AppliMethod {
 		nb2 = 6;
 		int maxNb =	Math.max(nb1, nb2);
 		
-		System.out.println(maxNb);
+		System.out.println("nb1 = "+nb1+"\nnb2 = "+nb2+"\nmaxNb = "+maxNb);
 	}
 
 }
