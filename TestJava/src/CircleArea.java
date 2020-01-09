@@ -20,12 +20,12 @@ public class CircleArea {
 		System.out.print("The sky is "+ Utils.COLOR_BLUE+" !\n");
 		Scanner sc = new Scanner(System.in);
 		int radius;
-		float area;
+		double area;
 		System.out.println("Please enter the radius of the circle :");
 		radius = sc.nextInt();
 		area = Utils.circleArea(radius);
 		System.out.println("Circle area = "+area);
-		
+		Math.
 		sc.close();
 	}
 	
