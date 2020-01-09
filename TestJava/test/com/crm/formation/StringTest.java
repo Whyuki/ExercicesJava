@@ -46,7 +46,7 @@ public class StringTest {
 		System.out.println(str4);
 		
 		//Extraction d'une sous-chaine
-		String str5 = str.substring(0, 3);
+		String str5 = str.substring(0, 4);
 		System.out.println(str5);
 		
 		// supprimer blancs
