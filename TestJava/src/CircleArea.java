@@ -23,7 +23,7 @@ public class CircleArea {
 		double area;
 		System.out.println("Please enter the radius of the circle :");
 		radius = sc.nextInt();
-		area = Utils.circleArea(radius);
+		area = Utils.circleAreaV2(radius);
 		System.out.println("Circle area = "+area);
 		sc.close();
 	}
