@@ -8,12 +8,12 @@ package com.crm.api;
  *
  */
 public class Utils {
-	
-	//declaration d'une constance MY_PI
-	public static final double MY_PI  = Math.PI;
 
-	// déclaration constante de type string 
-	public static final String COLOR_BLUE="blue";
+	// declaration d'une constance MY_PI
+	public static final double MY_PI = Math.PI;
+
+	// déclaration constante de type string
+	public static final String COLOR_BLUE = "blue";
 
 	public static float somme(float a, float b) {
 
@@ -36,19 +36,18 @@ public class Utils {
 
 		// calcul de l'aire
 		double a = r * r * MY_PI;
- 		return a;
+		return a;
 	}
-	
+
 	public static double circleAreaV2(int r) {
 
 		// utilisation de la class Math pour la formule
 		double a = Math.pow(r, 2) * Math.PI;
- 		return a;
+		return a;
 	}
 
 	public static void afficherMessage(String texte) {
 		System.out.println(texte);
 	}
 
-	
 }

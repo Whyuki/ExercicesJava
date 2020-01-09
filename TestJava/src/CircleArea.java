@@ -17,15 +17,15 @@ public class CircleArea {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("The sky is "+ Utils.COLOR_BLUE+" !\n");
+		System.out.print("The sky is " + Utils.COLOR_BLUE + " !\n");
 		Scanner sc = new Scanner(System.in);
 		int radius;
 		double area;
 		System.out.println("Please enter the radius of the circle :");
 		radius = sc.nextInt();
 		area = Utils.circleAreaV2(radius);
-		System.out.println("Circle area = "+area);
+		System.out.println("Circle area = " + area);
 		sc.close();
 	}
-	
+
 }
