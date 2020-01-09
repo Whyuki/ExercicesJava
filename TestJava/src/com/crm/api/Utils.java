@@ -10,7 +10,7 @@ package com.crm.api;
 public class Utils {
 	
 	//declaration d'une constance PI
-	public static final double PI  = Math.PI;
+	// public static final double PI  = Math.PI;
 
 	// déclaration constante de type string 
 	public static final String COLOR_BLUE="blue";
@@ -35,7 +35,7 @@ public class Utils {
 	public static double circleArea(int r) {
 
 		// calcul de l'aire
-		double a = r * r * PI;
+		double a = r * r * Math.PI;
  
 		return a;
 	}
