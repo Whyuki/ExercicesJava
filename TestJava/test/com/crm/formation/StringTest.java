@@ -48,6 +48,10 @@ public class StringTest {
 		//Extraction d'une sous-chaine
 		String str5 = str.substring(0, 3);
 		System.out.println(str5);
+		
+		// supprimer blancs
+		String str6 = str.replaceAll(" ",""); // space " " ou "\\s"
+		System.out.println(str6);
 	}
 	
 }
