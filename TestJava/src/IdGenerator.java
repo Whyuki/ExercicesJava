@@ -18,7 +18,7 @@ public class IdGenerator {
 
 		Scanner sc = new Scanner(System.in);
 		String firstName, name, login, passworld;
-		System.out.println("Please enter your firstname");
+		System.out.println("Please enter your first name");
 		firstName = sc.nextLine();
 		System.out.println("Please enter your name");
 		name = sc.nextLine();
