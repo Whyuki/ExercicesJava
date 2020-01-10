@@ -52,6 +52,9 @@ public class StringTest {
 		// supprimer blancs
 		String str6 = str.replaceAll(" ",""); // space " " ou "\\s"
 		System.out.println(str6);
+		
+		
+		//notation pointé sur le nom de la variable str.blablabla
 	}
 	
 }
