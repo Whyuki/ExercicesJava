@@ -27,7 +27,6 @@ public class IdGenerator {
 				+ firstName.length();
 		System.out.println("Your login is : " + login);
 		System.out.println("Your passworld is :" + passworld);
-
 		sc.close();
 
 	}
