@@ -38,7 +38,6 @@ public class IdChecker3try {
 		} else {
 			System.out.println("error");
 		}
-
 		sc.close();
 
 	}
