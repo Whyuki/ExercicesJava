@@ -24,7 +24,7 @@ public class IdChecker3try {
 			login = sc.nextLine();
 			checkLogin = (login.contentEquals("J.SCHMITT"));
 			if (checkLogin == false) {
-				System.out.println("Login incorrect, try again :");
+				System.out.println("Incorrect login, try again :");
 			}
 		}
 		System.out.println("Please enter your password :" + "\n" + "__Try allowed : " + tryAllowed);
@@ -34,7 +34,7 @@ public class IdChecker3try {
 			i++;
 			tryAllowed--;
 			if (checkPassword == false && tryAllowed > 0) {
-				System.out.println("Password incorrect, try again :" + "\n__Remaining try : " + tryAllowed);
+				System.out.println("Incorrect password, try again :" + "\n__Remaining try : " + tryAllowed);
 			}
 		}
 		if (checkPassword == true) {
