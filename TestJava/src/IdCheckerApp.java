@@ -30,11 +30,15 @@ public class IdCheckerApp {
 		} else {
 			System.out.println("Incorrect login or password, try again :");
 		}
-		while (checkPassword == false && i < 3)
+		while (checkPassword == false && i < 3) {
 			i++;
-		tryAllowed--;
-		if (checkPassword == false && tryAllowed > 0) {
-			System.out.println("Incorrect password, try again :" + "\n__Remaining try : " + tryAllowed);
+			tryAllowed--;
+			if (tryAllowed > 0) {
+				System.out.println("__Remaining try : " + tryAllowed);
+				password = sc.next();
+			}else {
+				System.out.println("rip");
+			}
 		}
 		sc.close();
 
