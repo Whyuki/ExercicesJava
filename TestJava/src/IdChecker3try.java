@@ -19,16 +19,13 @@ public class IdChecker3try {
 		Scanner sc = new Scanner(System.in);
 		int i = 0;
 		boolean checkLogin = false, checkPassword = false;
-		System.out.println("Login :");
-		login = sc.nextLine();
-		checkLogin = (login.contentEquals("JOANNA"));
-		System.out.println(checkLogin);
 		while (checkLogin == false) {
-			System.out.println("incorrect login, try again :");
-			login = sc.next();
-			checkLogin = (login.contentEquals("JOANNA"));
+			System.out.println("Login :");
+			login = sc.nextLine();
+			checkLogin = (login.contentEquals("J.SCHMITT"));
+
 		}
-		System.out.println("log ok");
+		checkPassword = false;
 		while (checkPassword == false && i < 3) {
 			System.out.println("Password :");
 			password = sc.nextLine();
