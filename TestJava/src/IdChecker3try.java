@@ -22,7 +22,7 @@ public class IdChecker3try {
 		System.out.println("Please enter your login :");
 		while (checkLogin == false) {
 			login = sc.nextLine();
-			checkLogin = (login.contentEquals("J.SCHMITT"));
+			checkLogin = (login.contentEquals("J.SCHMITT"))||(login.contentEquals("JO"));
 			if (checkLogin == false) {
 				System.out.println("Incorrect login, try again :");
 			}
