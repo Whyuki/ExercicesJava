@@ -19,19 +19,23 @@ public class IdChecker3try {
 		Scanner sc = new Scanner(System.in);
 		int i = 0, tryAllowed = 3;
 		boolean checkLogin = false, checkPassword = false;
+		System.out.println("Please enter your login :");
 		while (checkLogin == false) {
-			System.out.println("Please enter your login :");
 			login = sc.nextLine();
 			checkLogin = (login.contentEquals("J.SCHMITT"));
-
+			if (checkLogin == false) {
+				System.out.println("Login incorrect, try again :");
+			}
 		}
-		checkPassword = false;
+		System.out.println("Please enter your password :" + "\n" + "__Try allowed : " + tryAllowed);
 		while (checkPassword == false && i < 3) {
-			System.out.println("Please enter your password :" + "\n" + "Remaining try : " + tryAllowed);
 			password = sc.nextLine();
 			checkPassword = (password.contentEquals("SChwitt6"));
 			i++;
 			tryAllowed--;
+			if (checkPassword == false && tryAllowed > 0) {
+				System.out.println("Password incorrect, try again :" + "\n__Remaining try : " + tryAllowed);
+			}
 		}
 		if (checkPassword == true) {
 			System.out.println("You are connected");
