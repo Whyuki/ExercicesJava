@@ -17,7 +17,7 @@ public class IdChecker3try {
 		// TODO Auto-generated method stub
 		String login, password;
 		Scanner sc = new Scanner(System.in);
-		int i = 0;
+		int i = 0, tryAllowed = 3;
 		boolean checkLogin = false, checkPassword = false;
 		while (checkLogin == false) {
 			System.out.println("Login :");
@@ -27,10 +27,11 @@ public class IdChecker3try {
 		}
 		checkPassword = false;
 		while (checkPassword == false && i < 3) {
-			System.out.println("Password :");
+			System.out.println("Password :" + "\n" + "Remaining try : " + tryAllowed);
 			password = sc.nextLine();
 			checkPassword = (password.contentEquals("SChwitt6"));
 			i++;
+			tryAllowed--;
 			// System.out.println("try " + i + "\nincorrect password, try again :");
 		}
 		if (checkPassword == true) {
