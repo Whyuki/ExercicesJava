@@ -15,6 +15,10 @@ public class IdChecker3try {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String[] loginT = {"A.BOUDIER","T.BROWN","L.CARRIVALE","K.CHARIH","G.CROUZET","D.DOGHMANE","R.HAMZA","J.JEANNIARD","M.RAVANDOUST","J.SCHMITT","B.SCHOENMAEKER","L.SEDY","N.THOUVENOT","S.TORRENTI"};
+		System.out.println(loginT.length);
+		
+		
 		String login, password;
 		Scanner sc = new Scanner(System.in);
 		int i = 0, tryAllowed = 3;
@@ -22,7 +26,7 @@ public class IdChecker3try {
 		System.out.println("Please enter your login :");
 		while (checkLogin == false) {
 			login = sc.nextLine();
-			checkLogin = (login.contentEquals("J.SCHMITT"))||(login.contentEquals("JO"));
+			checkLogin = (login.contentEquals("J.SCHMITT")) || (login.contentEquals("JO"));
 			if (checkLogin == false) {
 				System.out.println("Incorrect login, try again :");
 			}
