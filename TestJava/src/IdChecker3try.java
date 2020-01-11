@@ -32,7 +32,6 @@ public class IdChecker3try {
 			checkPassword = (password.contentEquals("SChwitt6"));
 			i++;
 			tryAllowed--;
-			// System.out.println("try " + i + "\nincorrect password, try again :");
 		}
 		if (checkPassword == true) {
 			System.out.println("Connected");
