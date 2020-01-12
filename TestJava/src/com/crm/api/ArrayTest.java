@@ -16,15 +16,11 @@ public class ArrayTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		int i;
-//		i=0;
-//		String[] loginT = { "A.BOUDIER", "T.BROWN", "L.CARRIVALE", "K.CHARIH", "G.CROUZET", "D.DOGHMANE", "R.HAMZA",
-//				"J.JEANNIARD", "M.RAVANDOUST", "J.SCHMITT", "B.SCHOENMAEKER", "L.SEDY", "N.THOUVENOT", "S.TORRENTI" };
-//		System.out.println(loginT.length);
 
 		String[] loginT = { "ok", "A.BOUDIER", "T.BROWN", "L.CARRIVALE", "K.CHARIH", "G.CROUZET", "D.DOGHMANE",
 				"R.HAMZA", "J.JEANNIARD", "M.RAVANDOUST", "J.SCHMITT", "B.SCHOENMAEKER", "L.SEDY", "N.THOUVENOT",
 				"S.TORRENTI" };
+		System.out.println(loginT.length);
 		String str;
 		boolean check = false;
 		Scanner sc = new Scanner(System.in);
