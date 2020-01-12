@@ -37,12 +37,13 @@ public class ArrayTest {
 			if (str.contentEquals(loginT[i])) {
 
 				check = true;
-				System.out.println("oki" + " it's " + check);
 				break;
-
 			}
 		}
-		if (check = false) {
+		if (check == true) {
+			System.out.println("oki" + " it's " + check);
+		} else {
+
 			System.out.println("rip" + " it's " + check);
 		}
 		sc.close();
