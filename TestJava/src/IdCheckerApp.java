@@ -21,24 +21,26 @@ public class IdCheckerApp {
 		Scanner sc = new Scanner(System.in);
 		int i = 0, tryAllowed = 3, posi = -1;
 		boolean checkLogin = false, checkPassword = false;
-
-		while (checkLogin == false && checkPassword == false && i < 3) {
-			System.out.println("Please enter your login :");
-			login = sc.nextLine();
+		System.out.println("Please enter your login :");
+		login = sc.nextLine();
+		while (checkLogin == false || checkPassword == false && i < 3) {
 			System.out.println("Please enter your password :");
 			password = sc.nextLine();
+			i++;
+			tryAllowed--;
 			for (int ix = 0; ix < ArrayId.LOGIN_ARRAY.length; ix++) {
 
 				if (login.contentEquals(ArrayId.LOGIN_ARRAY[ix])) {
+					System.out.println("ix" + ix);
+					checkLogin = true;
 					posi = ix;
 					break;
 				}
 			}
-			checkLogin = (posi >= 0);
-			checkPassword = (password.contentEquals(ArrayId.PASSWORD_ARRAY[posi]));
-			System.out.println(posi);
-			i++;
-			tryAllowed--;
+			System.out.println("posi" + posi);
+			if (posi > 0) {
+				checkPassword = (password.contentEquals(ArrayId.PASSWORD_ARRAY[posi]));
+			}
 			if (checkLogin == false || checkPassword == false) {
 				System.out.println("remaining try: " + tryAllowed);
 			}
@@ -48,8 +50,12 @@ public class IdCheckerApp {
 				checkPassword = false;
 				i = 0;
 				tryAllowed = 3;
+				posi = -1;
+				System.out.println("Please enter your login :");
+				login = sc.nextLine();
 			}
 		}
+
 		if (checkLogin == true && checkPassword == true) {
 			System.out.println("You are connected");
 		}
