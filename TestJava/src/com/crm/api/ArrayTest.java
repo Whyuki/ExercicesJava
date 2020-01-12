@@ -16,10 +16,11 @@ public class ArrayTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		String[] loginT = { "ok", "A.BOUDIER", "T.BROWN", "L.CARRIVALE", "K.CHARIH", "G.CROUZET", "D.DOGHMANE",
+//		String[] loginT = { "A.BOUDIER", "T.BROWN", "L.CARRIVALE", "K.CHARIH", "G.CROUZET", "D.DOGHMANE",
 //				"R.HAMZA", "J.JEANNIARD", "M.RAVANDOUST", "J.SCHMITT", "B.SCHOENMAEKER", "L.SEDY", "N.THOUVENOT",
 //				"S.TORRENTI" };
 		String str;
+		int posi;
 		boolean check = false;
 		Scanner sc = new Scanner(System.in);
 
@@ -29,8 +30,9 @@ public class ArrayTest {
 		for (int i = 0; i < ArrayId.LOGIN_ARRAY.length; i++) {
 
 			if (str.contentEquals(ArrayId.LOGIN_ARRAY[i])) {
-
+				posi = i; //for check password
 				check = true;
+				System.out.println("position "+posi);
 				break;
 			}
 		}
