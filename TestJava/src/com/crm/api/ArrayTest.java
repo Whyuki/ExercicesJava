@@ -16,11 +16,9 @@ public class ArrayTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		String[] loginT = { "ok", "A.BOUDIER", "T.BROWN", "L.CARRIVALE", "K.CHARIH", "G.CROUZET", "D.DOGHMANE",
-				"R.HAMZA", "J.JEANNIARD", "M.RAVANDOUST", "J.SCHMITT", "B.SCHOENMAEKER", "L.SEDY", "N.THOUVENOT",
-				"S.TORRENTI" };
-		System.out.println(loginT.length);
+//		String[] loginT = { "ok", "A.BOUDIER", "T.BROWN", "L.CARRIVALE", "K.CHARIH", "G.CROUZET", "D.DOGHMANE",
+//				"R.HAMZA", "J.JEANNIARD", "M.RAVANDOUST", "J.SCHMITT", "B.SCHOENMAEKER", "L.SEDY", "N.THOUVENOT",
+//				"S.TORRENTI" };
 		String str;
 		boolean check = false;
 		Scanner sc = new Scanner(System.in);
@@ -28,9 +26,9 @@ public class ArrayTest {
 		System.out.println("login");
 		str = sc.next();
 
-		for (int i = 0; i < loginT.length; i++) {
+		for (int i = 0; i < ArrayId.LOGIN_ARRAY.length; i++) {
 
-			if (str.contentEquals(loginT[i])) {
+			if (str.contentEquals(ArrayId.LOGIN_ARRAY[i])) {
 
 				check = true;
 				break;
