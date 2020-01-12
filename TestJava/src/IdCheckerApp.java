@@ -31,18 +31,16 @@ public class IdCheckerApp {
 			for (int ix = 0; ix < ArrayId.LOGIN_ARRAY.length; ix++) {
 
 				if (login.contentEquals(ArrayId.LOGIN_ARRAY[ix])) {
-					System.out.println("ix" + ix);
 					checkLogin = true;
 					posi = ix;
 					break;
 				}
 			}
-			System.out.println("posi" + posi);
 			if (posi > 0) {
 				checkPassword = (password.contentEquals(ArrayId.PASSWORD_ARRAY[posi]));
 			}
 			if (checkLogin == false || checkPassword == false) {
-				System.out.println("remaining try: " + tryAllowed);
+				System.out.println("/!\\ remaining try: " + tryAllowed);
 			}
 			if (tryAllowed == 0) {
 				System.out.println("______________" + "\nIncorrect login or password, try again :");
