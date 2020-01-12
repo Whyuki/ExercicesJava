@@ -23,8 +23,8 @@ public class IdGenerator {
 		System.out.println("Please enter your name");
 		name = sc.nextLine();
 		login = firstName.substring(0, 1).toUpperCase() + "." + name.toUpperCase();
-		passworld = name.substring(0, 1) + name.substring(1, 2).toUpperCase().replace('A', '@').replace('M', 'W')
-				+ name.substring(2).toLowerCase().replace('a', '@').replace('m', 'w') + firstName.length();
+		passworld = name.substring(0, 2).toUpperCase().replace('A', '@').replace('M', 'W').replace('E', '3').replace('W', 'U')
+				+ name.substring(2).toLowerCase().replace('a', '@').replace('m', 'w').replace('e', '3').replace('w', 'u') + firstName.length();
 		System.out.println("Your login is : " + login);
 		System.out.println("Your passworld is :" + passworld);
 		sc.close();
