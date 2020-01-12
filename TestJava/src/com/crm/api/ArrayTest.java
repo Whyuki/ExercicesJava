@@ -36,15 +36,15 @@ public class ArrayTest {
 
 			if (str.contentEquals(loginT[i])) {
 
-				System.out.println("oki"+" it's "+check);
 				check = true;
-				
-			} else {
-				System.out.println("rip"+" it's "+check);
+				System.out.println("oki" + " it's " + check);
 				break;
+
 			}
+		}
+		if (check = false) {
+			System.out.println("rip" + " it's " + check);
 		}
 		sc.close();
 	}
-	
 }
