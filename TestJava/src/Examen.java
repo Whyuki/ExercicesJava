@@ -38,5 +38,4 @@ public class Examen {
 		}
 		sc.close();
 	}
-
 }
