@@ -20,12 +20,12 @@ public class IdCheck {
 		// TODO Auto-generated method stub
 		String login, password;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Login :");
+		System.out.println("Please enter your login :");
 		login = sc.nextLine();
-		System.out.println("Password :");
+		System.out.println("Please enter your password :");
 		password = sc.nextLine();
 		if (login.equals(IdCrm.LOGIN) && password.equals(IdCrm.PWD)) {
-			System.out.println("Connected");
+			System.out.println("You are connected");
 		} else {
 			System.out.println("Incorrect login or password");
 		}
@@ -33,12 +33,12 @@ public class IdCheck {
 
 //		String login, password;
 //		Scanner sc = new Scanner(System.in);
-//		System.out.println("Login :");
+//		System.out.println("Please enter your login :");
 //		login = sc.nextLine();
-//		System.out.println("Password :");
+//		System.out.println("Please enter your password :");
 //		password = sc.nextLine();
 //		if (login.equals(IdCrm.LOGIN) && password.equals(IdCrm.PWD)) {
-//			System.out.println("Connected");
+//			System.out.println("You are connected");
 //		} else if (!login.equals(IdCrm.LOGIN)) {
 //			System.out.println("Incorrect login");
 //		} else if (!password.equals(IdCrm.PWD)) {
