@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /**
  * 
  */
@@ -17,7 +18,7 @@ public class Examen {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Entrez votre note :");
 		note = sc.nextInt();
-		
+
 		if (note >= 16) {
 			System.out.println("Vous êtes admis avec la mention TB");
 
@@ -36,6 +37,7 @@ public class Examen {
 		} else {
 			System.out.println("Vous êtes ajourné");
 		}
+
 		sc.close();
 	}
 }
