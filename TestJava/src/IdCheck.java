@@ -23,7 +23,6 @@ public class IdCheck {
 		System.out.println("Password :");
 		password = sc.nextLine();
 		if (login.equals("CRM") && password.equals("CDI1234")) {
-
 			System.out.println("Connected");
 		} else {
 			System.out.println("incorrect login or password");
