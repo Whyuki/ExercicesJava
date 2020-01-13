@@ -20,19 +20,15 @@ public class IdCheck {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Login :");
 		login = sc.nextLine();
-		if (login.equals("CRM")) {
-			System.out.println("Password :");
-			password = sc.nextLine();
-			if (password.equals("CDI1234")) { 
-				System.out.println("Connected");
-			} else {
-				System.out.println("incorrect login or password");
-			}
+		System.out.println("Password :");
+		password = sc.nextLine();
+		if (login.equals("CRM") && password.equals("CDI1234")) {
+
+			System.out.println("Connected");
 		} else {
-			System.out.println("incorrect login");
+			System.out.println("incorrect login or password");
 		}
 		sc.close();
-
 	}
 
 }
