@@ -15,7 +15,7 @@ public class Examen {
 		// TODO Auto-generated method stub
 		int note;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Entre votre note :");
+		System.out.println("Entrez votre note :");
 		note = sc.nextInt();
 		
 		if (note >= 16) {
