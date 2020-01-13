@@ -16,9 +16,11 @@ public class EvenNumber {
 		int number = 0;
 		String answer = "yes";
 		Scanner sc = new Scanner(System.in);
+		
 		while (answer.equals("yes")) {
 			System.out.println("Please enter a number");
 			number = sc.nextInt();
+			
 			if (number % 2 == 0) {
 				System.out.println("This number is even");
 			} else {
