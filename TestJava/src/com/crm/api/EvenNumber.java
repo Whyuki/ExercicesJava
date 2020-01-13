@@ -20,15 +20,16 @@ public class EvenNumber {
 			System.out.println("Please enter a number");
 			number = sc.nextInt();
 			if (number % 2 == 0) {
-				System.out.println("This number is even\n");
+				System.out.println("This number is even");
 			} else {
-				System.out.println("This number is odd\n");
+				System.out.println("This number is odd");
 			}
 
-//			System.out.println("\nDo you want try with an another number ? (yes/no)");
-//			answer = sc.nextLine();
+			System.out.println("\nDo you want try with an another number ? (yes/no)");
+			answer = sc.next();
+//			System.out.println(answer);
 		}
-
+		System.out.println("Closed program");
 		sc.close();
 	}
 }
