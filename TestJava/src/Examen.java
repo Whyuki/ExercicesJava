@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * 
  */
@@ -9,7 +8,6 @@ import java.util.Scanner;
  *
  */
 public class Examen {
-
 	/**
 	 * @param args
 	 */
@@ -17,24 +15,26 @@ public class Examen {
 		// TODO Auto-generated method stub
 		int note;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter your note :");
+		System.out.println("Entre votre note :");
 		note = sc.nextInt();
+		
 		if (note >= 16) {
-			System.out.println("mention TB");
+			System.out.println("Vous êtes admis avec la mention TB");
+
 		} else if (note >= 14) {
-			System.out.println("mention B");
+			System.out.println("Vous êtes admis avec la mention B");
 
 		} else if (note >= 12) {
-			System.out.println("mention AB");
+			System.out.println("Vous êtes admis avec la mention AB");
 
 		} else if (note >= 10) {
-			System.out.println("admis");
+			System.out.println("Vous êtes admis");
 
 		} else if (note >= 8 && note < 10) {
-			System.out.println("rattrapage");
+			System.out.println("Vous êtes éligible au rattrapage");
 
 		} else {
-			System.out.println("rip");
+			System.out.println("Vous êtes ajourné");
 		}
 		sc.close();
 	}
