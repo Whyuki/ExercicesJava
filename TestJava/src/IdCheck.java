@@ -26,7 +26,7 @@ public class IdCheck {
 			if (password.equals("CDI1234")) { 
 				System.out.println("Connected");
 			} else {
-				System.out.println("incorrect password");
+				System.out.println("incorrect login or password");
 			}
 		} else {
 			System.out.println("incorrect login");
