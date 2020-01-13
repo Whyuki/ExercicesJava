@@ -1,6 +1,8 @@
 
 import java.util.Scanner;
 
+import com.crm.api.IdCrm;
+
 /**
  * 
  */
@@ -22,10 +24,10 @@ public class IdCheck {
 		login = sc.nextLine();
 		System.out.println("Password :");
 		password = sc.nextLine();
-		if (login.equals("CRM") && password.equals("CDI1234")) {
+		if (login.equals(IdCrm.LOGIN) && password.equals(IdCrm.PWD)) {
 			System.out.println("Connected");
 		} else {
-			System.out.println("incorrect login or password");
+			System.out.println("Incorrect login or password");
 		}
 		sc.close();
 	}
