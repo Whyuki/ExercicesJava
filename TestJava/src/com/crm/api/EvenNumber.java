@@ -27,7 +27,6 @@ public class EvenNumber {
 
 			System.out.println("\nDo you want try with an another number ? (yes/no)");
 			answer = sc.next();
-//			System.out.println(answer);
 		}
 		System.out.println("Closed program");
 		sc.close();
