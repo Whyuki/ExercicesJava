@@ -9,7 +9,8 @@ package com.crm.formation;
  */
 /*
  * 
- * if (estVrai) System.out.println("YES"); (une seule instruction accolades facultatives)
+ * if (estVrai) System.out.println("YES"); (une seule instruction accolades
+ * facultatives)
  */
 public class ConditionTest {
 
@@ -18,18 +19,41 @@ public class ConditionTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		boolean estVrai = false;
-		System.out.println("Début programme");
+//		boolean estVrai = false;
+//		System.out.println("Début programme");
+//
+//		if (estVrai) { // if (estVrai == true){
+//			System.out.println("YES");
+//			System.out.println("WE CAN");
+//		} else {
+//			System.out.println("NO");
+//			System.out.println("WE CAN'T");
+//		}
+//
+//		System.out.println("Fin de programme");
 
-		if (estVrai) { // if (estVrai == true){
-			System.out.println("YES");
-			System.out.println("WE CAN");
+		int nb = 1;
+		String str = "oki";
+
+		if (nb > 10 && str.equals("ok")) {
+			System.out.println("Conditions remplies");
+		} else if (nb > 10 || str.equals("ok")) {
+			System.out.println("Une des deux conditions est remplie");
 		} else {
-			System.out.println("NO");
-			System.out.println("WE CAN'T");
+			System.out.println("Aucune condion n'est remplie");
 		}
 
-		System.out.println("Fin de programme");
+		if (nb > 10 && str.equals("ok")) {
+			System.out.println("Conditions remplies");
+		} else {
+			if (nb > 10 || str.equals("ok")) {
+				System.out.println("Une des deux conditions est remplie");
+			} else {
+				System.out.println("Aucune condion n'est remplie");
+			}
+
+		}
+
 	}
 
 }
