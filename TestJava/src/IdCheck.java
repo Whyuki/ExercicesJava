@@ -20,10 +20,10 @@ public class IdCheck {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Login :");
 		login = sc.nextLine();
-		if (login.equals("J.SCHMITT")) {
+		if (login.equals("CRM")) {
 			System.out.println("Password :");
 			password = sc.nextLine();
-			if (password.equals("SChwitt6")) { // !!! string == "blabla" ---> str.equals("blabla")
+			if (password.equals("CDI1234")) { // !!! string == "blabla" ---> str.equals("blabla")
 				System.out.println("Connected");
 			} else {
 				System.out.println("incorrect password");
