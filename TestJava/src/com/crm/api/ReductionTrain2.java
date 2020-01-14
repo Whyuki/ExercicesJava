@@ -21,9 +21,9 @@ public class ReductionTrain2 {
 		System.out.println("Quel est votre age ?");
 		age = sc.nextInt();
 		if (age > 0) {
-			if (age >= 15) {
-				if (age >= 25) {
-					if (age >= 50) {
+			if (age > 15) {
+				if (age > 25) {
+					if (age > 50) {
 						reduc = 30;
 						System.out.println("Vous bénéficiez d'une réduction de " + reduc + "%.");
 					} else {
