@@ -17,32 +17,32 @@ public class SwitchOrientation {
 		// TODO Auto-generated method stub
 		String choix = "ok";
 		Scanner sc = new Scanner(System.in);
-		final String CDA = "C", DWWM = "D", REORIENTATION = "R", EN_COURS_DE_REFLEXION = "E";
+		final String CDA = "Concepteur Développeur d'Application", DWWM = " Développeur Web Web-Mobile", REORIENTATION = "réorentation professionnelle", EN_COURS_DE_REFLEXION = "en cours de réflexion";
 
-		System.out.println("Veuillez choisir entre les propositions suivantes :" + " \n(C) : CDA" + "\n(D) : DWWM"
+		System.out.println("Veuillez choisir entre les propositions suivantes :" + " \n(C) : CDA ("+CDA+")" + "\n(D) : DWWM ("+DWWM+")"
 				+ "\n(R) : Réorientation" + "\n(E) : En cours de réflexion ");
 		choix = sc.nextLine();
 
 		switch (choix) {
-		case CDA:
-			System.out.println("Vous avez choisi de suivre la formation Concepteur Développeur d'Applications");
+		case "C":
+			System.out.println("Vous avez choisi de suivre la formation de "+CDA);
 			break;
 			
-		case DWWM :
-			System.out.println("Vous avez choisi de suivre la formation Développeur Web Web-Mobile");
+		case "D" :
+			System.out.println("Vous avez choisi de suivre la formation de "+DWWM);
 			break;
 			
-		case REORIENTATION:
-			System.out.println("Vous avez choisi de suivre une réorientation professionnelle");
+		case "R":
+			System.out.println("Vous avez choisi de suivre une "+REORIENTATION);
 			break;
 			
-		case EN_COURS_DE_REFLEXION:
+		case "E":
 
-			System.out.println("Vous avez déclaré être en cours de réflexion. ");
+			System.out.println("Vous avez déclaré être "+EN_COURS_DE_REFLEXION);
 			break;
 
 		default:
-			System.out.println("Ceci n'est pas sérieux !");
+			System.out.println("Veuillez faire un choix !");
 			break;
 		}
 		sc.close();
