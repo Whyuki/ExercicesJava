@@ -28,15 +28,16 @@ public class IdCheckerApp {
 			password = sc.nextLine();
 			tentative++;
 			tryAllowed--;
-			for (int indexPosition = 0; indexPosition < ArrayId.LOGIN_ARRAY.length; indexPosition++) {
+			if (checkLogin == false) {
+				for (int indexPosition = 0; indexPosition < ArrayId.LOGIN_ARRAY.length; indexPosition++) {
 
-				if (login.contentEquals(ArrayId.LOGIN_ARRAY[indexPosition])) {
-					checkLogin = true;
-					posi = indexPosition;
-					break;
+					if (login.contentEquals(ArrayId.LOGIN_ARRAY[indexPosition])) {
+						checkLogin = true;
+						posi = indexPosition;
+						break;
+					}
 				}
-			}
-			if (posi > 0) {
+			} else { // checkLogin = true so: posi>0
 				checkPassword = (password.contentEquals(ArrayId.PASSWORD_ARRAY[posi]));
 			}
 			if (checkLogin == false || checkPassword == false) {
