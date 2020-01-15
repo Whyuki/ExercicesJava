@@ -18,6 +18,6 @@ public class BoucleForTest {
 		for (i = 0; i < 10; i++) {
 			System.out.println("i = " + i);
 		}
-		System.out.println("after for i = " + i); // déclaration i avant boucle for sinon i inaccessible
+		System.out.println("after for : i = " + i); // déclaration i avant boucle for sinon i inaccessible
 	}
 }
