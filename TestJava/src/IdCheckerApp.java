@@ -37,21 +37,21 @@ public class IdCheckerApp {
 						break;
 					}
 				}
-			} else { // checkLogin = true so: posi>0
+			} else { // sous entendu : checkLogin = true so: posi>0
 				checkPassword = (password.contentEquals(ArrayId.PASSWORD_ARRAY[posi]));
 			}
 			if (checkLogin == false || checkPassword == false) {
 				System.out.println("/!\\ remaining try: " + tryAllowed);
-			}
-			if (tryAllowed == 0 && checkPassword == false) {
-				System.out.println("______________" + "\nIncorrect login or password, try again :");
-				checkLogin = false;
-				checkPassword = false;
-				tentative = 0;
-				tryAllowed = 3;
-				posi = -1;
-				System.out.println("Please enter your login :");
-				login = sc.nextLine();
+				if (tryAllowed == 0) {
+					System.out.println("______________" + "\nIncorrect login or password, try again :");
+					checkLogin = false;
+					checkPassword = false;
+					tentative = 0;
+					tryAllowed = 3;
+					posi = -1;
+					System.out.println("Please enter your login :");
+					login = sc.nextLine();
+				}
 			}
 		}
 
