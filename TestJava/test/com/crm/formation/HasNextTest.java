@@ -3,6 +3,7 @@
  */
 package com.crm.formation;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -16,8 +17,10 @@ public class HasNextTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 0, devi = 64, nbTentative = 0;
+		int n = 0, devi = 0, nbTentative = 0;
+		int r = new Random().nextInt(101);
 		Scanner sc = new Scanner(System.in);
+		devi = r;
 		System.out.println("Veuillez saisir un nombre compris entre 0 et 100 :");
 		while (n != devi) {
 //			System.out.println(sc.hasNextInt());
