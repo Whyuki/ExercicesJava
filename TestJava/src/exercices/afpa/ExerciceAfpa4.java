@@ -16,7 +16,7 @@ public class ExerciceAfpa4 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double x, i = 0, y, resultat;
+		double x, y, resultat;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir un nombre :");
 		x = sc.nextInt();
