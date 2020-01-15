@@ -40,7 +40,7 @@ public class IdCheckerApp {
 			} else { // sous entendu : checkLogin = true so: posi>0
 				checkPassword = (password.contentEquals(ArrayId.PASSWORD_ARRAY[posi]));
 			}
-			if (checkLogin == false || checkPassword == false) {
+			if (checkPassword == false) {
 				System.out.println("/!\\ remaining try: " + tryAllowed);
 				if (tryAllowed == 0) {
 					System.out.println("______________" + "\nIncorrect login or password, try again :");
@@ -54,7 +54,6 @@ public class IdCheckerApp {
 				}
 			}
 		}
-
 		if (checkLogin == true && checkPassword == true) {
 			System.out.println("You are connected");
 		}
