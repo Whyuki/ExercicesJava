@@ -1,3 +1,4 @@
+package exercices.afpa;
 import java.util.Scanner;
 
 /**
