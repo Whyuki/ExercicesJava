@@ -19,20 +19,20 @@ public class IdCheckerApp {
 		// TODO Auto-generated method stub
 		String login, password;
 		Scanner sc = new Scanner(System.in);
-		int i = 0, tryAllowed = 3, posi = -1;
+		int tentative = 0, tryAllowed = 3, posi = -1;
 		boolean checkLogin = false, checkPassword = false;
 		System.out.println("Please enter your login :");
 		login = sc.nextLine();
-		while (checkLogin == false || checkPassword == false && i < 3) {
+		while (checkLogin == false || checkPassword == false && tentative < 3) {
 			System.out.println("Please enter your password :");
 			password = sc.nextLine();
-			i++;
+			tentative++;
 			tryAllowed--;
-			for (int ix = 0; ix < ArrayId.LOGIN_ARRAY.length; ix++) {
+			for (int indexPosition = 0; indexPosition < ArrayId.LOGIN_ARRAY.length; indexPosition++) {
 
-				if (login.contentEquals(ArrayId.LOGIN_ARRAY[ix])) {
+				if (login.contentEquals(ArrayId.LOGIN_ARRAY[indexPosition])) {
 					checkLogin = true;
-					posi = ix;
+					posi = indexPosition;
 					break;
 				}
 			}
@@ -46,7 +46,7 @@ public class IdCheckerApp {
 				System.out.println("______________" + "\nIncorrect login or password, try again :");
 				checkLogin = false;
 				checkPassword = false;
-				i = 0;
+				tentative = 0;
 				tryAllowed = 3;
 				posi = -1;
 				System.out.println("Please enter your login :");
