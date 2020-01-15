@@ -18,11 +18,13 @@ public class DevineUnNombre {
 		int n = 0, devi = 64, i = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir un nombre compris entre 0 et 100 :");
-		while (n >= 0) {
+		while (n != devi) {
 			n = sc.nextInt();
 			i++;
 			if (n > 100) {
 				System.out.println("Nombre suppérieur à 100, réessayez : ");
+			} else if (n < 0) {
+				System.out.println("Nombre inférieur à 0, réessayez : ");
 			} else if (n == devi) {
 				System.out.println("Le bon nombre est bien " + devi);
 				if (i < 2) {
@@ -37,6 +39,5 @@ public class DevineUnNombre {
 			}
 		}
 		sc.close();
-
 	}
 }
