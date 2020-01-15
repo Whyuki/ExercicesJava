@@ -14,7 +14,7 @@ public class DevineUnNombre {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO idée nombre de tentative max ? game over ?
 		int n = 0, devi = 64, i = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir un nombre compris entre 0 et 100 :");
