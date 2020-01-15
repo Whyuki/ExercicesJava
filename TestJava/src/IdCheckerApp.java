@@ -42,7 +42,7 @@ public class IdCheckerApp {
 			if (checkLogin == false || checkPassword == false) {
 				System.out.println("/!\\ remaining try: " + tryAllowed);
 			}
-			if (tryAllowed == 0) {
+			if (tryAllowed == 0 && checkPassword == false) {
 				System.out.println("______________" + "\nIncorrect login or password, try again :");
 				checkLogin = false;
 				checkPassword = false;
