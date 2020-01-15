@@ -71,7 +71,8 @@ public class TestDivers {
 		System.out.println("Votre second nombre est : " + nbbis);
 		total = nb + nbbis;
 		System.out.println(nb + " + " + nbbis + " = " + total);
-
+		
+		sc.close();
 	}
 
 }
