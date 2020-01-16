@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author CRM
  *
  */
-public class DessineMoi {
+public class DessineMoiUnCarre {
 
 	/**
 	 * @param args
