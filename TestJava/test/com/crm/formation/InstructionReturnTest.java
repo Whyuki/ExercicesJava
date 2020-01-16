@@ -23,8 +23,8 @@ public class InstructionReturnTest { // class
 		for (int i = 0; i < nb; i++) {
 			if (i == 5) {
 //				break;
-//				continue;      //continue la boucle exemple n'affiche pas le 5 = ignore
-				return; // quitte/ferme la méthode : donc n'affiche pas "fin méthode ..."
+//				continue;      //continue la boucle = ignore si la condition est remplie
+				return; // quitte/ferme la méthode : donc n'exécute pas la suite des instructions ..."
 			}
 			System.out.println(i);
 		}
