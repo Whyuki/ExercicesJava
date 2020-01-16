@@ -21,7 +21,7 @@ public class DessineMoi {
 		System.out.println("Entrez la longueur");
 		longu = sc.nextInt();
 		while (i < longu) {
-			System.out.println(star+star);
+			System.out.println(star);
 			i++;
 		}
 
