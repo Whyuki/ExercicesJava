@@ -20,14 +20,14 @@ public class BoucleForTest {
 //		}
 //		System.out.println("after for : i = " + i); // déclaration i avant boucle for sinon i inaccessible
 
-		for (int x = -5; x <= 5; x++) {
-			if (x == 0) {
-				System.out.println("division par 0");
+		for (int x = 0; x <= 10; x++) {
+			if (x == 5) {
+				System.out.println(x);
 //				break;
 				continue;
 			}
-			System.out.println(1.0 / x);
+			System.out.println(x);
 		}
-		System.out.println("oki");
+		System.out.println("fin");
 	}
 }
