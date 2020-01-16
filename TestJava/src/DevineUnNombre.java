@@ -17,7 +17,7 @@ public class DevineUnNombre {
 	public static void main(String[] args) {
 		// TODO idée nombre de tentative max ? game over ?
 		// TODO fix nombre de tentative en cas de mauvaise saisie ?
-				int n = 0, devi = 0, nbTentative = 0;
+				int n = 0, devi = 0, nbTentative = 0, nbNotANumber =0;
 				int r = new Random().nextInt(101);
 				Scanner sc = new Scanner(System.in);
 				devi = r;
@@ -45,6 +45,7 @@ public class DevineUnNombre {
 						}
 					} else {
 						sc.next();
+						nbNotANumber++;
 						System.out.println("Ceci n'est pas un nombre ! Réessayez :");
 					}
 				}
