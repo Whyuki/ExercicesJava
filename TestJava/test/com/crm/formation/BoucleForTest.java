@@ -27,6 +27,5 @@ public class BoucleForTest {
 			}
 			System.out.println(1.0 / x);
 		}
-
 	}
 }
