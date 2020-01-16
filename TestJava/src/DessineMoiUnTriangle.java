@@ -21,8 +21,8 @@ public class DessineMoiUnTriangle {
 		System.out.println("Entrez la longueur");
 		side = sc.nextInt();
 
-		for (x = 0; x < side; x++) {
-			for (y = x; y >= 0; y--) {
+		for (y = 0; y < side; y++) {
+			for (x = y; x >= 0; x--) {
 				System.out.print(star);
 			}
 			System.out.println();
