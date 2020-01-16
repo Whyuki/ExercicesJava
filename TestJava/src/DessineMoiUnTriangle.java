@@ -22,14 +22,13 @@ public class DessineMoiUnTriangle {
 		side = sc.nextInt();
 
 		for (x = 0; x < side; x++) {
-
-			for (y = side; y >= 0; y--) {
-				System.out.println();
+			for (y = x; y >= 0; y--) {
+				System.out.print(star);
 			}
-			System.out.print(star);
+			System.out.println();
 		}
+
 
 		sc.close();
 	}
-
 }

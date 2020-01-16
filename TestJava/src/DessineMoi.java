@@ -21,9 +21,9 @@ public class DessineMoi {
 		System.out.println("Entrez la longueur");
 		side = sc.nextInt();
 
-		for (x = 0; x < side; x++) {
+		for (y = 0; y < side; y++) {
 
-			for (y = 0; y < side; y++) {
+			for (x = 0; x < side; x++) {
 				System.out.print(star);
 			}
 			System.out.println();
