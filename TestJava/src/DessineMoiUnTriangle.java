@@ -28,7 +28,6 @@ public class DessineMoiUnTriangle {
 			System.out.println();
 		}
 
-
 		sc.close();
 	}
 }
