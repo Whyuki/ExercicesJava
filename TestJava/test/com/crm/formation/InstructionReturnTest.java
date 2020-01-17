@@ -23,7 +23,7 @@ public class InstructionReturnTest { // class
 		System.out.println("Début méthode afficherListeNombre");
 		for (int i = 0; i < nb; i++) {
 			if (i == 5) {
-				break;					  //quitte la boucle et exécute la suite des instruction de la méthode
+				break;					  //quitte la boucle et exécute la suite des instruction de la method
 //				continue;     			 //continue la boucle = ignore si la condition est remplie
 //				return; 				// quitte/ferme la méthode : donc n'exécute pas la suite des instructions ..."
 			}
