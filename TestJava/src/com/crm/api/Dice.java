@@ -17,11 +17,7 @@ public class Dice {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*
-		 * deux joueurs, 3 lancés de dès, si 6 rejouer, somme pour déterminer gagnant
-		 */
 		Scanner sc = new Scanner(System.in);
-
 		String pseudo[] = new String[2];
 		int score[] = new int[2];
 		int dice = 0, nbJet = 0;
@@ -46,7 +42,6 @@ public class Dice {
 				if (dice == 6 || dice == 0) {
 					nbJet--;
 				}
-
 			}
 
 			System.out.println(pseudo[i] + "'s score : " + score[i]);
