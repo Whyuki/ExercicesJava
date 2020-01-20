@@ -71,15 +71,19 @@ public class TableauTest {
 		System.out.println("\nlongeur tabInt : " + tabInt.length);
 
 		int[] tabInt1 = new int[5];
-		System.out.println(tabInt1[0]);
-		tabInt1[0] = 5;
-		System.out.println(tabInt1[0]);
-		System.out.println(tabInt1[1]);
+		System.out.println(tabInt1[0]); // affichage 1er élément
+		tabInt1[0] = 5; // réaffectation 1er élément
+		System.out.println(tabInt1[0]); // affichage 1er élément apres réaffectation
+		System.out.println(tabInt1[1]); // affichage 2nd élément
 
 		int tabInt2[] = { 45, 55, 65, 75, 85 };
-		System.out.println(tabInt2[0]);
+		System.out.println("Parcours tableau TabInt2 (v1)");
 		for (int i = 0; i < tabInt2.length; i++) {
 			System.out.println(tabInt2[i]);
+		}
+		System.out.println("Parcours tableau TabInt2 (v1)");
+		for (int nb : tabInt2){
+			System.out.println(nb);
 		}
 	}
 
