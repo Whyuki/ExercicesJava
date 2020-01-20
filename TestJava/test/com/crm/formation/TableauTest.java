@@ -50,12 +50,20 @@ public class TableauTest {
 		System.out.println("Taille du tableau tablInt3 : " + tablInt3.length);
 
 		// Parcours du tableau :
-		System.out.println(tablInt3[0]);
-		System.out.println(tablInt3[1]);
-		System.out.println(tablInt3[2]);
+		/* équivalent
+		 * System.out.println(tablInt3[0]); System.out.println(tablInt3[1]);
+		 * System.out.println(tablInt3[2]);
+		 */
 		// Parcours avec une boucle :
+		//1ère version
+		System.out.println("Parcours du tableau 1ère version");
 		for (int i = 0; i < tablInt3.length; i++) {
 			System.out.println(tablInt3[i]);
+		}
+		//2nde version
+		System.out.println("Parcours du tableau 2nde version");
+		for (int nb: tablInt3) { // parcours du tableau et affectation du contenu de chaque élément du tableau dans nb
+			System.out.println(nb);
 		}
 
 		int[] tabInt;
