@@ -81,7 +81,7 @@ public class TableauTest {
 		for (int i = 0; i < tabInt2.length; i++) {
 			System.out.println(tabInt2[i]);
 		}
-		System.out.println("Parcours tableau TabInt2 (v1)");
+		System.out.println("Parcours tableau TabInt2 (v2)");
 		for (int nb : tabInt2){
 			System.out.println(nb);
 		}
