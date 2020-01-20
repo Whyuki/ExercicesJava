@@ -17,7 +17,7 @@ public class DevineUnNombre {
 	public static void main(String[] args) {
 		// TODO idée nombre de tentative max ? game over ?
 		// TODO fix nombre de tentative en cas de mauvaise saisie ?
-				int n = 0, devi = 0, nbTentative = 0, nbNotANumber =0;
+				int n = 0, devi = 0, nbTentative = 0, fail =0;
 				int r = new Random().nextInt(101);
 				Scanner sc = new Scanner(System.in);
 				devi = r;
@@ -29,14 +29,16 @@ public class DevineUnNombre {
 						nbTentative++;
 						if (n > 100) {
 							System.out.println("Nombre suppérieur à 100, réessayez : ");
+							fail++;
 						} else if (n < 0) {
 							System.out.println("Nombre inférieur à 0, réessayez : ");
+							fail++;
 						} else if (n == devi) {
 							System.out.println("Le bon nombre est bien " + devi);
 							if (nbTentative < 2) {
-								System.out.println("Vous l'avez trouvé en " + nbTentative + " essai");
+								System.out.println("Vous l'avez trouvé en " + nbTentative + " essai ( dont "+ fail +" erreur(s) de saisie)");
 							} else {
-								System.out.println("Vous l'avez trouvé en " + nbTentative + " essais");
+								System.out.println("Vous l'avez trouvé en " + nbTentative + " essais ( dont "+ fail +" erreur(s) de saisie)");
 							}
 						} else if (n > devi) {
 							System.out.println("C'est moins, réessayez :");
@@ -45,7 +47,8 @@ public class DevineUnNombre {
 						}
 					} else {
 						sc.next();
-						nbNotANumber++;
+						fail++;
+						nbTentative++;
 						System.out.println("Ceci n'est pas un nombre ! Réessayez :");
 					}
 				}
