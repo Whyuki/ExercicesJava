@@ -36,6 +36,7 @@ public class Palindrome {
 			} else {
 				palindrome = true;
 				continue;
+				
 			}
 
 		}
