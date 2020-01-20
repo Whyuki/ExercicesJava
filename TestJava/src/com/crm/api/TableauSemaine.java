@@ -29,7 +29,7 @@ public class TableauSemaine {
 //			System.out.println(week[i]);
 //		}
 
-		System.out.println("Veuillez saisir un jour de la semaine en français: ");
+		System.out.println("Veuillez saisir un jour de la semaine en français pour le traduire en anglais : ");
 		answer = sc.nextLine();
 		for (int i = 0; i < semaine.length; i++) {
 			if (answer.equalsIgnoreCase(semaine[i])) {
@@ -38,7 +38,7 @@ public class TableauSemaine {
 			}
 		}
 
-		System.out.println("\nPlease enter a day of the week in English: ");
+		System.out.println("\nPlease enter a day of the week in English to translate it into French : ");
 		answer = sc.nextLine();
 		for (int i = 0; i < week.length; i++) {
 			if (answer.equalsIgnoreCase(week[i])) {
