@@ -20,7 +20,6 @@ public class TableauSemaine {
 		String semaine[] = { "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche" };
 		String week[] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 		String answer;
-		int i = -1;
 //		System.out.println("\nFrançais : ");
 //		for (i = 0; i < semaine.length; i++) {
 //			System.out.println(semaine[i]);
@@ -32,7 +31,7 @@ public class TableauSemaine {
 
 		System.out.println("Veuillez saisir un jour de la semaine en français: ");
 		answer = sc.nextLine();
-		for (i = 0; i < semaine.length; i++) {
+		for (int i = 0; i < semaine.length; i++) {
 			if (answer.equalsIgnoreCase(semaine[i])) {
 				System.out.println(semaine[i] + " = " + week[i]);
 				break;
@@ -41,7 +40,7 @@ public class TableauSemaine {
 
 		System.out.println("\nPlease enter a day of the week in English: ");
 		answer = sc.nextLine();
-		for (i = 0; i < week.length; i++) {
+		for (int i = 0; i < week.length; i++) {
 			if (answer.equalsIgnoreCase(week[i])) {
 				System.out.println(week[i] + " = " + semaine[i]);
 				break;
