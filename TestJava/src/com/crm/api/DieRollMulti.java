@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author CRM
  *
  */
-public class DieRollArray {
+public class DieRollMulti {
 
 	/**
 	 * @param args
