@@ -18,19 +18,21 @@ public class DieRollArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int dice = 0, nbJet = 0, nbPlayer;
+		int die = 0, nbJet = 0, nbPlayer = 0;
 
-		System.out.println("How many players ?");
-		nbPlayer = sc.nextInt();
+		while (nbPlayer <= 0 || nbPlayer>6) {
+			System.out.println("How many players ? (max 6)");
+//		nbPlayer = sc.nextInt();      ---------------------------------> ignore request pseudo player 1 !!!! fix with Integer.parseInt(sc.nextLine())
+			nbPlayer = Integer.parseInt(sc.nextLine());
+		}
 
 		String pseudo[] = new String[nbPlayer];
 		int score[] = new int[nbPlayer];
 
 		for (int i = 0; i < nbPlayer; i++) {
-
-			System.out.println("Player " + (i + 1) + ", please enter your pseudo :");
+			System.out.println("\nPlayer " + (i + 1) + ", please enter your pseudo :");
 			pseudo[i] = sc.nextLine();
-			System.out.println("pseudo :" + pseudo[i]);
+//			System.out.println("Player " + (i + 1) + ", your pseudo is : " + pseudo[i]);
 		}
 
 		for (int i = 0; i < pseudo.length; i++) {
@@ -40,14 +42,14 @@ public class DieRollArray {
 			while (nbJet < 3) {
 
 				nbJet++;
-				dice = new Random().nextInt(7);
-				if (dice > 0) {
-					System.out.println("Die roll : " + dice);
+				die = new Random().nextInt(7);
+				if (die > 0) {
+					System.out.println("Die roll : " + die);
 				}
-				score[i] = score[i] + dice;
-				if (dice == 6 || dice == 0) {
+				score[i] = score[i] + die;
+				if (die == 6 || die == 0) {
 					nbJet--;
-					if (dice == 6) {
+					if (die == 6) {
 						System.out.println("'------------> Roll Again !");
 					}
 				}
@@ -56,7 +58,7 @@ public class DieRollArray {
 			System.out.println(pseudo[i] + "'s score : " + score[i]);
 
 			nbJet = 0;
-			dice = 0;
+			die = 0;
 
 		}
 
