@@ -27,9 +27,10 @@ public class DieRollArray {
 		int score[] = new int[nbPlayer];
 
 		for (int i = 0; i < nbPlayer; i++) {
-			//player 1 ? indice 0 à fix !!
-			System.out.println("Player" + (i+1) + ", please enter your pseudo :");
+
+			System.out.println("Player " + (i + 1) + ", please enter your pseudo :");
 			pseudo[i] = sc.nextLine();
+			System.out.println("pseudo :" + pseudo[i]);
 		}
 
 		for (int i = 0; i < pseudo.length; i++) {
