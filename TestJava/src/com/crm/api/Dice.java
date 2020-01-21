@@ -29,18 +29,21 @@ public class Dice {
 
 		for (int i = 0; i < pseudo.length; i++) {
 
-			System.out.println(pseudo[i] + ", please roll the dice :");
+			System.out.println("\n" + pseudo[i] + ", please roll the die :");
 
 			while (nbJet < 3) {
 
 				nbJet++;
 				dice = new Random().nextInt(7);
 				if (dice > 0) {
-					System.out.println("Jet : " + dice);
+					System.out.println("Die roll : " + dice);
 				}
 				score[i] = score[i] + dice;
 				if (dice == 6 || dice == 0) {
 					nbJet--;
+					if (dice == 6) {
+						System.out.println("'------------> Roll Again !");
+					}
 				}
 			}
 
@@ -52,12 +55,13 @@ public class Dice {
 		}
 
 		if (score[0] > score[1]) {
-			System.out.println(pseudo[0] + " win !");
+			System.out.println("\n" + pseudo[0] + " win !");
 		} else if (score[0] == score[1]) {
 			System.out.println("=");
 		} else {
-			System.out.println(pseudo[1] + " win !");
+			System.out.println("\n" + pseudo[1] + " win !");
 		}
+		sc.close();
 	}
 
 }
