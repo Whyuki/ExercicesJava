@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author joann
  *
  */
-public class Dice {
+public class DieRoll {
 
 	/**
 	 * @param args
