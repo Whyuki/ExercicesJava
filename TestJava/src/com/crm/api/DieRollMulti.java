@@ -18,9 +18,9 @@ public class DieRollMulti {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int die = 0, nbJet = 0, nbPlayer = 0;
+		int die = 0, nbJet = 0, nbPlayer = 0, scoreWin = 0, idxWin = 0;
 
-		while (nbPlayer <= 0 || nbPlayer>6) {
+		while (nbPlayer <= 0 || nbPlayer > 6) {
 			System.out.println("How many players ? (max 6)");
 //		nbPlayer = sc.nextInt();      ---------------------------------> ignore request pseudo player 1 !!!! fix with Integer.parseInt(sc.nextLine())
 			nbPlayer = Integer.parseInt(sc.nextLine());
@@ -50,7 +50,7 @@ public class DieRollMulti {
 				if (die == 6 || die == 0) {
 					nbJet--;
 					if (die == 6) {
-						System.out.println("'------------> Roll Again !");
+						System.out.println(">>>>>>>>>>>>>>>>>>>>> Roll Again !");
 					}
 				}
 			}
@@ -62,13 +62,15 @@ public class DieRollMulti {
 
 		}
 
-		if (score[0] > score[1]) {
-			System.out.println("\n" + pseudo[0] + " win !");
-		} else if (score[0] == score[1]) {
-			System.out.println("=");
-		} else {
-			System.out.println("\n" + pseudo[1] + " win !");
+		for (int i = 0; i < score.length; i++) {
+
+			scoreWin = Math.max(scoreWin, score[i]);
+			if (scoreWin == score[i]) {
+				idxWin = i;
+			}
 		}
+		System.out.println("\n**** " + pseudo[idxWin] + " win with " + scoreWin + " ! ****");
+
 		sc.close();
 	}
 }
