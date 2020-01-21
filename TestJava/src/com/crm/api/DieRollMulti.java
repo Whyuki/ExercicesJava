@@ -41,7 +41,7 @@ public class DieRollMulti {
 
 		for (int i = 0; i < pseudo.length; i++) {
 
-			System.out.println("\n" + pseudo[i] + ", please roll the die :");
+			System.out.println("\n" + pseudo[i] + " roll the die :");
 
 			while (nbJet < 3) {
 
