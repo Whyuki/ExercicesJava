@@ -63,16 +63,14 @@ public class DieRollMulti {
 
 			nbJet = 0;
 			die = 0;
-
-		}
-
-		for (int i = 0; i < score.length; i++) {
-
+			
 			scoreWin = Math.max(scoreWin, score[i]);
 			if (scoreWin == score[i]) {
 				idxWin = i;
 			}
+
 		}
+
 		System.out.println("\n**** " + pseudo[idxWin] + " win with " + scoreWin + " ! ****");
 
 		sc.close();
