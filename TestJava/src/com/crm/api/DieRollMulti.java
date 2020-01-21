@@ -22,8 +22,12 @@ public class DieRollMulti {
 
 		while (nbPlayer <= 0 || nbPlayer > 6) {
 			System.out.println("How many players ? (max 6)");
-//		nbPlayer = sc.nextInt();      ---------------------------------> ignore request pseudo player 1 !!!! fix with Integer.parseInt(sc.nextLine())
-			nbPlayer = Integer.parseInt(sc.nextLine());
+			if (sc.hasNextInt()) {
+//				nbPlayer = sc.nextInt(); // -------------> ignore request pseudo player 1 !!!! fix with Integer.parseInt(sc.nextLine())
+				nbPlayer = Integer.parseInt(sc.nextLine());
+			} else {
+				sc.nextLine();
+			}
 		}
 
 		String pseudo[] = new String[nbPlayer];
