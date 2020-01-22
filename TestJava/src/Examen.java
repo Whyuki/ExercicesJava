@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
+ * @version 1.0
  *
  */
 /** 
