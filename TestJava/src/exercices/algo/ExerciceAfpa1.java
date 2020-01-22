@@ -1,4 +1,4 @@
-package exercices.afpa;
+package exercices.algo;
 import java.util.Scanner;
 
 /**

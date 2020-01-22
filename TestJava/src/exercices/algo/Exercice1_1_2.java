@@ -1,3 +1,4 @@
+package exercices.algo;
 import java.util.Scanner;
 
 /**
