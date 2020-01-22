@@ -18,8 +18,10 @@ public class TableauTest {
 		// Déclaration de tableau :
 		// 1ere méthode déclarative :
 		int[] tablInt = new int[5];
+		System.out.println(tablInt[0]);
 		// 2nde méthode déclarative :
 		int tablInt1[] = new int[5];
+		System.out.println(tablInt1[0]);
 
 		// Déclaration et initialisation d'un tableau
 		int[] tablInt3 = { 1, 2, 3 };

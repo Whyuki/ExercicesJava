@@ -31,21 +31,6 @@ public class IdCheck {
 		}
 		sc.close();
 
-//		String login, password;
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println("Please enter your login :");
-//		login = sc.nextLine();
-//		System.out.println("Please enter your password :");
-//		password = sc.nextLine();
-//		if (login.equals(IdCrm.LOGIN) && password.equals(IdCrm.PWD)) {
-//			System.out.println("You are connected");
-//		} else if (!login.equals(IdCrm.LOGIN)) {
-//			System.out.println("Incorrect login");
-//		} else if (!password.equals(IdCrm.PWD)) {
-//			System.out.println("Incorrect password");
-//		}
-//		sc.close();
-
 	}
 
 }
