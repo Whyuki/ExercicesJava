@@ -8,7 +8,7 @@ import com.crm.api.Utils;
  */
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class SquareArea {

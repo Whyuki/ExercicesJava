@@ -4,7 +4,7 @@
 package com.crm.formation;
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class OperateurTernaireTest {
@@ -17,7 +17,7 @@ public class OperateurTernaireTest {
 		
 		// ternary operator
 		
-		int nb1 =4, nb2 = 3;
+		int nb1 =2, nb2 = 3;
 		boolean isTrue = nb1 > nb2 ? true : false;
 		System.out.println(isTrue);
 		

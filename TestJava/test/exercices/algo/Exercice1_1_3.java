@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class Exercice1_1_3 {

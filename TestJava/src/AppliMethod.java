@@ -4,7 +4,7 @@
 
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class AppliMethod {

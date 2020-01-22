@@ -7,7 +7,7 @@ import com.crm.api.ArrayId;
  */
 
 /**
- * @author joann
+ * @author Joanna
  *
  */
 public class IdCheckerApp {

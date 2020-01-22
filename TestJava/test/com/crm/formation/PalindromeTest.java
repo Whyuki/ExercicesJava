@@ -6,7 +6,7 @@ package com.crm.formation;
 import java.util.Scanner;
 
 /**
- * @author joann
+ * @author Joanna
  *
  */
 public class PalindromeTest {

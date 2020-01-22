@@ -5,7 +5,7 @@ package com.crm.formation;
  */
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class StringTest {

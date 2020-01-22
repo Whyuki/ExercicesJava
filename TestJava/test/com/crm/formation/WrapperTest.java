@@ -5,7 +5,7 @@ package com.crm.formation;
 // class wrapper : équivalent objet du type primitif
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class WrapperTest {

@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 package com.crm.formation;

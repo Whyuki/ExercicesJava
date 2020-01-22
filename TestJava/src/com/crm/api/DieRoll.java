@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * @author joann
+ * @author Joanna
  *
  */
 public class DieRoll {

@@ -6,7 +6,7 @@ package com.crm.api;
 import java.util.Scanner;
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class TableauSemaine {

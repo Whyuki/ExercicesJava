@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 
 /**
- * @author joann
+ * @author Joanna
  *
  */
 public class IdCheck {

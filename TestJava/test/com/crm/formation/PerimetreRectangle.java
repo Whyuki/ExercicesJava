@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 //PERIMETRE RECTANGLE AVEC FORMULE
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class PerimetreRectangle {

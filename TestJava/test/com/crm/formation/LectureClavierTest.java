@@ -6,7 +6,7 @@ package com.crm.formation;
 import java.util.Scanner;
 
 /**
- * @author CRM
+ * @author Joanna
  *
  */
 public class LectureClavierTest {
