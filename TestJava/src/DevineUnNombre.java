@@ -9,6 +9,9 @@ import java.util.Scanner;
  * @author Joanna
  *
  */
+/** 
+ * Devinette nombre entre 0 et 100, indication plus ou moins
+ */
 public class DevineUnNombre {
 
 	/**

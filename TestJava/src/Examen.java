@@ -8,6 +8,9 @@ import java.util.Scanner;
  * @author Joanna
  *
  */
+/** 
+ * résultat examen
+ */
 public class Examen {
 	/**
 	 * @param args

@@ -8,6 +8,9 @@ import java.util.Scanner;
  * @author Joanna
  *
  */
+/** 
+ * Compare trois nombres saisis par l'user et affiche le plus grand
+ */
 public class CompareNumbers {
 
 	/**
