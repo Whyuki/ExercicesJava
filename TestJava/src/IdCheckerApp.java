@@ -28,7 +28,7 @@ public class IdCheckerApp {
 			password = sc.nextLine();
 			tentative++;
 			tryAllowed--;
-			while (checkLogin == false) {
+			if (checkLogin == false) {
 				for (int indexPosition = 0; indexPosition < ArrayId.LOGIN_ARRAY.length; indexPosition++) {
 
 					if (login.contentEquals(ArrayId.LOGIN_ARRAY[indexPosition])) {
@@ -37,10 +37,11 @@ public class IdCheckerApp {
 						break;
 					}
 				}
-			} 
+			}
+			if (checkLogin == true) {
 				checkPassword = (password.contentEquals(ArrayId.PASSWORD_ARRAY[posi]));
 			}
-			if (checkLogin == false && checkPassword == false) {
+			if (checkPassword == false) {
 				System.out.println("/!\\ remaining try: " + tryAllowed);
 				if (tryAllowed == 0) {
 					System.out.println("______________" + "\nIncorrect login or password, try again :");
@@ -53,7 +54,7 @@ public class IdCheckerApp {
 					login = sc.nextLine();
 				}
 			}
-		
+		}
 		if (checkLogin == true && checkPassword == true) {
 			System.out.println("You are connected");
 		}
