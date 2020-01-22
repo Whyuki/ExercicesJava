@@ -10,6 +10,9 @@ import java.util.Scanner;
  * @author Joanna
  *
  */
+/** 
+ * Jeu lancement d'un dè : xjoueur(s), 3 lancés, si 6 : relance
+ */
 public class DieRoll {
 
 	/**
