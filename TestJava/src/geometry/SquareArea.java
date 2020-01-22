@@ -1,3 +1,4 @@
+package geometry;
 import java.util.Scanner;
 
 import com.crm.api.Utils;

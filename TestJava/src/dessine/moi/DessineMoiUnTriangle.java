@@ -1,3 +1,4 @@
+package dessine.moi;
 import java.util.Scanner;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Scanner;
  * @author CRM
  *
  */
-public class DessineMoiUnCarre {
+public class DessineMoiUnTriangle {
 
 	/**
 	 * @param args
@@ -22,8 +23,7 @@ public class DessineMoiUnCarre {
 		side = sc.nextInt();
 
 		for (y = 0; y < side; y++) {
-
-			for (x = 0; x < side; x++) {
+			for (x = y; x >= 0; x--) {
 				System.out.print(star);
 			}
 			System.out.println();
@@ -31,5 +31,4 @@ public class DessineMoiUnCarre {
 
 		sc.close();
 	}
-
 }
