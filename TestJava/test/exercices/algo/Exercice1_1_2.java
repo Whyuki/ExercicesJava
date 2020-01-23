@@ -18,11 +18,11 @@ public class Exercice1_1_2 {
 		// TODO Auto-generated method stub
 		int premierNombre, secondNombre;
 		float moyenne;
-		boolean réponse;
+		boolean reponse;
 		Scanner sc;
 		sc = new Scanner(System.in);
-		réponse = true;
-		while (réponse == true) {
+		reponse = true;
+		while (reponse == true) {
 			System.out.println("Veuillez saisir un premier nombre :");
 			premierNombre = sc.nextInt();
 			System.out.println("Veuillez saisir un second nombre :");
@@ -30,7 +30,7 @@ public class Exercice1_1_2 {
 			moyenne = (premierNombre + secondNombre) / 2f;
 			System.out.println("La moyenne de ces deux nombres est de : " + moyenne);
 			System.out.println("Souhaitez vous faire un autre calcul ? si oui tapez 'true', sinon: tapez 'false'");
-			réponse = sc.nextBoolean();
+			reponse = sc.nextBoolean();
 		}
 		sc.close();
 	}
