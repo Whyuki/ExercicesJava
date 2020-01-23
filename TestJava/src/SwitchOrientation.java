@@ -5,6 +5,8 @@ import java.util.Scanner;
  */
 
 /**
+ * Exemple utilisation switch : affichage en fonction du choix de l'utilisateur
+ * 
  * @author Joanna
  *
  */
