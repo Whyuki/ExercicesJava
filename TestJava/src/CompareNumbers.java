@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 
 /**
- * Compare trois nombres saisis par l'user et affiche le plus grand
+ * Compare trois nombres saisis par l'utilisateur et affiche le plus grand
  *
  * @author Joanna
  */

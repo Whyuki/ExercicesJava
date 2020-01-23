@@ -5,6 +5,8 @@ import java.util.Scanner;
  */
 
 /**
+ * Exemple utilisation switch : reconnaire un chiffre
+ * 
  * @author Joanna
  *
  */
@@ -14,7 +16,7 @@ public class SwitchChiffre {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO gérer exception InputMismatchException ( scann only int)
 		int chiffre = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Entrez un chiffre svp");

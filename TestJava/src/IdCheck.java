@@ -1,12 +1,9 @@
 
 import java.util.Scanner;
 
-
 /**
- * connexion simple avec un login et mdp donné
- */
-
-/**
+ * Connexion simple avec identifiants uniques donnés
+ *
  * @author Joanna
  *
  */

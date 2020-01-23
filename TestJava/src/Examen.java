@@ -5,12 +5,10 @@ import java.util.Scanner;
  */
 
 /**
+ * résultat examen
+ *
  * @author Joanna
  * @version 1.0
- *
- */
-/**
- * résultat examen
  */
 public class Examen {
 	/**
