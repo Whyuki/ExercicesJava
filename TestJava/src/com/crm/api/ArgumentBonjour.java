@@ -7,20 +7,19 @@ package com.crm.api;
  * @author Joanna
  *
  */
-public class ArgumentMain {
+public class ArgumentBonjour {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		if (args != null) {
-			System.out.println("La taille du tableau args est : " + args.length);
 
-			for (String str : args) {
-				System.out.println(str);
-			}
+		if (args.length == 4) {
+			System.out.println("Bienvenue " + args[0] + " " + args[1] + " " + args[2]);
+			System.out.println("Il est " + args[3]);
 		}
+
 	}
 
 }
