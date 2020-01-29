@@ -5,8 +5,6 @@ package com.crm.api;
 
 import java.util.Scanner;
 
-
-
 /**
  * @author Joanna
  *
@@ -75,16 +73,6 @@ public class WeekTranslate {
 			}
 		}
 		return ind;
-	}
-
-	public static void parcoursTableau2dim(String[][] array) {
-
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j < array[i].length; j++) {
-				System.out.println("élément [" + i + "][" + j + "] : " + array[i][j]);
-			}
-			System.out.println();
-		}
 	}
 
 }
