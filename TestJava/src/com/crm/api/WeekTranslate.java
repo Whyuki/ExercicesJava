@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Joanna
  *
  */
-public class SemaineTableauMultiDim {
+public class WeekTranslate {
 
 	/**
 	 * @param args
@@ -34,7 +34,6 @@ public class SemaineTableauMultiDim {
 					if (answer.equalsIgnoreCase(semaineWeek[0][i])) {
 						System.out.println("English : " + semaineWeek[1][i]);
 						System.out.println("Deutsch : " + semaineWeek[2][i]);
-						break;
 					}
 				}
 				System.out.println("\nContinuer ? O/N");
@@ -46,7 +45,6 @@ public class SemaineTableauMultiDim {
 					if (answer.equalsIgnoreCase(semaineWeek[1][i])) {
 						System.out.println("Français : " + semaineWeek[0][i]);
 						System.out.println("Deutsch : " + semaineWeek[2][i]);
-						break;
 					}
 				}
 				System.out.println("\nAnother one ? Y/N");
@@ -58,7 +56,6 @@ public class SemaineTableauMultiDim {
 					if (answer.equalsIgnoreCase(semaineWeek[2][i])) {
 						System.out.println("Français : " + semaineWeek[0][i]);
 						System.out.println("English : " + semaineWeek[1][i]);
-						break;
 					}
 				}
 				System.out.println("\nFortsetzen ? J/N");
