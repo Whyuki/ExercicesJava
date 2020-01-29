@@ -59,13 +59,14 @@ public class Utils {
 			System.out.println();
 		}
 	}
-	
+
 	public static int foundInd(String[][] array, String str) {
 		int ind = -1;
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[i].length; j++) {
 				if (str.equalsIgnoreCase(array[i][j])) {
 					ind = j;
+					break;
 				}
 			}
 		}

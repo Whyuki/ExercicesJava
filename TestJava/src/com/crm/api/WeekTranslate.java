@@ -68,6 +68,7 @@ public class WeekTranslate {
 			for (int j = 0; j < array[i].length; j++) {
 				if (str.equalsIgnoreCase(array[i][j])) {
 					ind = j;
+					break;
 				}
 			}
 		}
