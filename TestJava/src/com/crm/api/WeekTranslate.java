@@ -16,7 +16,7 @@ public class WeekTranslate {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[][] semaineWeek = {
+		final String[][] SEMAINE_WEEK_WOCHE = {
 				{ "Français", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche" },
 				{ "English", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" },
 				{ "Deutsch", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag" } };
@@ -31,27 +31,27 @@ public class WeekTranslate {
 			if (langu.equalsIgnoreCase("FR")) {
 				System.out.println("Veuillez saisir un jour de la semaine :");
 				answer = sc.nextLine();
-				index = foundInd(semaineWeek, answer);
-				System.out.println("English : " + semaineWeek[1][index]);
-				System.out.println("Deutsch : " + semaineWeek[2][index]);
+				index = foundInd(SEMAINE_WEEK_WOCHE, answer);
+				System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
+				System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
 
 				System.out.println("\nContinuer ? O/N");
 				onOff = sc.nextLine();
 			} else if (langu.equalsIgnoreCase("EN")) {
 				System.out.println("Please enter a day of the week :");
 				answer = sc.nextLine();
-				index = foundInd(semaineWeek, answer);
-				System.out.println("Français : " + semaineWeek[0][index]);
-				System.out.println("Deutsch : " + semaineWeek[2][index]);
+				index = foundInd(SEMAINE_WEEK_WOCHE, answer);
+				System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
+				System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
 
 				System.out.println("\nAnother one ? Y/N");
 				onOff = sc.nextLine();
 			} else if (langu.equalsIgnoreCase("DE")) {
 				System.out.println("Bitte geben Sie einen Wochentag :");
 				answer = sc.nextLine();
-				index = foundInd(semaineWeek, answer);
-				System.out.println("Français : " + semaineWeek[0][index]);
-				System.out.println("English : " + semaineWeek[1][index]);
+				index = foundInd(SEMAINE_WEEK_WOCHE, answer);
+				System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
+				System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
 
 				System.out.println("\nFortsetzen ? J/N");
 				onOff = sc.nextLine();
@@ -60,7 +60,6 @@ public class WeekTranslate {
 			}
 		}
 		sc.close();
-
 	}
 
 	public static int foundInd(String[][] array, String str) {
