@@ -32,29 +32,42 @@ public class WeekTranslate {
 				System.out.println("Veuillez saisir un jour de la semaine :");
 				word = sc.nextLine();
 				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, 0);
-				System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
-				System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
+				if (index >= 0) {
+					System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
+					System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
 
-				System.out.println("\nContinuer ? O/N");
-				onOff = sc.nextLine();
+					System.out.println("\nContinuer ? O/N");
+					onOff = sc.nextLine();
+				} else {
+					System.out.println("Mot invalide");
+				}
 			} else if (langu.equalsIgnoreCase("EN")) {
 				System.out.println("Please enter a day of the week :");
 				word = sc.nextLine();
 				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, 1);
-				System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
-				System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
+				if (index >= 0) {
+					System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
+					System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
 
-				System.out.println("\nAnother one ? Y/N");
-				onOff = sc.nextLine();
+					System.out.println("\nAnother one ? Y/N");
+					onOff = sc.nextLine();
+				} else {
+					System.out.println("RIP");
+				}
 			} else if (langu.equalsIgnoreCase("DE")) {
 				System.out.println("Bitte geben Sie einen Wochentag :");
 				word = sc.nextLine();
 				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, 2);
-				System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
-				System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
+				if (index >= 0) {
 
-				System.out.println("\nFortsetzen ? J/N");
-				onOff = sc.nextLine();
+					System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
+					System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
+
+					System.out.println("\nFortsetzen ? J/N");
+					onOff = sc.nextLine();
+				} else {
+					System.out.println("Nein, nein, nein !");
+				}
 			} else {
 				System.out.println("Error");
 			}
