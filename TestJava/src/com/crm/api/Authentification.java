@@ -35,8 +35,8 @@ public class Authentification {
 			System.out.println("Please enter your password :");
 			password = sc.nextLine();
 			tryAllowed--;
-			posi = Utils.foundInd(ID_TABL, login);
-			if (posi > 0 && login.contentEquals(ID_TABL[0][posi])) {
+			posi = Utils.foundIndex(ID_TABL, login, 0);
+			if (posi > 0 ) {
 				checkLogin = true;
 				checkPassword = (password.contentEquals(ID_TABL[1][posi]));
 			}

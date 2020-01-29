@@ -31,7 +31,7 @@ public class WeekTranslate {
 			if (langu.equalsIgnoreCase("FR")) {
 				System.out.println("Veuillez saisir un jour de la semaine :");
 				word = sc.nextLine();
-				index = foundIndex(SEMAINE_WEEK_WOCHE, word, 0);
+				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, 0);
 				System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
 				System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
 
@@ -40,7 +40,7 @@ public class WeekTranslate {
 			} else if (langu.equalsIgnoreCase("EN")) {
 				System.out.println("Please enter a day of the week :");
 				word = sc.nextLine();
-				index = foundIndex(SEMAINE_WEEK_WOCHE, word, 1);
+				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, 1);
 				System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
 				System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
 
@@ -49,7 +49,7 @@ public class WeekTranslate {
 			} else if (langu.equalsIgnoreCase("DE")) {
 				System.out.println("Bitte geben Sie einen Wochentag :");
 				word = sc.nextLine();
-				index = foundIndex(SEMAINE_WEEK_WOCHE, word, 2);
+				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, 2);
 				System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
 				System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
 
@@ -61,17 +61,4 @@ public class WeekTranslate {
 		}
 		sc.close();
 	}
-
-	public static int foundIndex(String[][] array, String str, int indiceTab) {
-		int ind = -1;
-		for (int j = 0; j < array[indiceTab].length; j++) {
-			if (str.equalsIgnoreCase(array[indiceTab][j])) {
-				ind = j;
-				break;
-			}
-		}
-
-		return ind;
-	}
-
 }
