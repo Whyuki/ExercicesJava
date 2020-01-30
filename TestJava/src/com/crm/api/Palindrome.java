@@ -1,13 +1,12 @@
-/**
- * 
- */
 package com.crm.api;
 
 import java.util.Scanner;
 
 /**
  * @author Joanna
- *
+ * 
+ * afficher si le mot saisi est un palindrome (identique à l'envers ex: kawak)
+ * 
  */
 public class Palindrome {
 

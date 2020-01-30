@@ -2,12 +2,10 @@ package exercices.algo;
 import java.util.Scanner;
 
 /**
- * 
- */
-
-/**
  * @author Joanna
- *
+ * 
+ * factorielle
+ * 
  */
 public class ExerciceAfpa2 {
 

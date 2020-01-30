@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.crm.api;
 
 import java.util.Random;
@@ -11,7 +8,7 @@ import java.util.Scanner;
  *
  */
 /** 
- * Jeu lancement d'un dè : xjoueur(s), 3 lancés, si 6 : relance
+ * Jeu lancement d'un dè :  2 joueur(s), 3 lancés, si 6 : relance
  */
 public class DieRoll {
 

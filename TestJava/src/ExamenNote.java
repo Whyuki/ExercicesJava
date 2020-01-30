@@ -1,10 +1,6 @@
 import java.util.Scanner;
 
 /**
- * 
- */
-
-/**
  * résultat examen avec if imbriqués
  *
  * @author Joanna

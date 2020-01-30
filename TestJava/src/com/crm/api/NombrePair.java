@@ -1,13 +1,11 @@
-/**
- * 
- */
 package com.crm.api;
 
 import java.util.Scanner;
 
 /**
  * @author Joanna
- *
+ * 
+ * afficher si le nombre saisi est pair ou impair grace au modulo (modulo de la division par deux = 0 : pair, sinon (=1) : impair)
  */
 public class NombrePair {
 

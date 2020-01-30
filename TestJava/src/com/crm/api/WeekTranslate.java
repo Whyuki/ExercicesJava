@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.crm.api;
 
 import java.util.Scanner;

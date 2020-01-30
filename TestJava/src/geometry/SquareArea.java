@@ -4,12 +4,10 @@ import java.util.Scanner;
 import com.crm.api.Utils;
 
 /**
- * 
- */
-
-/**
  * @author Joanna
- *
+ * 
+ * calcul de l'aire d'un carré
+ * 
  */
 public class SquareArea {
 

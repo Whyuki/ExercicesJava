@@ -2,11 +2,9 @@ package exercices.algo;
 import java.util.Scanner;
 
 /**
- * 
- */
-
-/**
  * @author Joanna
+ * 
+ * calcul la moyenne de deux nombres saisis
  *
  */
 public class Exercice1_1_2 {

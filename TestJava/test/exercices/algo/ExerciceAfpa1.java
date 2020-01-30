@@ -2,11 +2,9 @@ package exercices.algo;
 import java.util.Scanner;
 
 /**
- * 
- */
-
-/**
  * @author Joanna
+ * 
+ * calcul la somme des nombres entre 0 et le nombre saisi
  *
  */
 public class ExerciceAfpa1 {
