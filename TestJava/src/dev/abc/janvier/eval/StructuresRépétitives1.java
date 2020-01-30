@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- *
+ * 
+ * for
+ * 
  */
 public class StructuresRépétitives1 {
 

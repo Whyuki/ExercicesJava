@@ -5,6 +5,8 @@ import java.util.Scanner;
 /**
  * @author Joanna
  *
+ * do while
+ *
  */
 public class StructuresRépétitives2 {
 
