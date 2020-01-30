@@ -8,6 +8,8 @@ import java.util.Scanner;
 /**
  * @author Joanna
  *
+ * connexion avec trois tentatives par login, tableau deux dimensions contenant les login et password
+ * 
  */
 public class Authentification {
 
