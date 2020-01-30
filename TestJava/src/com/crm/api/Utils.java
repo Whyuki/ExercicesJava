@@ -15,23 +15,28 @@ public class Utils {
 	// déclaration constante de type string
 	public static final String COLOR_BLUE = "blue";
 
+	
+	// calcul la somme de deux float
 	public static float somme(float a, float b) {
 
 		float s = (float) a + (float) b;
 		return s;
 	}
 
+	
+	// calcul perimtre d'un rectangle avec longueur et largeur en parametre
 	public static float perimeterRectangle(float length, float width) {
 		float perim = Utils.somme(length, width) * 2;
 		return perim;
 	}
-
+	
+	// calcul l'aire d'un carré avec coté en parametre
 	public static float squareArea(float side) {
 		float squareArea = (float) side * 4;
 		return squareArea;
 
 	}
-
+	// calcul l'aire d'un cercle avec le rayon en parametre
 	public static double circleArea(int r) {
 
 		// calcul de l'aire
@@ -49,7 +54,8 @@ public class Utils {
 	public static void afficherMessage(String texte) {
 		System.out.println(texte);
 	}
-
+	
+	// méthode permettant de parcourir un tableau deux dimension et afficher chaque éléments
 	public static void parcoursTableau2dim(String[][] array) {
 
 		for (int i = 0; i < array.length; i++) {
@@ -59,7 +65,7 @@ public class Utils {
 			System.out.println();
 		}
 	}
-	
+	// méthode permettant de chercher dans un tableau deux dimensions de string le contenu et retourne l'indice correspondant
 	public static int foundIndex(String[][] array, String str, int indiceTab) {
 		int ind = -1;
 		for (int j = 0; j < array[indiceTab].length; j++) {
