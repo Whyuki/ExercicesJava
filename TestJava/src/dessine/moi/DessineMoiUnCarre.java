@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- * 
+ */
+/**
  * dessiner un carré aec des * à l'aide de deux boucles for
  * 
  */

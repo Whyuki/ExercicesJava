@@ -2,7 +2,8 @@ package dev.abc.janvier.eval;
 
 /**
  * @author Joanna
- * 
+ */
+/** 
  *         méthode prenant un entier en paramètre et retournant la
  *         multiplication de cet entier par 2
  *

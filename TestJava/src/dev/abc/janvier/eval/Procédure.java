@@ -2,7 +2,8 @@ package dev.abc.janvier.eval;
 
 /**
  * @author Joanna
- * 
+ */
+/** 
  *         méthode prenant une chaîne de caractères en paramètre et affichant la
  *         longueur de cette chaîne
  *

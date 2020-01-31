@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /**
  * Devinette nombre entre 0 et 100, indication plus ou moins
- *
+ */
+/**
  * @author Joanna
  */
 public class DevineUnNombre {

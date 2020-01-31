@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- * 
+ */
+/** 
  * traduction jour de la semaine fr-en et en-fr, tableau une dimension
  * 
  */

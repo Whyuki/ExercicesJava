@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- *
+ */
+/**
  * traduction jours de la semaine en anglais et allemand, avec tableau deux dimensions 
  *
  */

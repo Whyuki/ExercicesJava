@@ -2,7 +2,8 @@ package com.crm.api;
 
 /**
  * @author Joanna
- * 
+ */
+/** 
  * classe utilitaire
  * 
  */

@@ -2,7 +2,8 @@ package com.crm.api;
 
 /**
  * @author Joanna
- * 
+ */
+/** 
  * split string en tableau de string avec le séparateur indiqué
  * 
  */

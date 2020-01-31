@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- * 
+ */
+/** 
  *         exercice méthode qui calcule le somme des éléments passés en
  *         paramètres et l'utiliser dans la méthode main
  */

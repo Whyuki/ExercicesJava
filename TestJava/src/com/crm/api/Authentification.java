@@ -1,13 +1,11 @@
-/**
- * 
- */
 package com.crm.api;
 
 import java.util.Scanner;
 
 /**
  * @author Joanna
- *
+ */
+/**
  *         connexion avec trois tentatives par login
  *         demande login / demande password / verification match 
  *         tableau deux dimensions contenant les login et password

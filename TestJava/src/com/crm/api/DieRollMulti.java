@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- * 
+ */
+/**
  * Jeu lancement d'un dè :  x joueur(s), 3 lancés, si 6 : relance
  *
  */

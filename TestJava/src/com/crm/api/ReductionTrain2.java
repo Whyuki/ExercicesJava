@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- * 
+ */
+/** 
  * Afficher la réduction (potentielle) correspondante à l'âge saisi par l'utilisateur
  * méthode if imbriqué 
  * 

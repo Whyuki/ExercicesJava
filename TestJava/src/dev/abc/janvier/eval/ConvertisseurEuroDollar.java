@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- *
+ */
+/**
  * convertir euro en dollar avec taux de change connu
  *
  */

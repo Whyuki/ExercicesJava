@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- * 
+ */
+/**
  * générateur adresse mail avec prenom"."nom, tout en minuscule, terminaison "@crm.com"
  *
  */

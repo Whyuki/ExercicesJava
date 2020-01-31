@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 /**
  * @author Joanna
- * 
+ */
+/**
  * dessine un triangle avec des * 
  * 
  */
