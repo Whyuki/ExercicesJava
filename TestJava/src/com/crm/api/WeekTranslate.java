@@ -42,7 +42,7 @@ public class WeekTranslate {
 
 					System.out.println("\nContinuer ? O/N");
 					onOff = sc.nextLine();
-				} else {
+				} else { // si indice < 0 : mot non présent dans le tableau
 					System.out.println("Mot invalide");
 				}
 			} else if (langu.equalsIgnoreCase("EN")) {
