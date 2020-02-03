@@ -38,8 +38,8 @@ public class WeekTranslate {
 				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, INDEX_FR); // recherche du mot dans le tableau FR et
 																				// retour de l'index
 				if (index >= 0) {
-					System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
-					System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
+					System.out.println("English : " + SEMAINE_WEEK_WOCHE[INDEX_EN][index]);
+					System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[INDEX_DE][index]);
 
 					System.out.println("\nContinuer ? O/N");
 					onOff = sc.nextLine();
@@ -51,8 +51,8 @@ public class WeekTranslate {
 				word = sc.nextLine();
 				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, INDEX_EN);
 				if (index >= 0) {
-					System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
-					System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[2][index]);
+					System.out.println("Français : " + SEMAINE_WEEK_WOCHE[INDEX_FR][index]);
+					System.out.println("Deutsch : " + SEMAINE_WEEK_WOCHE[INDEX_DE][index]);
 
 					System.out.println("\nAnother one ? Y/N");
 					onOff = sc.nextLine();
@@ -65,8 +65,8 @@ public class WeekTranslate {
 				index = Utils.foundIndex(SEMAINE_WEEK_WOCHE, word, INDEX_DE);
 				if (index >= 0) {
 
-					System.out.println("Français : " + SEMAINE_WEEK_WOCHE[0][index]);
-					System.out.println("English : " + SEMAINE_WEEK_WOCHE[1][index]);
+					System.out.println("Français : " + SEMAINE_WEEK_WOCHE[INDEX_FR][index]);
+					System.out.println("English : " + SEMAINE_WEEK_WOCHE[INDEX_EN][index]);
 
 					System.out.println("\nFortsetzen ? J/N");
 					onOff = sc.nextLine();
