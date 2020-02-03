@@ -1,4 +1,4 @@
-package dev.abc.janvier.eval;
+package com.crm.evaluationM6;
 
 import java.util.Scanner;
 

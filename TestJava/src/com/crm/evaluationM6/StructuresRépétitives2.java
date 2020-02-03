@@ -1,24 +1,24 @@
-package dev.abc.janvier.eval;
+package com.crm.evaluationM6;
 
 import java.util.Scanner;
 
 /**
  * @author Joanna
  */
-/** 
- * for
- * 
+/**
+ * do while
+ *
  */
-public class StructuresRépétitives1 {
+public class StructuresRépétitives2 {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int nbStart = 0, nbEnd = 0;
-		Scanner sc = new Scanner(System.in);
 
+		int nbStart = 0, nbEnd = 0, i=0;
+		Scanner sc = new Scanner(System.in);
 		do {
 			System.out.println("Veuillez saisir un nombre de départ :");
 			nbStart = sc.nextInt();
@@ -26,13 +26,16 @@ public class StructuresRépétitives1 {
 			nbEnd = sc.nextInt();
 			if (nbStart < nbEnd) {
 				System.out.println("Valeurs intermédiaires :");
-				for (int i = nbStart; i <= nbEnd; i += 2) {
+				i= nbStart; //utilisation de i pour conserver le do while
+				do {
 					System.out.println(i);
-				}
+					i += 2;
+				} while (i <= nbEnd);
 			} else {
 				System.out.println("Le nombre de départ doit être inférieur au nombre de fin !");
 			}
 		} while (nbStart > nbEnd);
 		sc.close();
 	}
+
 }
