@@ -1,3 +1,4 @@
+package com.crm.app;
 import java.util.Random;
 import java.util.Scanner;
 
