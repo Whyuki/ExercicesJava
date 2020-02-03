@@ -1,14 +1,14 @@
-package dessine.moi;
+package com.crm.dessin;
 import java.util.Scanner;
 
 /**
  * @author Joanna
  */
 /**
- * dessine un triangle avec des * 
+ * dessiner un carré aec des * à l'aide de deux boucles for
  * 
  */
-public class DessineMoiUnTriangle {
+public class DessineMoiUnCarre {
 
 	/**
 	 * @param args
@@ -22,7 +22,8 @@ public class DessineMoiUnTriangle {
 		side = sc.nextInt();
 
 		for (y = 0; y < side; y++) {
-			for (x = y; x >= 0; x--) {
+
+			for (x = 0; x < side; x++) {
 				System.out.print(star);
 			}
 			System.out.println();
@@ -30,4 +31,5 @@ public class DessineMoiUnTriangle {
 
 		sc.close();
 	}
+
 }
