@@ -1,0 +1,48 @@
+// intérêt simple (avec taux d'intérêt)
+reel somme, tauxInteret, valeurAcquise
+entier N
+Début
+écrire "Saisir la somme initiale"
+lire somme
+écrire "Saisir le taux d'intérêt (ex 3.5 pour 3.5%)"
+lire tauxInteret
+écrire "Saisir le nombre d'année soumise à intérêt"
+lire N
+valeurAcquise <-- somme + (somme * tauxInteret/100 * N)
+écrire "La valeur acquise est de :", valeurAcquise
+Fin
+
+// intérêt simple (avec montant d'intérêt)
+reel somme, montantInteret, valeurAcquise
+entier N
+Début
+écrire "Saisir la somme initiale"
+lire somme
+écrire "Saisir le montant d'intérêt"
+lire montantInteret
+écrire "Saisir le nombre d'année soumise à intérêt"
+lire N
+valeurAcquise <-- somme + (montantInteret * N)
+écrire "La valeur acquise est de :", valeurAcquise
+Fin
+
+// intérêt composé
+reel somme, i, valeurAcquise, temp, comp
+entier n, x
+Début
+écrire "Saisir la somme initiale"
+lire somme
+écrire "Saisir le montant d'intérêt"
+lire i
+écrire "Saisir le nombre d'année soumise à intérêt"
+lire n
+temp <-- 1
+comp <-- 1 + interest 
+	Tant que x < n
+	temp <-- temp * comp
+	x <-- x + 1
+	Fin Tant que
+valeurAcquise <-- somme * temp
+écrire "La valeur acquise est de :", valeurAcquise
+Fin
+

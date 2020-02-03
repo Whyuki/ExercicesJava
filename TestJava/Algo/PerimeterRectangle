@@ -1,0 +1,14 @@
+Début
+entier length, width;
+réel perimeter;
+écrire "Please enter the length of the rectangle :";
+length <-- lire;
+écrire "And its width :";
+width <-- lire;
+Si (length<0 ou width<0)
+alors écrire "Fail";
+Sinon
+perimeter <-- (length + width)*2;
+Fin Si
+écrire "The perimeter of this rectangle is ", perimeter;
+Fin 

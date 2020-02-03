@@ -1,0 +1,22 @@
+entier nombre
+entier compteurDeNombre
+entier somme
+reel moy 
+Début 
+compteurDeNombre <-- 0
+somme <-- 0
+écrire "Saisir un nombre ou appuyer sur entrée pour quitter"
+lire nombre
+Tant que (nombre<>0)
+compteurDeNombre <-- compteurDeNombre + 1
+somme <-- somme + nombre
+écrire "Saisir un autre nombre ou appuyer sur entrée pour calculer la moyenne"
+lire nombre
+Fin Tant que
+Si somme <>0 Alors
+moy <-- somme/compteurDeNombre
+écrire "La moyenne des nombres saisis est de",moy
+Sinon 
+écrire "Moyenne impossible à calculer"
+Fin Si
+Fin

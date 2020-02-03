@@ -1,0 +1,47 @@
+		Début
+		entier n, i, somme;
+		i <-- 0;
+		somme <-- 0;
+
+		écrire ("Veuillez saisir un nombre :");
+		n <-- lire ;
+
+		Tant que (i <= n) 
+			somme <-- somme + i;
+			i++;
+		Fin Tant que 
+		
+		écrire (" Le résultat avec Tant que est : " , somme);
+		Fin
+__________________________________________________________________________________________________________________
+		Début
+		entier n, i, somme;
+		i <-- 0;
+		somme <-- 0;
+		écrire ("Veuillez saisir un nombre :");
+		n <-- lire ;
+				
+		Faire 
+			somme <-- somme + i;
+			i++;
+		Tant que (i <= n);
+		
+		écrire (" Le résultat avec Faire Tant que est : " , somme);
+		
+		Fin
+__________________________________________________________________________________________________________________
+		Début
+		
+		entier n, i, somme;
+		i <-- 0;
+		somme <-- 0;
+		écrire ("Veuillez saisir un nombre :");
+		n <-- lire ;
+		
+		Pour i = 0 à n 
+				somme <-- somme + i;
+		Fin Pour
+
+		écrire (" Le résultat avec Pour est : " , somme);
+		
+		Fin
