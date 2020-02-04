@@ -51,9 +51,33 @@ public class Personne {
 
 	/**
 	 * Cette méthode affiche les détails
-	 */	
+	 */
 	public void afficherDetails() {
-		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;) ).");
+		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;D ).");
+	}
+	
+	
+	/**
+	 * Cette méthode (public static) affiche les détails avec un for each
+	 */
+	
+	public static void affDet(Personne[] perTab) {
+		for(Personne per : perTab ) {
+			System.out.println("Prenom : "+per.prenom);
+			System.out.println("Nom : "+per.nom);
+			System.out.println("Surnom : "+per.surnom);
+		}
+	}
+	
+	/**
+	 * Cette méthode (public static) affiche les détails avec un for 
+	 */
+
+	public static void afficherResume(Personne[] perTab) {
+		for (int i = 0; i < perTab.length; i++) {
+			System.out.println("\n Résumé :" + "\n" + (i + 1) + ")" + "\nPrénom : " + perTab[i].prenom + "\nNom : "
+					+ perTab[i].nom + "\nSurnom : " + perTab[i].surnom + "\n");
+		}
 	}
 
 }
