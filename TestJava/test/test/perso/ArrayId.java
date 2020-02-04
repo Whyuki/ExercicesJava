@@ -1,5 +1,5 @@
 
-package com.crm.api;
+package test.perso;
 
 /**
  * @author Joanna

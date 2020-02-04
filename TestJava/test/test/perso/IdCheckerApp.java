@@ -1,6 +1,5 @@
+package test.perso;
 import java.util.Scanner;
-
-import com.crm.api.ArrayId;
 
 /**
  * Connexion avec 3 essais de pwd par login saisi, identifiants dans un tableau ArrayId
