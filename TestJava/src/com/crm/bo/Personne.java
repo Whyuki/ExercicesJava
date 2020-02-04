@@ -17,8 +17,8 @@ public class Personne {
 
 	// méthodes
 
-	// getters & setters : right clic > source > generate	
-	
+	// getters & setters : right clic > source > generate
+
 	/**
 	 * Cette méthode renvoie la valeur de l'attribut nom
 	 * 
@@ -27,7 +27,7 @@ public class Personne {
 	public String getNom() {
 		return nom;
 	}
-	
+
 	/**
 	 * Cette méthode modifie la valeur de l'attribut nom
 	 * 
@@ -36,7 +36,7 @@ public class Personne {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	
+
 	/**
 	 * Cette méthode renvoie valeur attribut prenom
 	 * 
@@ -45,7 +45,7 @@ public class Personne {
 	public String getPrenom() {
 		return prenom;
 	}
-	
+
 	/**
 	 * Cette méthode modifie la valeur de l'attribut prenom
 	 * 
@@ -54,7 +54,7 @@ public class Personne {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	
+
 	/**
 	 * Cette méthode affiche les détails
 	 */
@@ -62,16 +62,13 @@ public class Personne {
 		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;D ).");
 	}
 
-
 	/**
 	 * Cette méthode (public static) affiche les détails avec une boucle for each
 	 */
 
 	public static void affDet(Personne[] perTab) {
 		for (Personne per : perTab) {
-			System.out.println("\nPrenom : " + per.prenom);
-			System.out.println("Nom : " + per.nom);
-			System.out.println("Surnom : " + per.surnom);
+			System.out.println(per.surnom + " (" + per.prenom + " " + per.nom + ")");
 		}
 	}
 

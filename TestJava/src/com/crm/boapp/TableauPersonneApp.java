@@ -19,31 +19,32 @@ public class TableauPersonneApp {
 		int nbPersonne = 0;
 		System.out.println("De combien de personne se compose votre équipe ?");
 
-		nbPersonne = sc.nextInt();
-		Personne[] tabPers = new Personne[nbPersonne]; // Déclaration d'un tableau d'objet de type Personne 
+		nbPersonne = Integer.parseInt(sc.nextLine());
+		Personne[] tabPers = new Personne[nbPersonne]; // Déclaration d'un tableau d'objet de type Personne
 		// construction d'objets de type Personne pour chaque case du tableau
 		for (int i = 0; i < tabPers.length; i++) {
 			tabPers[i] = new Personne();
 			System.out.println("\nMembre n° " + (i + 1) + ", veuillez saisir votre Prénom :");
-			tabPers[i].setPrenom(sc.next());
+			tabPers[i].setPrenom(sc.nextLine());
 			System.out.println("Veuillez saisir votre Nom :");
-			tabPers[i].setNom(sc.next());
+			tabPers[i].setNom(sc.nextLine());
 			System.out.println("Veuillez saisir votre Surnom :");
-			tabPers[i].surnom = sc.next();
+			tabPers[i].surnom = sc.nextLine();
 
 			tabPers[i].afficherDetails();
-			
+
 		}
-		Personne.affDet(tabPers);
+		System.out.println("\nListe des membres de l'équipe :");
+
+//		 Personne.affDet(tabPers);
 		// équivalent :
-		for(Personne per : tabPers ) {
-			System.out.println("\nPrenom : "+per.getPrenom());
-			System.out.println("Nom : "+per.getNom());
-			System.out.println("Surnom : "+per.surnom);
+		for (Personne per : tabPers) {
+			System.out.println(per.surnom + " (" + per.getPrenom() + " " + per.getNom() + ")");
 		}
-				
+
+//		
 //		Personne.afficherResume(tabPers);
-		
+
 		sc.close();
 	}
 
