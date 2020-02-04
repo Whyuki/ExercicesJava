@@ -52,11 +52,7 @@ public class Personne {
 	}
 
 	public void afficherDetails() {
-		System.out.println("Détails :");
-		System.out.println("Nom : " + nom);
-		System.out.println("Prénom : " + prenom);
-		System.out.println("Surnom : " + surnom);
-//		System.out.println("Date de naissance :" + dateDeNaissance);
+		System.out.println("Bonjour " + prenom + " " + nom + "(" + surnom + ")");
 	}
 
 }
