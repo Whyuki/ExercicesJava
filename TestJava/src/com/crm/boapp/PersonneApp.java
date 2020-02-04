@@ -25,6 +25,12 @@ public class PersonneApp {
 		pers.surnom = sc.nextLine();
 
 		pers.afficherDetails();
+		// attribut private need method get.. / 
+		// attribut public don't need : objetName.attributName 
+		// =
+//		System.out.println(
+//				"Bonjour " + pers.getPrenom() + " " + pers.getNom() + "( " + pers.surnom + " pour les intimes ;) ).");
+
 		sc.close();
 	}
 

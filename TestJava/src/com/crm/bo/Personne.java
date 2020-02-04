@@ -28,7 +28,6 @@ public class Personne {
 
 	/**
 	 * Cette méthode modifie la valeur de l'attribut nom
-	 * 
 	 */
 	public void setNom(String n) {
 		nom = n;
@@ -45,7 +44,6 @@ public class Personne {
 
 	/**
 	 * Cette méthode modifie la valeur de l'attribut prenom
-	 * 
 	 */
 	public void setPrenom(String p) {
 		prenom = p;
@@ -53,7 +51,6 @@ public class Personne {
 
 	/**
 	 * Cette méthode affiche les détails
-	 * 
 	 */	
 	public void afficherDetails() {
 		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;) ).");
