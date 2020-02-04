@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.crm.bo;
 
 import java.util.Date;
