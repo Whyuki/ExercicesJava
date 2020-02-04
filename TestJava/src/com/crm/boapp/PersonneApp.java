@@ -14,9 +14,12 @@ public class PersonneApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Personne pers = new Personne();
-		pers.surnom = "Joe";
+		pers.surnom = "Jo";
 		pers.setNom("SCHMITT");
-		System.out.println("Bienvenue" + pers.getNom() + " (" + pers.surnom + ")");
+		pers.setPrenom("Joanna");
+
+		pers.afficherDetails();
+
 	}
 
 }
