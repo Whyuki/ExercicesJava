@@ -38,7 +38,7 @@ public class TableauPersonneApp {
 		Personne.affDet(tabPers);
 		// équivalent :
 		for(Personne per : tabPers ) {
-			System.out.println("Prenom : "+per.getPrenom());
+			System.out.println("\nPrenom : "+per.getPrenom());
 			System.out.println("Nom : "+per.getNom());
 			System.out.println("Surnom : "+per.surnom);
 		}
