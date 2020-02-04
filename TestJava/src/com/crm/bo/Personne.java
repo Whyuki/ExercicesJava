@@ -51,8 +51,12 @@ public class Personne {
 		prenom = p;
 	}
 
+	/**
+	 * Cette méthode affiche les détails
+	 * 
+	 */	
 	public void afficherDetails() {
-		System.out.println("Bonjour " + prenom + " " + nom + "(" + surnom + ")");
+		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;) ).");
 	}
 
 }
