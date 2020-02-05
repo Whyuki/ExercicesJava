@@ -9,9 +9,32 @@ package com.crm.bo;
  */
 public class Rectangle {
 
+	private String name;
 	private float length;
 	private float width;
-	private String name;
+	
+	
+	
+	
+	public Rectangle() {
+		name="";
+		System.out.println("Construction d'un objet Rectangle (sans paramètres) ");
+	}
+
+	public Rectangle(String name, float length, float width) {
+		this.name = name;
+		this.length = length;
+		this.width = width;
+		System.out.println("Construction d'un objet Rectangle avec paramètres (nom, longueur, largeur) ");
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public float getLength() {
 		return length;
@@ -29,13 +52,6 @@ public class Rectangle {
 		this.width = width;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public float perimeterCalculator(float length, float width) {
 		float perimeter;

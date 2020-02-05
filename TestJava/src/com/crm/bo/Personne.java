@@ -78,9 +78,6 @@ public class Personne {
 		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;D ).");
 	}
 
-
-	
-	
 	
 	
 	

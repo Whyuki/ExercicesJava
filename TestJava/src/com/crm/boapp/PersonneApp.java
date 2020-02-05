@@ -1,3 +1,7 @@
+/**
+ * avec interraction user
+ */
+
 package com.crm.boapp;
 
 import java.util.Scanner;
