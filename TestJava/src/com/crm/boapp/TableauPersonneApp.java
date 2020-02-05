@@ -36,12 +36,12 @@ public class TableauPersonneApp {
 		}
 		System.out.println("\nListe des membres de l'équipe :");
 
-//		 Personne.affDet(tabPers);
-		// équivalent :
 		for (Personne per : tabPers) {
 			System.out.println(per.surnom + " (" + per.getPrenom() + " " + per.getNom() + ")");
 		}
 
+		// équivalent :
+//		Personne.affDet(tabPers);
 //		
 //		Personne.afficherResume(tabPers);
 
