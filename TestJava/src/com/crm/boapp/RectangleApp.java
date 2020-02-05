@@ -28,12 +28,14 @@ public class RectangleApp {
 		rect1.setLength(sc.nextFloat());
 		System.out.println("his width ?");
 		rect1.setWidth(sc.nextFloat());
-		rect1.showDetails();
 
 		System.out.println("\nlength of second rectangle ?");
 		rect2.setLength(sc.nextFloat());
 		System.out.println("his width ?");
 		rect2.setWidth(sc.nextFloat());
+		
+		
+		rect1.showDetails();
 		rect2.showDetails();
 
 		rect1.compareRectangle(rect2);

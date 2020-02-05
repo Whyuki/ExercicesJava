@@ -50,7 +50,7 @@ public class Rectangle {
 	}
 
 	public void showDetails() {
-		System.out.println(name + " :");
+		System.out.println("\n"+name + " :");
 		System.out.println("length : " + length + ", width " + width);
 
 		System.out.println(
