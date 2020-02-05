@@ -12,12 +12,9 @@ public class Rectangle {
 	private String name;
 	private float length;
 	private float width;
-	
-	
-	
-	
+
 	public Rectangle() {
-		name="";
+		name = "";
 		System.out.println("Construction d'un objet Rectangle (sans paramètres) ");
 	}
 
@@ -31,7 +28,7 @@ public class Rectangle {
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -52,7 +49,6 @@ public class Rectangle {
 		this.width = width;
 	}
 
-
 	public float perimeterCalculator(float length, float width) {
 		float perimeter;
 		perimeter = (length + width) * 2;
@@ -66,7 +62,7 @@ public class Rectangle {
 	}
 
 	public void showDetails() {
-		System.out.println("\n"+name + " :");
+		System.out.println("\n" + name + " :");
 		System.out.println("length : " + length + ", width " + width);
 
 		System.out.println(
@@ -78,7 +74,7 @@ public class Rectangle {
 
 		if (this.areaCalculator(length, width) > rToCompare.areaCalculator(length, width)) {
 			System.out.println("\nThe " + this.name + " is the biggest !");
-		} else {
+		} else if (rToCompare.areaCalculator(length, width) > this.areaCalculator(length, width)) {
 			System.out.println("\nThe " + rToCompare.name + " is the biggest !");
 		}
 
