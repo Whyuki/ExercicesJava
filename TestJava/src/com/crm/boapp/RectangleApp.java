@@ -39,6 +39,8 @@ public class RectangleApp {
 		rect2.showDetails();
 
 		rect1.compareRectangle(rect2);
+		
+
 
 		sc.close();
 	}
