@@ -37,9 +37,7 @@ public class Point {
 	}
 
 	public float distance(Point p) {
-		float distance;
-		distance = (float) Math
+		return (float) Math
 				.sqrt(Math.pow((this.abcisse - p.abcisse), 2) + Math.pow((this.ordonnee - p.ordonnee), 2));
-		return distance;
 	}
 }

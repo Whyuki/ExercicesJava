@@ -13,16 +13,17 @@ public class Rectangle {
 	private float length;
 	private float width;
 
+	
+	//"Construction d'un objet Rectangle (sans paramètres)
 	public Rectangle() {
 		name = "";
-		System.out.println("Construction d'un objet Rectangle (sans paramètres) ");
 	}
 
+	// Construction d'un objet Rectangle avec paramètres (nom, longueur, largeur)
 	public Rectangle(String name, float length, float width) {
 		this.name = name;
 		this.length = length;
 		this.width = width;
-		System.out.println("Construction d'un objet Rectangle avec paramètres (nom, longueur, largeur) ");
 	}
 
 	public String getName() {
@@ -49,33 +50,30 @@ public class Rectangle {
 		this.width = width;
 	}
 
-	public float perimeterCalculator(float length, float width) {
-		float perimeter;
-		perimeter = (length + width) * 2;
-		return perimeter;
+	public float perimeter() {
+		return (length + width) * 2;
 	}
 
-	public float areaCalculator(float length, float width) {
-		float area;
-		area = length * width;
-		return area;
+	public float area() {
+		return length * width;
 	}
 
 	public void showDetails() {
 		System.out.println("\n" + name + " :");
 		System.out.println("length : " + length + ", width " + width);
 
-		System.out.println(
-				"perimeter : " + perimeterCalculator(length, width) + ", area : " + areaCalculator(length, width));
+		System.out.println("perimeter : " + perimeter() + ", area : " + area());
 
 	}
 
 	public void compareRectangle(Rectangle rToCompare) {
 
-		if (this.areaCalculator(length, width) > rToCompare.areaCalculator(length, width)) {
+		if (this.area() > rToCompare.area()) {
 			System.out.println("\nThe " + this.name + " is the biggest !");
-		} else if (rToCompare.areaCalculator(length, width) > this.areaCalculator(length, width)) {
+		} else if (rToCompare.area() > this.area()) {
 			System.out.println("\nThe " + rToCompare.name + " is the biggest !");
+		} else {
+			System.out.println("\nThey are equal !");
 		}
 
 	}
