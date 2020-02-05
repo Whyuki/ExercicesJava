@@ -15,9 +15,23 @@ public class Personne {
 	private String prenom;
 	protected Date dateDeNaissance;
 
-	// méthodes
+	// constructor
+	public Personne() {
+		nom = "";
+		prenom = "";
+		surnom = "";
+		System.out.println("Constuction d'un objet Personne (sans paramètres) :");
+	}
 
-	// getters & setters : right clic > source > generate
+	public Personne(String surnom, String nom, String prenom) {
+		this.surnom = surnom;
+		this.nom = nom;
+		this.prenom = prenom;
+		System.out.println("Constuction d'un objet Personne avec paramètres (surnom, nom, prénom) :");
+
+	}
+
+	// getters/setters : right clic > source > generate
 
 	/**
 	 * Cette méthode renvoie la valeur de l'attribut nom
@@ -55,6 +69,8 @@ public class Personne {
 		this.prenom = prenom;
 	}
 
+	// méthodes
+
 	/**
 	 * Cette méthode affiche les détails
 	 */
@@ -62,10 +78,18 @@ public class Personne {
 		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;D ).");
 	}
 
+
+	
+	
+	
+	
+	
+	// méthodes statiques :
+	
 	/**
 	 * Cette méthode (public static) affiche les détails avec une boucle for each
 	 */
-
+	
 	public static void affDet(Personne[] perTab) {
 		for (Personne per : perTab) {
 			System.out.println(per.surnom + " (" + per.prenom + " " + per.nom + ")");
