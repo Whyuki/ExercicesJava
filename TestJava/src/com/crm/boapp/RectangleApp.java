@@ -38,7 +38,7 @@ public class RectangleApp {
 		rect1.showDetails();
 		rect2.showDetails();
 
-		rect1.compareRectangle(rect2);
+		rect1.compareRectangle(rect2); // compare rect1 avec rect2 et annonce le nom du rectangle le plus grand
 		
 
 
