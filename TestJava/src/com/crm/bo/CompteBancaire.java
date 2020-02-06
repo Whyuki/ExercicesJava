@@ -12,7 +12,7 @@ public class CompteBancaire {
 	private String numeroCompte;
 	private float solde;
 	private final int DECOUVERT_AUTORISE = 150;
-	private static int compteurClient = 0; // attribut statique
+	public static int compteurClient = 0; // attribut/variable statique : appartient à la classe et non à l'objet!
 
 	/**
 	 * constructeur avec generation et assignation numeroCompte en f° du compteur de
