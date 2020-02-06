@@ -22,10 +22,10 @@ public class CompteBancaireApp2 {
 		CompteBancaire comptA = new CompteBancaire();
 		String command = "";
 		String onOff = "O";
-		System.out.println("Bonjour.");
+		System.out.println("Bonjour,");
 		while (onOff.equalsIgnoreCase("o")) {
-			System.out.println(
-					"Quel opération souhaitez vous effectuer ? 1/2/3" + "\n1 Retrait" + "\n2 Depot" + "\n3 Afficher détails");
+			System.out.println("Quel opération souhaitez vous effectuer ? " + "\n1 Retrait" + "\n2 Depot"
+					+ "\n3 Afficher détails" + "\nTapez 1, 2 ou 3 :");
 
 			command = sc.nextLine();
 			switch (command) {
@@ -39,6 +39,8 @@ public class CompteBancaireApp2 {
 				break;
 			case "3":
 				comptA.afficherDetails();
+				break;
+			default:
 				break;
 			}
 			System.out.println("\nSouhaitez vous effectuer une autre opération ? O/N");
