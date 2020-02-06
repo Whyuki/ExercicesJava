@@ -10,16 +10,25 @@ package com.crm.bo;
 public class CompteBancaire {
 
 	private String numeroCompte;
-	protected float solde;
-	protected final int decouvertAutorise = 150;
-	
-	
-	//constructeur parametre numClient et generation et assignation numero client en f° du param
-	public CompteBancaire(int numClient) {
-		this.numeroCompte = String.format("%010d", numClient);
+	private float solde;
+	private final int decouvertAutorise = 150;
+	private static int compteurClient = 0; //attribut statique 
+
+	/**
+	 * constructeur avec generation et assignation numeroCompte en f° du compteur de
+	 * client qui s'incremente à chaque instance d'objet
+	 */
+	public CompteBancaire() {
+		compteurClient++;
+		this.numeroCompte = String.format("%010d", compteurClient);
 		this.solde = 0;
 	}
-	//constructeur parametre numero client, assignation du numero client par param
+
+	/**
+	 * constructeur parametre numero client, assignation du numero client par param
+	 * 
+	 * @param numeroCompte
+	 */
 	public CompteBancaire(String numeroCompte) {
 		this.numeroCompte = numeroCompte;
 		this.solde = 0;
@@ -40,29 +49,35 @@ public class CompteBancaire {
 	public void setSolde(float solde) {
 		this.solde = solde;
 	}
-//	public static String generateurNumCompte(int numClient) {
-//		return String.format("%010d", numClient);
-//	}
-	
+
+	/**
+	 * methode avec parametre qui debite le solde du montant entré en parametre dans
+	 * la limite du découvert autorisé
+	 * 
+	 * @param montant
+	 */
 	public void retrait(int montant) {
 		if ((solde - montant) >= -150) {
 			solde = solde - montant;
 			System.out.println("Retrait effectué, nouveau solde : " + solde);
 		} else {
-			System.out.println("Retrait impossible, depassement du découvert autorisé !"+"\nSolde : "+solde);
+			System.out.println("Retrait impossible, depassement du découvert autorisé !" + "\nSolde : " + solde);
 		}
 	}
 
+	/**
+	 * methode avec parametre qui credite le solde du montant entré en parametre
+	 * 
+	 */
 	public void depot(int montant) {
 		solde = solde + montant;
 		System.out.println("Depot effectué, nouveau solde : " + solde);
 	}
 
 	public void afficherDetails() {
-		System.out.println("Numero de compte : " + numeroCompte);
+		System.out.println("\nNumero de compte : " + numeroCompte);
 		System.out.println("Solde : " + solde);
 		System.out.println("Decouvert autorisé : " + decouvertAutorise);
 	}
 
-	
 }
