@@ -1,5 +1,5 @@
 /**
- * 
+ * Classe metier CompteBancaire
  */
 package com.crm.bo;
 
@@ -12,7 +12,7 @@ public class CompteBancaire {
 	private String numeroCompte;
 	private float solde;
 	private final int decouvertAutorise = 150;
-	private static int compteurClient = 0; //attribut statique 
+	private static int compteurClient = 0; // attribut statique
 
 	/**
 	 * constructeur avec generation et assignation numeroCompte en f° du compteur de
@@ -67,7 +67,6 @@ public class CompteBancaire {
 
 	/**
 	 * methode avec parametre qui credite le solde du montant entré en parametre
-	 * 
 	 */
 	public void depot(int montant) {
 		solde = solde + montant;

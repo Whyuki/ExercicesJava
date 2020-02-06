@@ -27,6 +27,13 @@ public class CompteBancaireApp1 {
 		CompteBancaire compt2 = new CompteBancaire();
 		compt2.afficherDetails();
 
+		
+		
+		
+		
+		
+		
+		
 		// tableau de comptes bancaires avec generation de numero de compte (increment à
 		// chaque init)
 		CompteBancaire[] tablCompt = new CompteBancaire[5];

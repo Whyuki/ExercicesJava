@@ -1,5 +1,5 @@
 /**
- * 
+ * Class application CompteBancaire
  */
 package com.crm.boapp;
 
