@@ -11,7 +11,7 @@ public class CompteBancaire {
 
 	private String numeroCompte;
 	private float solde;
-	private final int decouvertAutorise = 150;
+	private final int DECOUVERT_AUTORISE = 150;
 	private static int compteurClient = 0; // attribut statique
 
 	/**
@@ -76,7 +76,7 @@ public class CompteBancaire {
 	public void afficherDetails() {
 		System.out.println("\nNumero de compte : " + numeroCompte);
 		System.out.println("Solde : " + solde);
-		System.out.println("Decouvert autorisé : " + decouvertAutorise);
+		System.out.println("Decouvert autorisé : " + DECOUVERT_AUTORISE);
 	}
 
 }

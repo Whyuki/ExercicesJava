@@ -25,18 +25,23 @@ public class CompteBancaireApp2 {
 		System.out.println("Bonjour.");
 		while (onOff.equalsIgnoreCase("o")) {
 			System.out.println(
-					"Quel opération souhaitez vous effectuer ?" + "\n1 Retrait" + "\n2 Depot" + "\n3 Afficher détails");
+					"Quel opération souhaitez vous effectuer ? 1/2/3" + "\n1 Retrait" + "\n2 Depot" + "\n3 Afficher détails");
+
 			command = sc.nextLine();
-			if (command.equalsIgnoreCase("retrait") || command.equals("1")) {
+			switch (command) {
+			case "1":
 				System.out.println("Combien souhaitez vous retirer ?");
 				comptA.retrait(Integer.parseInt(sc.nextLine()));
-			} else if (command.equalsIgnoreCase("depot") || command.equals("2")) {
+				break;
+			case "2":
 				System.out.println("Combien souhaitez vous deposer ?");
 				comptA.depot(Integer.parseInt(sc.nextLine()));
-			} else if (command.equalsIgnoreCase("afficher détails") || command.equals("3")) {
+				break;
+			case "3":
 				comptA.afficherDetails();
+				break;
 			}
-			System.out.println("Souhaitez vous effectuer une autre opération ? O/N");
+			System.out.println("\nSouhaitez vous effectuer une autre opération ? O/N");
 			onOff = sc.nextLine();
 		}
 		System.out.println("Au revoir.");
