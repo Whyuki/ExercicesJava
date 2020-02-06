@@ -45,12 +45,6 @@ public class TableauPersonneApp {
 			System.out.println(pers.surnom + " (" + pers.getPrenom() + " " + pers.getNom() + ")");
 		}
 
-		// équivalent (methodes statiques) for each & for :
-//		Personne.affDet(tabPers);
-//		
-//		Personne.afficherResume(tabPers);
-//				
-//		
 
 
 		sc.close();

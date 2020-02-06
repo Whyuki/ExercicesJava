@@ -78,31 +78,4 @@ public class Personne {
 		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;D ).");
 	}
 
-	
-	
-	
-	// méthodes statiques :
-	
-	/**
-	 * Cette méthode (public static) affiche les détails avec une boucle for each
-	 */
-	
-	public static void affDet(Personne[] perTab) {
-		for (Personne per : perTab) {
-			System.out.println(per.surnom + " (" + per.prenom + " " + per.nom + ")");
-		}
-	}
-
-	/**
-	 * Cette méthode (public static) affiche les détails avec une boucle for
-	 */
-
-	public static void afficherResume(Personne[] perTab) {
-		for (int i = 0; i < perTab.length; i++) {
-			System.out.println("\nPrenom : " + perTab[i].prenom);
-			System.out.println("Nom : " + perTab[i].nom);
-			System.out.println("Surnom : " + perTab[i].surnom);
-		}
-	}
-
 }

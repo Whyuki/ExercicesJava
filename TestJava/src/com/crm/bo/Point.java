@@ -15,7 +15,7 @@ public class Point {
 	public Point() {
 	}
 
-	public Point(int abcisse, int ordonne) {
+	public Point(float abcisse, float ordonne) {
 		this.abcisse = abcisse;
 		this.ordonnee = ordonne;
 	}
@@ -24,7 +24,7 @@ public class Point {
 		return abcisse;
 	}
 
-	public void setAbcisse(int abcisse) {
+	public void setAbcisse(float abcisse) {
 		this.abcisse = abcisse;
 	}
 
@@ -32,7 +32,7 @@ public class Point {
 		return ordonnee;
 	}
 
-	public void setOrdonne(int ordonne) {
+	public void setOrdonne(float ordonne) {
 		this.ordonnee = ordonne;
 	}
 
