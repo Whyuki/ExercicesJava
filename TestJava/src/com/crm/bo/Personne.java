@@ -20,14 +20,14 @@ public class Personne {
 		nom = "";
 		prenom = "";
 		surnom = "";
-		System.out.println("Constuction d'un objet Personne (sans paramètres) :");
+//		System.out.println("Constuction d'un objet Personne (sans paramètres) :");
 	}
 
 	public Personne(String surnom, String nom, String prenom) {
 		this.surnom = surnom;
 		this.nom = nom;
 		this.prenom = prenom;
-		System.out.println("Constuction d'un objet Personne avec paramètres (surnom, nom, prénom) :");
+//		System.out.println("Constuction d'un objet Personne avec paramètres (surnom, nom, prénom) :");
 
 	}
 
@@ -71,6 +71,14 @@ public class Personne {
 
 	// méthodes
 
+
+	public boolean isEquals(Personne pers) {
+		if (this.prenom.equals(pers.prenom) && this.nom.equals(pers.nom)) {
+			return true;
+		}
+		return false;
+	}
+
 	/**
 	 * Cette méthode affiche les détails
 	 */
@@ -78,4 +86,17 @@ public class Personne {
 		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;D ).");
 	}
 
+	public int incrementeNombre(int nb) { // param type primitif 
+		return nb++;
+	}
+	
+	public static void modifierPersonne(Personne pers) {
+		pers.nom = pers.nom.toUpperCase();
+		pers.prenom = pers.prenom.toUpperCase();
+	}
+	
+	public void majusc() {
+		this.nom = this.nom.toUpperCase();
+		this.prenom = this.prenom.toUpperCase();
+	}
 }
