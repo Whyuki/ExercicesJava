@@ -36,6 +36,7 @@ public class Point {
 		this.ordonnee = ordonne;
 	}
 
+	// racine carré Math.sqrt
 	public float distance(Point p) {
 		return (float) Math
 				.sqrt(Math.pow((this.abcisse - p.abcisse), 2) + Math.pow((this.ordonnee - p.ordonnee), 2));
