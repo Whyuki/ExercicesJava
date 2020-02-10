@@ -53,12 +53,12 @@ public class Rectangle {
 		return (length + width) * 2;
 	}
 
-	public float area() {
-		return length * width;
-	}
-
 	public void perimeter(String unit) {
 		System.out.println("The perimeter is " + this.perimeter() + unit);
+	}
+
+	public float area() {
+		return length * width;
 	}
 
 	public void area(String unit) {
