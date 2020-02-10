@@ -50,17 +50,22 @@ public class CompteBancaire {
 		this.solde = solde;
 	}
 
+	public static int getDecouvertAutorise() {
+		return DECOUVERT_AUTORISE;
+	}
+
 	/**
-	 * methode avec parametre qui debite le solde du montant entré en parametre (si cette opération n'amène pas le solde en dessous du découvert autorisé)
+	 * methode avec parametre qui debite le solde du montant entré en parametre (si
+	 * cette opération n'amène pas le solde en dessous du découvert autorisé)
 	 * 
 	 * @param montant
 	 */
-	public void retrait(int montant) {
+	public boolean retrait(int montant) {
 		if ((solde - montant) >= -150) {
 			solde = solde - montant;
-			System.out.println("Retrait effectué, nouveau solde : " + solde);
+			return true;
 		} else {
-			System.out.println("Retrait impossible, depassement du découvert autorisé !" + "\nSolde : " + solde);
+			return false;
 		}
 	}
 
@@ -69,7 +74,6 @@ public class CompteBancaire {
 	 */
 	public void depot(int montant) {
 		solde = solde + montant;
-		System.out.println("Depot effectué, nouveau solde : " + solde);
 	}
 
 	public void afficherDetails() {

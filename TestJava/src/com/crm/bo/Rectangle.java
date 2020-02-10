@@ -53,23 +53,22 @@ public class Rectangle {
 		return (length + width) * 2;
 	}
 
-	public void perimeter(String unit) {
-		System.out.println("The perimeter is " + this.perimeter() + unit);
+	public String perimeter(String unit) {
+		return this.perimeter() + unit;
 	}
 
 	public float area() {
 		return length * width;
 	}
 
-	public void area(String unit) {
-		System.out.println("The area is " + this.area() + unit);
+	public String area(String unit) {
+		return this.area() + unit;
 	}
 
 	public void showDetails() {
 		System.out.println("\n" + name + " :");
 		System.out.println("length : " + length + ", width " + width);
 		System.out.println("perimeter : " + perimeter() + ", area : " + area());
-
 	}
 
 	public void compareRectangle(Rectangle rToCompare) {

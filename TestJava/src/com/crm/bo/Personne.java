@@ -98,13 +98,11 @@ public class Personne {
 			break;
 		default:
 			break;
-
 		}
-
 	}
 
 	public int incrementeNombre(int nb) { // param type primitif pour demontrer qu'une méthode avec un type primitif en
-											// parametre de modifie par la variable entrée en parametre (voir Personne
+											// parametre de modifie par la valeur (ou variable) entrée en parametre (voir Personne
 											// App0)
 		return nb++;
 	}

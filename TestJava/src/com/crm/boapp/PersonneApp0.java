@@ -64,7 +64,6 @@ public class PersonneApp0 {
 //		int n = 5;
 //		pers1.incrementeNombre(n); // param type primitif ne modifie pas la variable
 //		System.out.println(n);
-
 	}
 
 }
