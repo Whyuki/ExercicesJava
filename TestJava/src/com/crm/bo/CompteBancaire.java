@@ -11,7 +11,7 @@ public class CompteBancaire {
 
 	private String numeroCompte;
 	private float solde;
-	private final int DECOUVERT_AUTORISE = 150;
+	private static final int DECOUVERT_AUTORISE = 150;
 	private static int compteurClient = 0; // attribut/variable statique : appartient à la classe et non à l'objet!
 
 	/**
