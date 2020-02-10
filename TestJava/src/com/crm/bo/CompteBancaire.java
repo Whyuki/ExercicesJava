@@ -51,8 +51,7 @@ public class CompteBancaire {
 	}
 
 	/**
-	 * methode avec parametre qui debite le solde du montant entré en parametre dans
-	 * la limite du découvert autorisé
+	 * methode avec parametre qui debite le solde du montant entré en parametre (si cette opération n'amène pas le solde en dessous du découvert autorisé)
 	 * 
 	 * @param montant
 	 */
