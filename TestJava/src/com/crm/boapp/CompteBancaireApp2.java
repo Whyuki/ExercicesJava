@@ -44,7 +44,7 @@ public class CompteBancaireApp2 {
 				System.out.println("Depot effectué, nouveau solde : " + comptA.getSolde());
 				break;
 			case "3":
-				comptA.afficherDetails();
+//				comptA.afficherDetails();
 				System.out.println("\nNumero de compte : " + comptA.getNumeroCompte());
 				System.out.println("Solde : " + comptA.getSolde());
 				break;

@@ -4,6 +4,7 @@
 package com.crm.boapp;
 
 import java.util.Scanner;
+import java.util.Vector;
 
 import com.crm.bo.CompteBancaire;
 
@@ -41,6 +42,14 @@ public class CompteBancaireApp1 {
 			tablCompt[i].afficherDetails();
 		}
 
+//		Vector compteBanqu = new Vector();
+//		compteBanqu.addElement(compt1);
+//		compteBanqu.addElement(compt2);
+//		int posi = compteBanqu.indexOf(compt1);
+//		System.out.println(posi);
+//		posi = compteBanqu.indexOf(compt2);
+//		System.out.println(posi);
+		
 //		pad
 //		String.format()
 //		String nombre = String.format("%010d", 1);
