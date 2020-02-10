@@ -71,7 +71,6 @@ public class Personne {
 
 	// méthodes
 
-
 	public boolean isEquals(Personne pers) {
 		if (this.prenom.equals(pers.prenom) && this.nom.equals(pers.nom)) {
 			return true;
@@ -86,15 +85,35 @@ public class Personne {
 		System.out.println("Bonjour " + prenom + " " + nom + "( " + surnom + " pour les intimes ;D ).");
 	}
 
-	public int incrementeNombre(int nb) { // param type primitif 
+	public void afficherDetails(String langu) {
+		switch (langu) {
+		case "fr":
+			System.out.println("Prénom : " + prenom + "\nNom : " + nom + "\nSurnom : " + surnom);
+			break;
+		case "en":
+			System.out.println("Firstname : " + prenom + "\nLastname : " + nom + "\nNickname : " + surnom);
+			break;
+		case "de":
+			System.out.println("Vorname : " + prenom + "\nNachname : " + nom + "\nSpitzname : " + surnom);
+			break;
+		default:
+			break;
+
+		}
+
+	}
+
+	public int incrementeNombre(int nb) { // param type primitif pour demontrer qu'une méthode avec un type primitif en
+											// parametre de modifie par la variable entrée en parametre (voir Personne
+											// App0)
 		return nb++;
 	}
-	
+
 	public static void modifierPersonne(Personne pers) {
 		pers.nom = pers.nom.toUpperCase();
 		pers.prenom = pers.prenom.toUpperCase();
 	}
-	
+
 	public void majusc() {
 		this.nom = this.nom.toUpperCase();
 		this.prenom = this.prenom.toUpperCase();

@@ -28,19 +28,20 @@ public class RectangleApp {
 		rect1.setLength(sc.nextFloat());
 		System.out.println("his width ?");
 		rect1.setWidth(sc.nextFloat());
+		rect1.perimeter("cm");
+		rect1.area("cm²");
 
 		System.out.println("\nlength of second rectangle ?");
 		rect2.setLength(sc.nextFloat());
 		System.out.println("his width ?");
 		rect2.setWidth(sc.nextFloat());
-		
-		
+		rect2.perimeter("cm");
+		rect2.area("cm²");
+
 		rect1.showDetails();
 		rect2.showDetails();
 
 		rect1.compareRectangle(rect2); // compare rect1 avec rect2 et annonce le nom du rectangle le plus grand
-		
-
 
 		sc.close();
 	}

@@ -13,8 +13,7 @@ public class Rectangle {
 	private float length;
 	private float width;
 
-	
-	//"Construction d'un objet Rectangle (sans paramètres)
+	// "Construction d'un objet Rectangle (sans paramètres)
 	public Rectangle() {
 		name = "";
 	}
@@ -58,10 +57,17 @@ public class Rectangle {
 		return length * width;
 	}
 
+	public void perimeter(String unit) {
+		System.out.println("The perimeter is " + this.perimeter() + unit);
+	}
+
+	public void area(String unit) {
+		System.out.println("The area is " + this.area() + unit);
+	}
+
 	public void showDetails() {
 		System.out.println("\n" + name + " :");
 		System.out.println("length : " + length + ", width " + width);
-
 		System.out.println("perimeter : " + perimeter() + ", area : " + area());
 
 	}
