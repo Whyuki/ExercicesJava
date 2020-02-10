@@ -17,6 +17,7 @@ public class CompteBancaireApp1 {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -42,13 +43,13 @@ public class CompteBancaireApp1 {
 			tablCompt[i].afficherDetails();
 		}
 
-//		Vector compteBanqu = new Vector();
-//		compteBanqu.addElement(compt1);
-//		compteBanqu.addElement(compt2);
-//		int posi = compteBanqu.indexOf(compt1);
-//		System.out.println(posi);
-//		posi = compteBanqu.indexOf(compt2);
-//		System.out.println(posi);
+		Vector compteBanqu = new Vector();
+		compteBanqu.addElement(compt1);
+		compteBanqu.addElement(compt2);
+		int posi = compteBanqu.indexOf(compt1);
+		System.out.println(posi);
+		posi = compteBanqu.indexOf(compt2);
+		System.out.println(posi);
 		
 //		pad
 //		String.format()
