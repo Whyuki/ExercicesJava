@@ -3,6 +3,7 @@
  */
 package com.crm.bo;
 
+
 /**
  * @author Joanna
  *

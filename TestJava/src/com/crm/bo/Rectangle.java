@@ -80,6 +80,14 @@ public class Rectangle {
 		} else {
 			System.out.println("\nThey are equal !");
 		}
+	}
+
+	public boolean isBiggerThan(Rectangle rToCompare) {
+		if (this.area() > rToCompare.area()) {
+			return true;
+		} else {
+			return false;
+		}
 
 	}
 }
