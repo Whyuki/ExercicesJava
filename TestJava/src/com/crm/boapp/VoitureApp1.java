@@ -36,6 +36,8 @@ public class VoitureApp1 {
 		typeRoute = sc.nextLine();
 		while (tuture.isMarche() == true) {
 			System.out.println();
+			tuture.afficherVitesse();
+			System.out.println();
 			System.out.println("Veuillez choisir l'action : ");
 			System.out.println("Pour accélérer tapez : 1 ");
 			System.out.println("Pour freiner tapez : 2 ");
@@ -46,11 +48,11 @@ public class VoitureApp1 {
 			switch (choix) {
 			case "1":
 				System.out.println("De combien souhaitez vous accélérer ?");
-				tuture.accelerer(sc.nextInt(), typeRoute);
+				tuture.accelerer(Integer.parseInt(sc.nextLine()), typeRoute);
 				break;
 			case "2":
 				System.out.println("De combien souhaitez vous ralentir ?");
-				tuture.ralentir(sc.nextInt());
+				tuture.ralentir(Integer.parseInt(sc.nextLine()));
 				break;
 			case "3":
 				tuture.klaxonner();
