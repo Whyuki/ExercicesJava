@@ -19,6 +19,8 @@ public class Voiture {
 	private static final int VILLE_VIT_MAX = 50;
 	private static final int ROUTE_VIT_MAX = 80;
 	private static final int AUTOROUTE_VIT_MAX = 130;
+	private String typeRoute;
+
 
 	public Voiture() {
 
@@ -88,6 +90,14 @@ public class Voiture {
 		this.vitesse = vitesse;
 	}
 
+	public String getTypeRoute() {
+		return typeRoute;
+	}
+	
+	public void setTypeRoute(String typeRoute) {
+		this.typeRoute = typeRoute;
+	}
+	
 	public void afficherDetails() {
 		System.out.println("Marque : " + marque);
 		System.out.println("Couleur : " + couleur);

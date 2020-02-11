@@ -21,7 +21,6 @@ public class VoitureApp1 {
 
 		Scanner sc = new Scanner(System.in);
 		String choix;
-		String typeRoute;
 
 		Voiture tuture = new Voiture("Fiat", "noir", 3, "manuelle", 7000);
 
@@ -33,7 +32,7 @@ public class VoitureApp1 {
 			tuture.demarrage();
 		}
 		System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
-		typeRoute = sc.nextLine();
+		tuture.setTypeRoute(sc.nextLine());
 		while (tuture.isMarche() == true) {
 			System.out.println();
 			System.out.println("Veuillez choisir l'action : ");
@@ -46,7 +45,7 @@ public class VoitureApp1 {
 			switch (choix) {
 			case "1":
 				System.out.println("De combien souhaitez vous accélérer ?");
-				tuture.accelerer(Integer.parseInt(sc.nextLine()), typeRoute);
+				tuture.accelerer(Integer.parseInt(sc.nextLine()), tuture.getTypeRoute());
 				break;
 			case "2":
 				System.out.println("De combien souhaitez vous ralentir ?");
@@ -57,7 +56,7 @@ public class VoitureApp1 {
 				break;
 			case "4":
 				System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
-				typeRoute = sc.nextLine();
+				tuture.setTypeRoute(sc.nextLine());
 				tuture.afficherVitesse();
 				break;
 			case "5":
