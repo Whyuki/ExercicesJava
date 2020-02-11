@@ -1,9 +1,9 @@
 /**
- * 
+ * creation de compte bancaire ave generation du n° de compte
+ * et test vector
  */
 package com.crm.boapp;
 
-import java.util.Scanner;
 import java.util.Vector;
 
 import com.crm.bo.CompteBancaire;
@@ -20,12 +20,12 @@ public class CompteBancaireApp1 {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
 
 		CompteBancaire compt1 = new CompteBancaire(); // constructeur avec generation et assignation numeroCompte en f°
 														// du compteur de client qui s'incremente à chaque instance
 														// d'objet
 		compt1.afficherDetails();
+		
 		CompteBancaire compt2 = new CompteBancaire();
 		compt2.afficherDetails();
 
@@ -36,7 +36,7 @@ public class CompteBancaireApp1 {
 		
 		
 		// tableau de comptes bancaires avec generation de numero de compte (increment à
-		// chaque init)
+		// chaque instance)
 		CompteBancaire[] tablCompt = new CompteBancaire[5];
 		for (int i = 0; i < tablCompt.length; i++) {
 			tablCompt[i] = new CompteBancaire();
@@ -62,7 +62,6 @@ public class CompteBancaireApp1 {
 //		String nombre = String.format("%010d", 1);
 //		System.out.println(nombre);
 
-		sc.close();
 	}
 
 }
