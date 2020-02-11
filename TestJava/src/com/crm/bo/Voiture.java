@@ -98,49 +98,65 @@ public class Voiture {
 
 	public void demarrage() {
 		marche = true;
+		System.out.println("vroum-vroum !");
 	}
 
 	public void accelerer(int vitesseAcceleration, String typeRoute) {
 
-		switch (typeRoute) {
-		case "ville":
-			if (vitesse + vitesseAcceleration <= VILLE_VIT_MAX) {
-				vitesse = vitesse + vitesseAcceleration;
-			} else {
-				vitesse = 50;
-				this.avertissementVitesseMax();
+		final String VILLE = "ville";
+		final String ROUTE = "route";
+		final String AUTOROUTE = "autoroute";
+
+		if (marche == true) {
+			switch (typeRoute) {
+			case VILLE:
+				if (vitesse + vitesseAcceleration <= VILLE_VIT_MAX) {
+					vitesse = vitesse + vitesseAcceleration;
+				} else {
+					vitesse = 50;
+					this.avertissementVitesseMax();
+				}
+				break;
+			case ROUTE:
+				if (vitesse + vitesseAcceleration <= ROUTE_VIT_MAX) {
+					vitesse = vitesse + vitesseAcceleration;
+				} else {
+					vitesse = 80;
+					this.avertissementVitesseMax();
+				}
+				break;
+			case AUTOROUTE:
+				if (vitesse + vitesseAcceleration <= AUTOROUTE_VIT_MAX) {
+					vitesse = vitesse + vitesseAcceleration;
+				} else {
+					vitesse = 130;
+					this.avertissementVitesseMax();
+				}
+				break;
+			default:
+				System.out.println("Type de route non reconnue");
+				break;
 			}
-			break;
-		case "route":
-			if (vitesse + vitesseAcceleration <= ROUTE_VIT_MAX) {
-				vitesse = vitesse + vitesseAcceleration;
-			} else {
-				vitesse = 80;
-				this.avertissementVitesseMax();
-			}
-			break;
-		case "autoroute":
-			if (vitesse + vitesseAcceleration <= AUTOROUTE_VIT_MAX) {
-				vitesse = vitesse + vitesseAcceleration;
-			} else {
-				vitesse = 130;
-				this.avertissementVitesseMax();
-			}
-			break;
-		default:
-			System.out.println("Type de route non reconnue");
-			break;
+		} else {
+			System.out.println("Demarrage nécessaire !");
 		}
+
 		this.afficherVitesse();
 	}
 
 	public void ralentir(int vitesseRalentissement) {
-		vitesse = vitesse - vitesseRalentissement;
+		if (vitesse - vitesseRalentissement >= 0) {
+			vitesse = vitesse - vitesseRalentissement;
+			this.afficherVitesse();
+		} else {
+			vitesse = 0;
+		}
 	}
 
 	public void arret() {
 		marche = false;
 		vitesse = 0;
+		this.afficherVitesse();
 	}
 
 	public void klaxonner() {
