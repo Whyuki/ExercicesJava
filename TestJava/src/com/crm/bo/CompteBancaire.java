@@ -3,6 +3,8 @@
  */
 package com.crm.bo;
 
+import java.util.Vector;
+
 /**
  * @author Joanna
  *

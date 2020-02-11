@@ -50,6 +50,12 @@ public class CompteBancaireApp1 {
 		System.out.println(posi);
 		posi = compteBanqu.indexOf(compt2);
 		System.out.println(posi);
+		compteBanqu.addElement(new CompteBancaire());
+		((CompteBancaire) compteBanqu.get(2)).afficherDetails();
+		compteBanqu.addElement(new CompteBancaire());
+		((CompteBancaire) compteBanqu.get(3)).afficherDetails();
+		
+		
 		
 //		pad
 //		String.format()
