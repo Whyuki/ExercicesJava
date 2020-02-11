@@ -36,14 +36,12 @@ public class VoitureApp1 {
 		typeRoute = sc.nextLine();
 		while (tuture.isMarche() == true) {
 			System.out.println();
-			tuture.afficherVitesse();
-			System.out.println();
 			System.out.println("Veuillez choisir l'action : ");
 			System.out.println("Pour accélérer tapez : 1 ");
 			System.out.println("Pour freiner tapez : 2 ");
 			System.out.println("Pour klaxonner tapez : 3 ");
-			System.out.println("Pour vous arrêter tapez : 4 ");
-			System.out.println("Pour changer de type de route, Tapez 5 ");
+			System.out.println("Pour changer de type de route, Tapez 4 ");
+			System.out.println("Pour vous arrêter tapez : 5 ");
 			choix = sc.nextLine();
 			switch (choix) {
 			case "1":
@@ -58,11 +56,12 @@ public class VoitureApp1 {
 				tuture.klaxonner();
 				break;
 			case "4":
-				tuture.arret();
-				break;
-			case "5":
 				System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
 				typeRoute = sc.nextLine();
+				tuture.afficherVitesse();
+				break;
+			case "5":
+				tuture.arret();
 				break;
 			default:
 				System.out.println("Commande inconnue");
