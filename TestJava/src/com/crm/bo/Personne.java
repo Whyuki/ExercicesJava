@@ -102,8 +102,8 @@ public class Personne {
 	}
 
 	public int incrementeNombre(int nb) { // param type primitif pour demontrer qu'une méthode avec un type primitif en
-											// parametre de modifie par la valeur (ou variable) entrée en parametre (voir Personne
-											// App0)
+											// parametre ne modifie pas la valeur (ou variable) entrée en parametre (voir Personne
+											// App0) contrairmeent aux objets en parametres (references)
 		return nb++;
 	}
 
