@@ -28,7 +28,7 @@ public class VoitureApp1 {
 		System.out.println("Bonjour, prennez place au volant de cette voiture, voici ces caractéristiques : ");
 		tuture.afficherDetails();
 
-		System.out.println("Souhaitez vous démarrer la voiture ? O/N");
+		System.out.println("Souhaitez vous la démarrer ? O/N");
 		if (sc.nextLine().equalsIgnoreCase("O")) {
 			tuture.demarrage();
 		}
