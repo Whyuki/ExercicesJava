@@ -31,9 +31,9 @@ public class VoitureApp1 {
 		if (sc.nextLine().equalsIgnoreCase("O")) {
 			tuture.demarrage();
 		}
-		System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
-		tuture.setTypeRoute(sc.nextLine());
 		while (tuture.isMarche() == true) {
+			System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
+			tuture.setTypeRoute(sc.nextLine());
 			System.out.println();
 			System.out.println("Veuillez choisir l'action : ");
 			System.out.println("Pour accélérer tapez : 1 ");
@@ -67,7 +67,6 @@ public class VoitureApp1 {
 				break;
 			}
 		}
-
 		sc.close();
 	}
 
