@@ -39,7 +39,7 @@ public class TableauPersonneApp {
 			tabPers[i].afficherDetails();
 
 		}
-		System.out.println("\nListe des membres de l'équipe :");
+		System.out.println("\nVotre équipe est composée de "+tabPers.length+" personnes"+"\nListe des membres de l'équipe :");
 
 		for (Personne pers : tabPers) {
 			System.out.println(pers.surnom + " (" + pers.getPrenom() + " " + pers.getNom() + ")");
