@@ -1,7 +1,7 @@
 package com.crm.bo;
 
 public enum RouteType {
-	ville("ville"), route("route"), autoroute("autoroute");
+	VILLE("ville"), ROUTE("route"), AUTOROUTE("autoroute");
 
 	private final String text;
 	

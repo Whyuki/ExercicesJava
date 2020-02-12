@@ -19,10 +19,7 @@ public class VoitureV {
 	private boolean marche;
 	private int vitesse;
 	private String typeRoute;
-
-	Route ville = new Route(50);
-	Route route = new Route(80);
-	Route autoroute = new Route(130);
+	private Route route;
 
 	public VoitureV() {
 
@@ -34,6 +31,9 @@ public class VoitureV {
 		this.nbPortes = nbPortes;
 		this.boiteVitesse = boiteVitesse;
 		this.prix = prix;
+
+		route.setType("ROUTE");
+		route.setVitesseMax();
 	}
 
 	public String getMarque() {
@@ -96,8 +96,10 @@ public class VoitureV {
 		return typeRoute;
 	}
 
+
 	public void setTypeRoute(String typeRoute) {
 		this.typeRoute = typeRoute;
+		route.setType(this.typeRoute);
 	}
 
 	public void afficherDetails() {
@@ -113,37 +115,15 @@ public class VoitureV {
 		System.out.println("vroum-vroum !");
 	}
 
-	public void accelerer(int vitesseAcceleration, String typeRoute) {
+	public void accelerer(int vitesseAcceleration, Route route) {
 		if (marche == true) {
-			switch (RouteType.valueOf(typeRoute)) {
-			case ville:
-				if (vitesse + vitesseAcceleration <= ville.getVitesseMax()) {
-					vitesse = vitesse + vitesseAcceleration;
-				} else {
-					vitesse = ville.getVitesseMax();
-					this.avertissementVitesseMax();
-				}
-				break;
-			case route:
-				if (vitesse + vitesseAcceleration <= route.getVitesseMax()) {
-					vitesse = vitesse + vitesseAcceleration;
-				} else {
-					vitesse = route.getVitesseMax();
-					this.avertissementVitesseMax();
-				}
-				break;
-			case autoroute:
-				if (vitesse + vitesseAcceleration <= autoroute.getVitesseMax()) {
-					vitesse = vitesse + vitesseAcceleration;
-				} else {
-					vitesse = autoroute.getVitesseMax();
-					this.avertissementVitesseMax();
-				}
-				break;
-			default:
-				System.out.println("Type de route non reconnue");
-				break;
+			if (vitesse + vitesseAcceleration <= route.getVitesseMax()) {
+				vitesse = vitesse + vitesseAcceleration;
+			} else {
+				vitesse = route.getVitesseMax();
+				this.avertissementVitesseMax();
 			}
+
 		} else {
 			System.out.println("Demarrage nécessaire !");
 		}
@@ -176,29 +156,10 @@ public class VoitureV {
 		System.out.println("Attention vitesse limitée !" + "\nAdaptation automatique de votre vitesse !");
 	}
 
-	public void controleVitesse(String typeRoute) {
-		switch (RouteType.valueOf(typeRoute)) {
-		case ville:
-			if (vitesse > ville.getVitesseMax()) {
-				vitesse = ville.getVitesseMax();
-				this.avertissementVitesseMax();
-			}
-			break;
-		case route:
-			if (vitesse > route.getVitesseMax()) {
-				vitesse = route.getVitesseMax();
-				this.avertissementVitesseMax();
-			}
-			break;
-		case autoroute:
-			if (vitesse > autoroute.getVitesseMax()) {
-				vitesse = autoroute.getVitesseMax();
-				this.avertissementVitesseMax();
-			}
-			break;
-		default:
-			System.out.println("Type de route non reconnue");
-			break;
+	public void controleVitesse(Route route) {
+		if (vitesse > route.getVitesseMax()) {
+			vitesse = route.getVitesseMax();
+			this.avertissementVitesseMax();
 		}
 		afficherVitesse();
 	}
