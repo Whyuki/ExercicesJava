@@ -18,11 +18,8 @@ public class VoitureV {
 	private float prix;
 	private boolean marche;
 	private int vitesse;
-	private Route route = new Route();
+	private Route route;
 
-	public VoitureV() {
-
-	}
 
 	public VoitureV(String marque, String couleur, int nbPortes, String boiteVitesse, float prix) {
 		this.marque = marque;
@@ -31,6 +28,7 @@ public class VoitureV {
 		this.boiteVitesse = boiteVitesse;
 		this.prix = prix;
 
+		route = new Route();
 		route.setType("VILLE");
 		route.setVitesseMax();
 	}
