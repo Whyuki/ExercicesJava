@@ -27,6 +27,7 @@ public class Route {
 
 	public void setType(String type) {
 		this.type = type;
+		this.setVitesseMax();
 	}
 
 	public int getVitesseMax() {
@@ -34,11 +35,11 @@ public class Route {
 	}
 
 	public void setVitesseMax() {
-		if (this.type.equals("VILLE")) {
+		if (this.type.equalsIgnoreCase("VILLE")) {
 			vitesseMax = 50;
-		} else if (this.type.equals("ROUTE")) {
+		} else if (this.type.equalsIgnoreCase("ROUTE")) {
 			vitesseMax = 80;
-		} else if (this.type.equals("AUTOROUTE")) {
+		} else if (this.type.equalsIgnoreCase("AUTOROUTE")) {
 			vitesseMax = 130;
 		}
 	}

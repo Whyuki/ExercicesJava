@@ -31,9 +31,12 @@ public class VoitureAppTestTypeRoute {
 		if (sc.nextLine().equalsIgnoreCase("O")) {
 			titine.demarrage();
 			System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
-			titine.setTypeRoute(sc.nextLine());
+			titine.getRoute().setType(sc.nextLine());
+			System.out.println("\nVous êtes sur une route de type " + titine.getRoute().getType()
+					+ " : Vitesse limitiée à " + titine.getRoute().getVitesseMax() + "km/h");
 		}
 		while (titine.isMarche() == true) {
+
 			System.out.println();
 			System.out.println("Veuillez choisir l'action : ");
 			System.out.println("Pour accélérer tapez : 1 ");
@@ -45,7 +48,7 @@ public class VoitureAppTestTypeRoute {
 			switch (choix) {
 			case "1":
 				System.out.println("De combien souhaitez vous accélérer ?");
-				titine.accelerer(Integer.parseInt(sc.nextLine()), titine.getTypeRoute());
+				titine.accelerer(Integer.parseInt(sc.nextLine()), titine.getRoute());
 				break;
 			case "2":
 				System.out.println("De combien souhaitez vous ralentir ?");
@@ -56,7 +59,9 @@ public class VoitureAppTestTypeRoute {
 				break;
 			case "4":
 				System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
-				titine.setTypeRoute(sc.nextLine());
+				titine.getRoute().setType(sc.nextLine());
+				System.out.println("\nVous êtes sur une route de type " + titine.getRoute().getType()
+						+ " : Vitesse limitiée à " + titine.getRoute().getVitesseMax() + "km/h");
 				break;
 			case "5":
 				titine.arret();
@@ -65,7 +70,7 @@ public class VoitureAppTestTypeRoute {
 				System.out.println("Commande inconnue");
 				break;
 			}
-			titine.controleVitesse(titine.getTypeRoute());
+			titine.controleVitesse(titine.getRoute());
 		}
 		sc.close();
 	}

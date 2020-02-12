@@ -18,8 +18,7 @@ public class VoitureV {
 	private float prix;
 	private boolean marche;
 	private int vitesse;
-	private String typeRoute;
-	private Route route;
+	private Route route = new Route();
 
 	public VoitureV() {
 
@@ -32,8 +31,16 @@ public class VoitureV {
 		this.boiteVitesse = boiteVitesse;
 		this.prix = prix;
 
-		route.setType("ROUTE");
+		route.setType("VILLE");
 		route.setVitesseMax();
+	}
+
+	public Route getRoute() {
+		return route;
+	}
+
+	public void setRoute(Route route) {
+		this.route = route;
 	}
 
 	public String getMarque() {
@@ -92,16 +99,6 @@ public class VoitureV {
 		this.vitesse = vitesse;
 	}
 
-	public String getTypeRoute() {
-		return typeRoute;
-	}
-
-
-	public void setTypeRoute(String typeRoute) {
-		this.typeRoute = typeRoute;
-		route.setType(this.typeRoute);
-	}
-
 	public void afficherDetails() {
 		System.out.println("Marque : " + marque);
 		System.out.println("Couleur : " + couleur);
@@ -153,7 +150,7 @@ public class VoitureV {
 	}
 
 	public void avertissementVitesseMax() {
-		System.out.println("Attention vitesse limitée !" + "\nAdaptation automatique de votre vitesse !");
+		System.out.println("Attention dépassement de la vitesse limitée :" + "\nAdaptation automatique de votre vitesse !");
 	}
 
 	public void controleVitesse(Route route) {
