@@ -5,13 +5,13 @@ package com.crm.boapp;
 
 import java.util.Scanner;
 
-import com.crm.bo.Voiture;
+import com.crm.bo.VoitureV;
 
 /**
  * @author Joanna
  *
  */
-public class VoitureApp1 {
+public class VoitureAppTestTypeRoute {
 
 	/**
 	 * @param args
@@ -22,18 +22,18 @@ public class VoitureApp1 {
 		Scanner sc = new Scanner(System.in);
 		String choix;
 
-		Voiture tuture = new Voiture("Fiat", "noir", 3, "manuelle", 7000);
+		VoitureV titine = new VoitureV("Fiat", "noir", 3, "manuelle", 7000);
 
 		System.out.println("Bonjour, prennez place au volant de cette voiture, voici ces caractéristiques : ");
-		tuture.afficherDetails();
+		titine.afficherDetails();
 
 		System.out.println("Souhaitez vous la démarrer ? O/N");
 		if (sc.nextLine().equalsIgnoreCase("O")) {
-			tuture.demarrage();
+			titine.demarrage();
 			System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
-			tuture.setTypeRoute(sc.nextLine());
+			titine.setTypeRoute(sc.nextLine());
 		}
-		while (tuture.isMarche() == true) {
+		while (titine.isMarche() == true) {
 			System.out.println();
 			System.out.println("Veuillez choisir l'action : ");
 			System.out.println("Pour accélérer tapez : 1 ");
@@ -45,27 +45,27 @@ public class VoitureApp1 {
 			switch (choix) {
 			case "1":
 				System.out.println("De combien souhaitez vous accélérer ?");
-				tuture.accelerer(Integer.parseInt(sc.nextLine()), tuture.getTypeRoute());
+				titine.accelerer(Integer.parseInt(sc.nextLine()), titine.getTypeRoute());
 				break;
 			case "2":
 				System.out.println("De combien souhaitez vous ralentir ?");
-				tuture.ralentir(Integer.parseInt(sc.nextLine()));
+				titine.ralentir(Integer.parseInt(sc.nextLine()));
 				break;
 			case "3":
-				tuture.klaxonner();
+				titine.klaxonner();
 				break;
 			case "4":
 				System.out.println("Veuillez saisir le type de route : ville / route / autoroute :");
-				tuture.setTypeRoute(sc.nextLine());
+				titine.setTypeRoute(sc.nextLine());
 				break;
 			case "5":
-				tuture.arret();
+				titine.arret();
 				break;
 			default:
 				System.out.println("Commande inconnue");
 				break;
 			}
-			tuture.controleVitesse(tuture.getTypeRoute());
+			titine.controleVitesse(titine.getTypeRoute());
 		}
 		sc.close();
 	}

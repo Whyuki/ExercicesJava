@@ -1,13 +1,15 @@
 /**
- * class metier voiture
+ * 
  */
 package com.crm.bo;
+
+import com.crm.bo.TypeRoute;
 
 /**
  * @author Joanna
  *
  */
-public class Voiture {
+public class VoitureV {
 
 	private String marque;
 	private String couleur;
@@ -17,18 +19,16 @@ public class Voiture {
 	private boolean marche;
 	private int vitesse;
 	private String typeRoute;
-	private static final int VILLE_VIT_MAX = 50;
-	private static final int ROUTE_VIT_MAX = 80;
-	private static final int AUTOROUTE_VIT_MAX = 130;
-	private static final String VILLE = "ville";
-	private static final String ROUTE = "route";
-	private static final String AUTOROUTE = "autoroute";
 
-	public Voiture() {
+	TypeRoute ville = new TypeRoute(50);
+	TypeRoute route = new TypeRoute(80);
+	TypeRoute autoroute = new TypeRoute(130);
+
+	public VoitureV() {
 
 	}
 
-	public Voiture(String marque, String couleur, int nbPortes, String boiteVitesse, float prix) {
+	public VoitureV(String marque, String couleur, int nbPortes, String boiteVitesse, float prix) {
 		this.marque = marque;
 		this.couleur = couleur;
 		this.nbPortes = nbPortes;
@@ -115,28 +115,28 @@ public class Voiture {
 
 	public void accelerer(int vitesseAcceleration, String typeRoute) {
 		if (marche == true) {
-			switch (typeRoute) {
-			case VILLE:
-				if (vitesse + vitesseAcceleration <= VILLE_VIT_MAX) {
+			switch (RouteType.valueOf(typeRoute)) {
+			case ville:
+				if (vitesse + vitesseAcceleration <= ville.getVitesseMax()) {
 					vitesse = vitesse + vitesseAcceleration;
 				} else {
-					vitesse = VILLE_VIT_MAX;
+					vitesse = ville.getVitesseMax();
 					this.avertissementVitesseMax();
 				}
 				break;
-			case ROUTE:
-				if (vitesse + vitesseAcceleration <= ROUTE_VIT_MAX) {
+			case route:
+				if (vitesse + vitesseAcceleration <= route.getVitesseMax()) {
 					vitesse = vitesse + vitesseAcceleration;
 				} else {
-					vitesse = ROUTE_VIT_MAX;
+					vitesse = route.getVitesseMax();
 					this.avertissementVitesseMax();
 				}
 				break;
-			case AUTOROUTE:
-				if (vitesse + vitesseAcceleration <= AUTOROUTE_VIT_MAX) {
+			case autoroute:
+				if (vitesse + vitesseAcceleration <= autoroute.getVitesseMax()) {
 					vitesse = vitesse + vitesseAcceleration;
 				} else {
-					vitesse = AUTOROUTE_VIT_MAX;
+					vitesse = autoroute.getVitesseMax();
 					this.avertissementVitesseMax();
 				}
 				break;
@@ -148,7 +148,6 @@ public class Voiture {
 			System.out.println("Demarrage nécessaire !");
 		}
 
-		// this.afficherVitesse();
 	}
 
 	public void ralentir(int vitesseRalentissement) {
@@ -178,22 +177,22 @@ public class Voiture {
 	}
 
 	public void controleVitesse(String typeRoute) {
-		switch (typeRoute) {
-		case VILLE:
-			if (vitesse > VILLE_VIT_MAX) {
-				vitesse = 50;
+		switch (RouteType.valueOf(typeRoute)) {
+		case ville:
+			if (vitesse > ville.getVitesseMax()) {
+				vitesse = ville.getVitesseMax();
 				this.avertissementVitesseMax();
 			}
 			break;
-		case ROUTE:
-			if (vitesse > ROUTE_VIT_MAX) {
-				vitesse = 80;
+		case route:
+			if (vitesse > route.getVitesseMax()) {
+				vitesse = route.getVitesseMax();
 				this.avertissementVitesseMax();
 			}
 			break;
-		case AUTOROUTE:
-			if (vitesse > AUTOROUTE_VIT_MAX) {
-				vitesse = 130;
+		case autoroute:
+			if (vitesse > autoroute.getVitesseMax()) {
+				vitesse = autoroute.getVitesseMax();
 				this.avertissementVitesseMax();
 			}
 			break;
@@ -203,4 +202,5 @@ public class Voiture {
 		}
 		afficherVitesse();
 	}
+
 }
