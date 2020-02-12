@@ -3,7 +3,7 @@
  */
 package com.crm.bo;
 
-import com.crm.bo.TypeRoute;
+import com.crm.bo.Route;
 
 /**
  * @author Joanna
@@ -20,9 +20,9 @@ public class VoitureV {
 	private int vitesse;
 	private String typeRoute;
 
-	TypeRoute ville = new TypeRoute(50);
-	TypeRoute route = new TypeRoute(80);
-	TypeRoute autoroute = new TypeRoute(130);
+	Route ville = new Route(50);
+	Route route = new Route(80);
+	Route autoroute = new Route(130);
 
 	public VoitureV() {
 

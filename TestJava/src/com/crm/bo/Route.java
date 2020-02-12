@@ -7,10 +7,10 @@ package com.crm.bo;
  * @author Joanna
  *
  */
-public class TypeRoute {
+public class Route {
 	private int vitesseMax;
 
-	public TypeRoute(int vitesseMax) {
+	public Route(int vitesseMax) {
 		this.vitesseMax = vitesseMax;
 	}
 
