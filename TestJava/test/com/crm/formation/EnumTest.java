@@ -14,6 +14,9 @@ public class EnumTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		System.out.println("test : "+Enum.VENDREDI);
+		
 		for (Enum lang : Enum.values()) {
 			if (Enum.VENDREDI.equals(lang))
 				System.out.println("J'aime le : " + lang);
