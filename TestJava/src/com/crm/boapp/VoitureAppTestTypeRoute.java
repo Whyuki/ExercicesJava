@@ -73,6 +73,7 @@ public class VoitureAppTestTypeRoute {
 			}
 			titine.controleVitesse(titine.getRoute());
 		}
+		System.out.println("Au revoir !");
 		sc.close();
 	}
 
