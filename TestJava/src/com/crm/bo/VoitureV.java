@@ -7,7 +7,7 @@ import com.crm.bo.Route;
 
 /**
  * @author Joanna
- *
+ * @version Voiture v2
  */
 public class VoitureV {
 
@@ -19,7 +19,6 @@ public class VoitureV {
 	private boolean marche;
 	private int vitesse;
 	private Route route;
-
 
 	public VoitureV(String marque, String couleur, int nbPortes, String boiteVitesse, float prix) {
 		this.marque = marque;
@@ -148,7 +147,8 @@ public class VoitureV {
 	}
 
 	public void avertissementVitesseMax() {
-		System.out.println("Attention dépassement de la vitesse limitée :" + "\nAdaptation automatique de votre vitesse !");
+		System.out.println(
+				"Attention dépassement de la vitesse limitée :" + "\nAdaptation automatique de votre vitesse !");
 	}
 
 	public void controleVitesse(Route route) {

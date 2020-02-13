@@ -9,6 +9,7 @@ import com.crm.bo.VoitureV;
 
 /**
  * @author Joanna
+ * @version VoitureAPP v2
  *
  */
 public class VoitureAppTestTypeRoute {
