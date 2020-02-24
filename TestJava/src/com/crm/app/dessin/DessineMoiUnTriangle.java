@@ -1,4 +1,4 @@
-package com.crm.dessin;
+package com.crm.app.dessin;
 import java.util.Scanner;
 
 /**

@@ -1,4 +1,4 @@
-package geometry;
+package com.crm.app.geometry;
 import java.util.Scanner;
 
 import com.crm.api.Utils;
