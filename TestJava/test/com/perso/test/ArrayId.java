@@ -1,5 +1,5 @@
 
-package test.perso;
+package com.perso.test;
 
 /**
  * @author Joanna
