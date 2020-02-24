@@ -1,11 +1,9 @@
-/**
- * sans interraction user
- */
 package com.crm.boapp;
 
 import com.crm.bo.Personne;
 
 /**
+ * sans interraction user
  * @author Joanna
  *
  */

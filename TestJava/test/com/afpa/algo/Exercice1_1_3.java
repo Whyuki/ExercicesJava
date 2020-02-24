@@ -2,10 +2,8 @@ package com.afpa.algo;
 import java.util.Scanner;
 
 /**
- * @author Joanna
- * 
  * calcul la somme et moyenne des nombres saisis
- *
+ * @author Joanna
  */
 public class Exercice1_1_3 {
 

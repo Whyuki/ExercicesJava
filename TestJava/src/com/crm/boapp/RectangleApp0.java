@@ -1,11 +1,9 @@
-/**
- * sans interraction user
- */
 package com.crm.boapp;
 
 import com.crm.bo.Rectangle;
 
 /**
+ * sans interraction user
  * @author Joanna
  *
  */

@@ -2,10 +2,8 @@
 package com.perso.test;
 
 /**
- * @author Joanna
- */
-/**
  * test de tableau 
+ * @author Joanna
  */
 public class ArrayId {
 

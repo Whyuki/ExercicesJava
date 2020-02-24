@@ -1,6 +1,3 @@
-/**
- * collection : vector
- */
 package com.crm.boapp;
 
 import java.util.Vector;
@@ -8,6 +5,7 @@ import java.util.Vector;
 import com.crm.bo.Personne;
 
 /**
+ * collection : vector
  * @author Joanna
  *
  */

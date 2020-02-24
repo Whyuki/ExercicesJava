@@ -4,6 +4,7 @@
 package com.crm.bo;
 
 /**
+ * class metier voiture
  * @author Joanna
  *
  */

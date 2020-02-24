@@ -1,10 +1,8 @@
-/**
- * Classe metier CompteBancaire
- */
 package com.crm.bo;
 
 
 /**
+ * Classe metier CompteBancaire
  * @author Joanna
  *
  */

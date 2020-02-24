@@ -1,7 +1,3 @@
-/**
- * creation de compte bancaire ave generation du n° de compte
- * et test vector
- */
 package com.crm.boapp;
 
 import java.util.Vector;
@@ -9,6 +5,8 @@ import java.util.Vector;
 import com.crm.bo.CompteBancaire;
 
 /**
+ * creation de compte bancaire ave generation du n° de compte
+ * et test vector
  * @author Joanna
  *
  */

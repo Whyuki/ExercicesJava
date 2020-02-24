@@ -2,10 +2,8 @@ package com.afpa.algo;
 import java.util.Scanner;
 
 /**
- * @author Joanna
- * 
  * calcul de x puissance y à l'aide de Math.pow
- * 
+ * @author Joanna
  */
 public class ExerciceAfpa4 {
 

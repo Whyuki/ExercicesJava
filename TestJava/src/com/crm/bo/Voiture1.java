@@ -3,6 +3,7 @@ package com.crm.bo;
 import com.crm.bo.Route;
 
 /**
+ * Classe voiture avec attribut de type Route
  * @author Joanna
  * @version Voiture v2
  * Classe voiture avec attribut de type Route

@@ -2,10 +2,8 @@ package com.afpa.algo;
 import java.util.Scanner;
 
 /**
- * @author Joanna
- * 
  * calcul la moyenne de deux nombres saisis
- *
+ * @author Joanna
  */
 public class Exercice1_1_2 {
 

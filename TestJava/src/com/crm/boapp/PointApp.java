@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.crm.boapp;
 
 import com.crm.bo.Point;

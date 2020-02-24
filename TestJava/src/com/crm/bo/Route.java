@@ -1,6 +1,7 @@
 package com.crm.bo;
 
 /**
+ * Classe Route pour définir un type de route et la limitation de vitesse associée
  * @author Joanna
  * Classe Route pour définir un type de route et la limitation de vitesse associée
  */

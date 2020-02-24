@@ -1,6 +1,3 @@
-/**
- * Class application CompteBancaire
- */
 package com.crm.boapp;
 
 import java.util.Scanner;
@@ -8,6 +5,7 @@ import java.util.Scanner;
 import com.crm.bo.CompteBancaire;
 
 /**
+ * Class application CompteBancaire
  * @author Joanna
  *
  */

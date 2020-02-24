@@ -1,11 +1,9 @@
-/**
- * sans interraction
- */
 package com.crm.boapp;
 
 import com.crm.bo.CompteBancaire;
 
 /**
+ * sans interraction
  * @author Joanna
  *
  */

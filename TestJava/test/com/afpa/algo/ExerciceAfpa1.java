@@ -2,10 +2,8 @@ package com.afpa.algo;
 import java.util.Scanner;
 
 /**
- * @author Joanna
- * 
  * calcul la somme des nombres entre 0 et le nombre saisi
- *
+ * @author Joanna
  */
 public class ExerciceAfpa1 {
 

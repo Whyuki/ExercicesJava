@@ -1,6 +1,3 @@
-/**
- * avec interraction user
- */
 package com.crm.boapp;
 
 import java.util.Scanner;
@@ -8,6 +5,7 @@ import java.util.Scanner;
 import com.crm.bo.Rectangle;
 
 /**
+ * avec interraction user
  * @author Joanna
  *
  */

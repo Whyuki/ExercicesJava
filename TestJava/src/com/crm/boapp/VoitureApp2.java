@@ -5,9 +5,10 @@ import java.util.Scanner;
 import com.crm.bo.Voiture1;
 
 /**
+ * Classe applicative test de la classe Voiture1 avec interraction et attribut de type Route (type et vitesse max)
  * @author Joanna
  * @version VoitureAPP v2
- * Classe applicative test de la classe Voiture1 (avec attribut de type Route (type et vitesse max))
+ * 
  */
 public class VoitureApp2 {
 

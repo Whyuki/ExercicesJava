@@ -1,11 +1,9 @@
-/**
- * 
- */
 package com.crm.boapp;
 
 import com.crm.bo.Voiture;
 
 /**
+ * Classe test de Voiture sans interraction
  * @author Joanna
  *
  */
