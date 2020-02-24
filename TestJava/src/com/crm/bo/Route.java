@@ -1,11 +1,8 @@
-/**
- * Classe Route pour définir un type de route et la limitation de vitesse associée
- */
 package com.crm.bo;
 
 /**
  * @author Joanna
- *
+ * Classe Route pour définir un type de route et la limitation de vitesse associée
  */
 public class Route {
 

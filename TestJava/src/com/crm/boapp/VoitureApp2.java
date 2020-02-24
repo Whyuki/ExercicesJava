@@ -1,18 +1,15 @@
-/**
- * Classe applicative test de la classe VoitureV (avec attribut de type Route (type et vitesse max))
- */
 package com.crm.boapp;
 
 import java.util.Scanner;
 
-import com.crm.bo.VoitureV;
+import com.crm.bo.Voiture1;
 
 /**
  * @author Joanna
  * @version VoitureAPP v2
- *
+ * Classe applicative test de la classe Voiture1 (avec attribut de type Route (type et vitesse max))
  */
-public class VoitureAppTestTypeRoute {
+public class VoitureApp2 {
 
 	/**
 	 * @param args
@@ -23,7 +20,7 @@ public class VoitureAppTestTypeRoute {
 		Scanner sc = new Scanner(System.in);
 		String choix;
 
-		VoitureV titine = new VoitureV("Fiat", "noir", 3, "manuelle", 7000);
+		Voiture1 titine = new Voiture1("Fiat", "noir", 3, "manuelle", 7000);
 
 		System.out.println("Bonjour, prennez place au volant de cette voiture, voici ces caractéristiques : ");
 		titine.afficherDetails();

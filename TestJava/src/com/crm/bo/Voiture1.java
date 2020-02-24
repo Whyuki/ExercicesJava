@@ -1,6 +1,3 @@
-/**
- * Classe voiture avec attribut de type Route
- */
 package com.crm.bo;
 
 import com.crm.bo.Route;
@@ -8,8 +5,9 @@ import com.crm.bo.Route;
 /**
  * @author Joanna
  * @version Voiture v2
+ * Classe voiture avec attribut de type Route
  */
-public class VoitureV {
+public class Voiture1 {
 
 	private String marque;
 	private String couleur;
@@ -20,7 +18,7 @@ public class VoitureV {
 	private int vitesse;
 	private Route route;
 
-	public VoitureV(String marque, String couleur, int nbPortes, String boiteVitesse, float prix) {
+	public Voiture1(String marque, String couleur, int nbPortes, String boiteVitesse, float prix) {
 		this.marque = marque;
 		this.couleur = couleur;
 		this.nbPortes = nbPortes;
