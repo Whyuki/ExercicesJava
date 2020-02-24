@@ -1,10 +1,10 @@
-afpa.exercices.algo
+com.afpa.algo
 com.crm.api
 com.crm.app
+com.crm.app.dessin
+com.crm.app.geometry
 com.crm.bo
 com.crm.boapp
-com.crm.dessin
 com.crm.evaluationM6
 com.crm.formation
-geometry
-test.perso
+com.perso.test
