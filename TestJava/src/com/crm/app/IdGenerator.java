@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 /**
  * Generateur d'identifiants avec prenom et nom
- */
-/**
  * @author Joanna
  *
  */

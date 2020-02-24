@@ -1,11 +1,8 @@
 package com.crm.app;
 
 /**
- * @author Joanna
- */
-/** 
  * split string en tableau de string avec le séparateur indiqué
- * 
+ * @author Joanna
  */
 public class splitString {
 

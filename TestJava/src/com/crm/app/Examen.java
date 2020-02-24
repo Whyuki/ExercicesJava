@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 /**
  * résultat examen
- */
-/**
  * @author Joanna
  * @version 1.0
  */

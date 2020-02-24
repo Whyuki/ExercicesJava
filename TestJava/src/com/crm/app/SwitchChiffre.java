@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 /**
  * Exemple utilisation switch : reconnaire un chiffre
- */
-/** 
  * @author Joanna
  *
  */

@@ -5,11 +5,8 @@ import java.util.Scanner;
 import com.crm.api.Utils;
 
 /**
- * @author Joanna
- */
-/**
  * traduction jours de la semaine en anglais et allemand, avec tableau deux dimensions 
- *
+ * @author Joanna
  */
 public class WeekTranslate {
 

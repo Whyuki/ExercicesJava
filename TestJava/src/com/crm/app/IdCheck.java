@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 /**
  * Connexion simple avec identifiants uniques donnés
- */
-/**
  * @author Joanna
  *
  */

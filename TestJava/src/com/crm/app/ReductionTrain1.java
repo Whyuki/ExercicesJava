@@ -3,11 +3,9 @@ package com.crm.app;
 import java.util.Scanner;
 
 /**
- * @author Joanna
- */
-/**
  * Afficher la réduction (potentielle) correspondante à l'âge saisi par l'utilisateur
  * méthode if else if...
+ * @author Joanna
  */
 public class ReductionTrain1 {
 

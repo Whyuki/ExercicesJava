@@ -1,11 +1,8 @@
 package com.crm.app;
 
 /**
- * @author Joanna
- */
-/** 
  * méthode afficherTableau avec tableau en parametre 
- * 
+ * @author Joanna
  */
 public class TableauEnParametre {
 

@@ -4,11 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * @author Joanna
- *
- */
-/** 
  * Jeu lancement d'un dè :  2 joueur(s), 3 lancés, si 6 : relance
+ * @author Joanna
  */
 public class DieRoll {
 

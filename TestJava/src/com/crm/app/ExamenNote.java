@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 /**
  * résultat examen avec if imbriqués
- */
-/**
  * @author Joanna
  * @version 1.0.1
  */

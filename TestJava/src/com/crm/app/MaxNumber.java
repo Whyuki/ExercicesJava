@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 /**
  * differentes façon de définir le nombre le plus grand
- */
-
-/**
  * @author Joanna
  *
  */

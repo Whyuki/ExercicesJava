@@ -1,10 +1,8 @@
 package com.crm.api;
 
 /**
- * @author Joanna
- */
-/** 
  * classe utilitaire
+ * @author Joanna
  * 
  */
 public class Utils {
