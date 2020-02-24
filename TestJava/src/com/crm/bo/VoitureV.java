@@ -1,5 +1,5 @@
 /**
- * 
+ * Classe voiture avec attribut de type Route
  */
 package com.crm.bo;
 

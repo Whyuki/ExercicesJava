@@ -1,5 +1,5 @@
 /**
- * 
+ * Classe applicative test de la classe VoitureV (avec attribut de type Route (type et vitesse max))
  */
 package com.crm.boapp;
 
