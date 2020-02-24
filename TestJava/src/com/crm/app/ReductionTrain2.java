@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.crm.api;
+package com.crm.app;
 
 import java.util.Scanner;
 

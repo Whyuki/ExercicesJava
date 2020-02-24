@@ -1,6 +1,8 @@
-package com.crm.api;
+package com.crm.app;
 
 import java.util.Scanner;
+
+import com.crm.api.Utils;
 
 /**
  * @author Joanna

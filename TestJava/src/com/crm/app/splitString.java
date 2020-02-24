@@ -1,4 +1,4 @@
-package com.crm.api;
+package com.crm.app;
 
 /**
  * @author Joanna
